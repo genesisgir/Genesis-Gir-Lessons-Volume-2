@@ -1,5 +1,4 @@
 # Genesis-Gir-Lessons-Volume-2
-#Genesis Gir Lessons Volume 2!
 It's here the second installment of my workflows for all of you to research and dig threw and understand how to code way faster and more intuitive
 programs to dig threw and understand! volume 2 is currently under development so sofware will be addded day by day or whenever they do I cannot stress enough how important it is to reference the automatetheboringstuff for these tutorials and progress capsules are just to watch my progress but some learning value can be found in them for sure!
 
