@@ -1,4 +1,4 @@
-# AMMOFUNCTIONSMOREAMMO
+# AMMO FUNCTIONS MORE AMMO
 
 
 Welcome to the ammo , functions , more ammo .py! in this script we are using modules, print(), variables, functions,
