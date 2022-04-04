@@ -19,31 +19,21 @@ and you can use them in your own projects!
 
 """
 # importing modules
+import sys, time, webbrowser
 
-import sys,time,webbrowser
+# defining functions
+def vari():
+    # Item amounts variables
 
-"""
-
-█ █▀▄▀█ █▀█ █▀█ █▀█ ▀█▀
-█ █░▀░█ █▀▀ █▄█ █▀▄ ░█░
-
-import statements allow the user to import modules into their source code and can be very useful
-try importing mods into your code with the 'import' statement. 
-
-ex. import sys
-
-sys in a module that allows the user to terminate their program early and there are millions of functions you
-can download using pip or use the modules that come built in in python from the standard library!
-
-"""
-
-# Item amounts variables
-
-ammo_amount = 0
-hand_gun_amount = 1
-medkit_amount = 44
-
-"""
+    global ammo_amount 
+    global hand_gun_amount 
+    global medkit_amount 
+    
+    ammo_amount = 0
+    hand_gun_amount = 1
+    medkit_amount = 44
+    
+    """
 
 █░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
 ▀▄▀ █▀█ █▀▄ █ █▀█ █▄█ █▄▄ ██▄ ▄█
@@ -74,31 +64,46 @@ boolean values! True and False can be used in variables so why not have a go at 
 
 """
 
-# defining functions
+vari()
+
 def inv():
-    print('          𝙈𝙖𝙩𝙚𝙧𝙞𝙖𝙡𝙨') 
-    print('You have ' + str(ammo_amount) + ' ammo, ' + str(hand_gun_amount) + ' pistol ' + str(medkit_amount) + ' medkits!\n')
+    print("          𝙈𝙖𝙩𝙚𝙧𝙞𝙖𝙡𝙨")
+    print(
+        "You have "
+        + str(ammo_amount)
+        + " ammo, "
+        + str(hand_gun_amount)
+        + " pistol "
+        + str(medkit_amount)
+        + " medkits!\n"
+    )
 
-def exit(): # defines the exit() function
-    import webbrowser,time
-    resp = input('Close program? y/n ')
-    if resp == 'y': # condion if users input is yes!
-        print('Thank you for trying out this program!') # what the function will evaluate to with the return statement
-        time.sleep(1)
-        print('You will be directed to genesisgirs Github channel goodbye!')
-        time.sleep(1)
-        webbrowser.open('https://github.com/GenesisGir')
-        sys.exit() # terminate program
-    elif resp =='n':
-        pass  
+def exit():  # defines the exit() function
+    import webbrowser, time
 
+    resp = input("Close program? y/n ")
+    if resp == "y":  # condion if users input is yes!
+        print(
+            "Thank you for trying out this program!"
+        )  # what the function will evaluate to with the return statement
+        time.sleep(1)
+        print("You will be directed to genesisgirs Github channel goodbye!")
+        time.sleep(1)
+        webbrowser.open("https://github.com/GenesisGir")
+        sys.exit()  # terminate program
+    elif resp == "n":
+        pass
+
+# defines the time function
 def time():
     import time
-    print('Please wait ' , str(5) , ' seconds')
-    for sec in range(5,0,-1):
-        print('Please wait ' , '(' , str(sec) , ')' , ' seconds')
+
+    print("Please wait ", str(5), " seconds")
+    for sec in range(5, 0, -1):
+        print("Please wait ", "(", str(sec), ")", " seconds")
         time.sleep(1)
-        
+
+
 """
 
 █▀▀ █░█ █▄░█ █▀▀ ▀█▀ █ █▀█ █▄░█ █▀
@@ -140,18 +145,20 @@ simple to not have to copy and paste your code over and over again saving you ti
      \__\/         \__\/         \__\/         \__\/         \__\/                      \__\/   
 """
 
-inv() # function call being used!
-input('(press enter to gather more ammo!)')
-time()# function call being used!
-print('SUCCESS!') # printing the text values 'SUCCESS' onto stream or stream with print functionality!
+inv()  # function call being used!
+input("(press enter to gather more ammo!)")
+time()  # function call being used!
+print(
+    "SUCCESS!"
+)  # printing the text values 'SUCCESS' onto stream or stream with print functionality!
 
 # giving user more ammunition by overwriting the variable
 ammo_amount = ammo_amount + 100
 
-inv() # function call being used!
-print() # ELOC
-print('You collected ' + str(ammo_amount) + ' ammunition!')
-exit() # function call being used!
+inv()  # function call being used!
+print()  # ELOC
+print("You collected " + str(ammo_amount) + " ammunition!")
+exit()  # function call being used!
 """
 |¯¯¯¯¯¯¯|°|\¯¯ (/\)¯¯ /|' |¯¯¯| |¯¯¯¯¯¯¯|°   /¯¯¯/\__)°|¯¯¯|_|¯¯¯| 
 |¯¯|__|¯¯|'  \ \__/\__/ / |___| |¯¯|__|¯¯|' |\   \/¯¯¯)|___|¯|___| 
