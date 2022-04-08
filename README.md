@@ -2,8 +2,7 @@
 It's here the second installment of my workflows for all of you to research and dig threw and understand how to code way faster and more intuitive
 programs to dig threw and understand! volume 2 is currently under development so sofware will be addded day by day or whenever they do I cannot stress enough how important it is to reference the automatetheboringstuff for these tutorials and progress capsules are just to watch my progress but some learning value can be found in them for sure! this repo has alot of usful information on getting started with python coding and contaians alot of .py files to inspect and learn from! things get more complex than VOL.1 and it's free and open source. Featuring a very talented programmer friend of mine known as JoggerJoel in 1 files!
 
-- 10 .py files
-- featuring JoggerJoel 
+- 10 .py files 
 - Tutorials on python source code
 - tips and tricks to use in your own code
 
