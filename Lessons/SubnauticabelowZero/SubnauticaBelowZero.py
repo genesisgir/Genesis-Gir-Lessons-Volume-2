@@ -47,7 +47,7 @@ from playsound import playsound
 
 # defining variables/constants
 
-# raw material constants 
+# raw materials  
 copper_ore = "Copper Ore" # Cu. Essential wiring component. 
 crystalline_ore = "Crystalline Sulfur" # S. Oxidant and reducing agent. 
 diamond_ore = "Diamond" # C. Carbon allotrope with superlative physical properties. 
@@ -67,7 +67,28 @@ snowball = "Snowball" #
 titanium_ore = "Titanium" # Ti. Basic building material. 
 uraninite_crystal = "Uraninite Crystal" # U3O8. A highly radioactive material.
 
-# biological material constants
+# raw material amounts
+copper_ore_amount = 0
+crystalline_ore_amount = 0
+diamond_ore_amount = 0
+gold_ore_amount = 0
+ion_cube_ore = 0
+kyanite_ore_amount = 0
+lead_ore_amount = 0
+lithium_ore_amount = 0
+magnetite_ore_amount = 0
+metal_salvage_ore_amount = 0
+nickel_ore_amount = 0
+quartz_ore_amount = 0
+ruby_ore_amount = 0
+salt_deposit_ore_amount = 0
+silver_ore_amount = 0
+snowball_amount = 0 
+titanium_ore_amount = 0
+uraninite_crystal_amount = 0
+
+
+# biological materials 
 creepvine_sample = "Creepvine Sample" # Silicone-based plant material. 
 creepvine_seed_cluster = "Creepvine Seed Cluster" # Indigenous seeds with high silicone and oil content. 
 fevered_pepper = "Fevered Pepper" # Spicy edible pepper 
@@ -82,11 +103,32 @@ spiral_plant_clipping = "Spiral Plant Clipping" # A clipping taken from a spiral
 table_coral_sample = "Table Coral Sample" # Contains trace precious metals used in computer fabrication.  
 young_cotton_anemone = "Young Cotton Anemone" # Young Cotton Anemone 
 
+# biological material amounts
+creepvine_sample_amount = 0 
+creepvine_seed_cluster_amount = 0 
+fevered_pepper_amount = 0 
+flowering_spore_amount = 0 
+frost_vase_plant_amount = 0 
+gel_sack_amount = 0 
+ribbon_plant_amount = 0 
+root_globule_amount = 0 
+prestons_plant_leaf_amount = 0
+snow_stalker_fur_amount = 0  
+spiral_plant_clipping_amount = 0 
+table_coral_sample_amount = 0  
+young_cotton_anemone_amount = 0
+
 # crafting tool constants
 fabricator = "Fabricator" # refer to line '89'
 habitat_builder = "Habitat Builder" # refer to line '95'
 modification_station  = "Modification Station " # refer to line '101'
 vehicle_upgrade_console  = "Vehicle Upgrade Console " # refer to line '107'
+
+# crafting tool amounts
+fabricator_amount = 1
+habitat_builder_amount = 0
+modification_station_amount  = 0
+vehicle_upgrade_console_amount  = 0
 
 """
 𝙁𝙖𝙗𝙧𝙞𝙘𝙖𝙩𝙤𝙧
@@ -115,7 +157,7 @@ The Vehicle Upgrade Console displays the name and current Energy level of any do
 the control panel, the player can customize the docked vehicle by renaming it or modifying its color scheme.  
 """
 
-# advanced material constnats
+# advanced materials 
 aerogel = "Aerogel" # Light, porous, dried gel. High heat insulation. 
 kharaa_antidote = "Kharaa Antidote" # An injectable container of antibacterial agent. 
 benzene = "Benzene" # C6H6. Oil and solvent applications. 
@@ -124,7 +166,16 @@ hydrochloric_acid = "Hydrochloric Acid" # HCI. Powerful acidic compound. Employ 
 polyaniline = "Polyaniline" # High conductance polymer. 
 synthetic_fibers = "Synthetic Fibers" # High-strength synthetic fibers
 
-# basic material constants
+# advanced material amounts
+aerogel_amount = 0
+kharaa_antidote_amount = 0 
+benzene_amount = 0 
+hydraulic_fluid_amount = 0 
+hydrochloric_acid_amount = 0
+polyaniline_amount = 0 
+synthetic_fibers_amount = 0
+
+# basic materials
 enameled_glass = "Enameled Glass" # Glass, hardened using a natural substrate. 
 fiber_mesh = "Fiber Mesh" # Strong natural fiber. Comfy. 
 glass = "Glass" # SiO4. Pure fused quartz glass. 
@@ -132,9 +183,19 @@ lubricant = "Lubricant" # Naturally-derived, oil-based lubricant. Industrial app
 plasteel_ingot = "Plasteel Ingot" # Ultra-strong synthetic construction material. 
 silicone_rubber = "Silicone Rubber" # Synthetic, silicone-based rubber. 
 titanium = "Titanium" # Ti. Basic building material. 
-titanium_ingot = "Titanium Ingot" # Ti. Condensed titanium bar. 
+titanium_ingot = "Titanium Ingot" # Ti. Condensed titanium bar.
 
-# electronic constants
+# basic material amounts
+enameled_glass_amount = 0 
+fiber_mesh_amount = 0 
+glass_amount = 0 
+lubricant_amount = 0 
+plasteel_ingot_amount = 0 
+silicone_rubber_amount = 0
+titanium_amount = 0
+titanium_ingot_amount = 0
+
+# electronic materials 
 advanced_wiring_kit = "Advanced Wiring Kit" # (SN) CPU with gold/silver wiring for advanced construction.(BZ) CPU used in advanced construction. 
 battery = "Battery" # Mobile power source. 
 computer_chip = "Computer Chip" # Multi-purpose CPU. 
@@ -147,7 +208,20 @@ reactor_rod = "Reactor Rod" # Used to power nuclear reactors.
 test_override_module = "Test Override Module" # Diagnostic module for the Delta Station communications tower 
 wiring_kit = "Wiring Kit" # Insulated silver wire. Essential electronic component.
 
-# deployables constants
+# electronic material amounts 
+advanced_wiring_kit_amount = 0 
+battery_amount = 0 
+computer_chip_amount = 0 
+copper_wire_amount = 0 
+ion_battery_amount = 0 
+ion_power_cell_amount = 0 
+parallel_processing_unit_amount = 0
+power_cell_amount = 0
+reactor_rod_amount = 0 
+test_override_module_amount = 0
+wiring_kit_amount = 0
+
+# deployables 
 beacon = "Beacon" # Navigation aid. Maintains and broadcasts its position. Configurable name. 
 creature_decoy = "Creature Decoy" # Attracts creatures to their location. Can be deployed by hand or by a submarine. Cannot be reclaimed once deployed. 
 grav_trap = "Grav Trap" # Uses artificial gravity to attract light objects and small creatures. 
@@ -160,7 +234,20 @@ spy_pengling = "Spy Pengling" # Reconnaissance tool for exploring the surface.
 spy_pengling_remote = "Spy Pengling Remote" # Tool for driving Spy Penglings. 
 waterproof_locker = "Waterproof Locker" # Small storage solution that maintains position in the water
 
-# equipment constants
+# deployable amounts 
+beacon_amount = 0 
+creature_decoy_amount = 0 
+grav_trap_amount = 0 
+mobile_vehicle_bay_amount = 0 
+quantum_locker_amount = 0 
+seaglide_amount = 0 
+snowfox_jump_module_amount = 0 
+snowfox_ice_worm_attack_reduction_module_amount = 0 
+spy_pengling_amount = 0 
+spy_pengling_remote_amount = 0 
+waterproof_locker_amount = 0
+
+# equipment 
 blue_tablet = "Blue Tablet" # Ancient tablet with a blue symbol. 
 booster_tank = "Booster Tank" # Use oxygen to give a speed boost 
 cold_suit = "Cold Suit" # An insulated suit to provide protection from the cold. 
@@ -186,7 +273,33 @@ thermos = "Thermos" # Real Italian espresso, diluted with tasteless American wat
 ultra_glide_fins = "Ultra Glide Fins" # Streamline construction enhances swim speed. 
 ultra_high_capacity_tank = "Ultra High Capacity Tank" # Additional air capacity (+180).
 
-# tool constants
+# equipment 💻 amounts
+blue_tablet_amount = 0 
+booster_tank_amount = 0 
+cold_suit_amount = 0 
+compass_amount = 0 
+fins_amount = 0 
+fire_extinguisher_amount = 0 
+first_aid_kit_amount = 0 
+floating_air_pump_amount = 0 
+headlamp_amount = 0 
+high_capacity_O2_tank_amount = 0 
+lightweight_high_capacity_tank_amount = 0 
+orange_tablet_amount = 0 
+pipe_amount = 0 
+pruple_tablet_amount = 0 
+radiation_suit_amount = 0 
+rebreather_amount = 0
+reinforced_dive_suit_amount = 0
+scanner_room_hud_chip_amount = 0
+standard_O2_tank_amount = 0 
+still_suit_amount = 0 
+swim_charge_fins_amount = 0 
+thermos_amount = 0 
+ultra_glide_fins_amount = 0 
+ultra_high_capacity_tank_amount = 0
+
+# tools 🛠️
 air_bladder = "Air Bladder" # Emergency flotation device. Chemical reaction produces lighter-than-air gas for personal buoyancy. 
 flare = "Flare" # Disposable light source, useful for distracting certain predators. 
 flashlight = "Flashlight" # Battery-powered, all-environment light source. 
@@ -205,10 +318,34 @@ tether_tool = "Tether Tool" # Teleport to a nearby teleportation seatruck module
 thermoblade = "Thermoblade" # Cooks and sterilizes small organisms for immediate consumption. 
 thumper = "Thumper" # Makes thumping noises to confuse ice worms.
 
-# vehicle constants
+# tool amounts
+air_bladder_amount = 0
+flare_amount = 0
+flashlight_amount = 0  
+habitat_builder_amount = 0
+laser_cutter_amount = 0
+light_stick_amount = 0  
+pathfinder_tool_amount = 0 
+mineral_detector_amount = 0
+propulsion_cannon_amount = 0
+repair_tool_amount = 0
+repulsion_cannon_amount = 0
+scanner_amount = 0
+statis_rifle_amount = 0
+survival_knife_amount = 0 
+tether_tool_amount = 0
+thermoblade_amount = 0 
+thumper_amount = 0
+
+# vehicles
 cyclops = "Cyclops" # refer to line '213'
 prawn_suit = "Prawn Suit" # refer to line '218'
 seamoth = "Seamoth " # refer to line '223'
+
+# vehicle amounts
+cyclops_amount = 0
+prawn_suit_amount = 0
+seamoth_amount = 0
 
 """
 𝙘𝙮𝙘𝙡𝙤𝙥𝙨
@@ -245,11 +382,14 @@ her sister Sam Ayou after the Alterra Corporation reported her to have died.
 """
 
 # health, hunger variable amounts
-health_amounts = str(100)
-hunger_amounts = str(100)
+health_amount = str(25)
+hunger_amount = str(100)
 
-health_amounts += "%"
-hunger_amounts += "%"
+health_amount += "%"
+hunger_amount += "%"
+
+# inventory variable
+inv = "" # users inventory variable
 
 """
 
@@ -301,7 +441,7 @@ print()
 print("all rights & copyrights go to developed by unknown worlds entertainment")
 print()
 print()
-winsound.PlaySound(r"C:\Users\daint\Documents\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\connetc.wav", winsound.SND_ASYNC)
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\connetc.wav", winsound.SND_ASYNC)
 # using the time.sleep() function call to cause a delay in the program execution!
 time.sleep(5)
 
@@ -327,7 +467,7 @@ print("█▀ █░█ █▄▄ █▄░█ ▄▀█ █░█ �
 print("▄█ █▄█ █▄█ █░▀█ █▀█ █▄█ ░█░ █ █▄▄ █▀█ ▄ █▄█ ██▄ █▄▄ █▄█ ▀▄▀▄▀   █▄ ██▄ █▀▄ █▄█\n\n")
 print()
 
-while True:
+while True: # init.
     print("Welcome to Subnautica: BELOW ZERO!\n")
     
     print("start new journey [j]")
@@ -337,10 +477,10 @@ while True:
     if resp == "j":
         print("Create world name\n")
         
-        world_name = input() # creation of world name constant!
+        world_name = input(">>> ") # creation of world name constant!
         print() # (ELOC)
         
-        winsound.PlaySound(r"C:\Users\daint\Documents\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\generate.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\generate.wav", winsound.SND_ASYNC)
         
         # generating world
         print(f"Generating {world_name} ..\n")
@@ -390,49 +530,42 @@ while True:
         print("SYSTEM: LAUNCHING DISTRESS SIGNAL. . .\n")
         
         # play radio.wav using winsound/playsound modules!
-        playsound(r"C:\Users\daint\Documents\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\radio.wav")
+        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\radio.wav")
         
         time.sleep(1)
         print("SYSTEM: LOCALIZING DATA. . .")
         time.sleep(1)
         print("SYSTEM: PREPARE YOURSELF FOR SURVIVIAL. . . \n")
         
-        print(f"{robin_ayou}:The Systems are failing I think I wont make it!")
-        print("(Press enter to continue)\n")
+        print(f"{robin_ayou}: The Systems are failing I think I wont make it!")
         
-        input() # U/I
+        input("(Press enter to continue)\n") # U/I
         
         print("- The sounds of blazing fire ripping apart the craft can be heard and your heading for a full-on collision")
         print(f"course straight to {planet_4546B}! -")
-        print(">>> [press enter]\n")
         
-        input() 
+        input(">>> [press enter]\n") 
         
         print(f"{robin_ayou}:Set coordinates to x 456, y 25675.3, z 2533.389!\n")
         
-        print(">>> [press enter]\n")
-        
-        input() 
+        input(">>> [press enter]\n") 
         
         print(f"{robin_ayou}: PERFECT! that should be a nice location to land!")
-        print(">>> [press enter]\n")
         
-        input() 
+        input(">>> [press enter]\n") 
         
         print("- The alien like craft heads faster and faster to the planets atmosphere in such a defying manner -")
-        print(">>> [press enter]\n")
         
-        input() # U/I
+        input(">>> [press enter]\n") 
         
         print("- as time slows down you feel the craft ripping apart as the shrapnel turns into metallic glitter -")
-        print(">>> [press enter]\n")
         
-        input() # U/I takes users input and evaluates to the string equal to users input
+        input(">>> [press enter]\n") # U/I takes users input and evaluates to the string equal to users input
         
         print(f"{robin_ayou}:Okay its time, this is going to hurt!")
-        print(">>> [press enter]\n")
         
-        input() # U/I
+        input(">>> [press enter]\n") # U/I
+        
         print("- FLAMES AND THE SOUND OF THE ROARING CRAFTS ENGINE EXPLODE-\n")
         
         time.sleep(5) # time.sleep() call delays program execution by set integers.
@@ -454,9 +587,8 @@ while True:
         time.sleep(5)
         print(f"- {robin_ayou} looks at her hands and sees that shes alive and well.. -\n")
         print(f"{robin_ayou}: IM ALIVE! DEAR GOD IM ALIVE THANK YOU SCIENCE!")
-        print(">>> [press enter]\n")
         
-        input() # U/I
+        input(">>> [press enter]\n") # U/I
         
         print("- The craft begins to flood with water and " + robin_ayou + " looks down at her feet shocked -\n")
         print(f"{robin_ayou}: Im Alive but not for long if I dont escape\n")
@@ -464,11 +596,9 @@ while True:
         print("-Checkpoint reached!-")
         
         # play checkp.wav with the winsound + playsound modules
-        winsound.PlaySound(r"C:\Users\daint\Documents\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\checkp.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\checkp.wav", winsound.SND_ASYNC)
         
-        print(">>> [press enter to continue]\n")
-        
-        input() # U/I
+        input(">>> [press enter to continue]\n") # U/I
         
         break # break statement that escapes the while loop                    
     elif resp == "x": # elif resp is == to "x" close the program!
@@ -480,15 +610,19 @@ while True:
         time.sleep(3)
         webbrowser.open("https://store.steampowered.com/app/848450/Subnautica_Below_Zero/") # directs user to steam page
         time.sleep(3)
-        print("shutting down Subnautica: BELOW ZERO")
+        print("shutting down Subnautica: BELOW ZERO\n")
         time.sleep(1)
         sys.exit() # terminates program.
     else: # choose a valid option please.
-        print()
+        
+        # error sound for not choosing valid options usies playsound/winsound
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+        
+        
         print("(1) System notification: Please choose a valid option [j] or [x]\n")
         continue
     
-while True:
+while True: # HULL BREACH loop
     
     winsound.PlaySound(r"C:\Users\daint\Documents\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\breach.wav", winsound.SND_ASYNC | winsound.SND_ALIAS)
     
@@ -543,9 +677,103 @@ while True:
         print("[Loading most recent checkpoint..]")
         continue
     else: # if user types anything other than given options.
+        
+        # error sound for not choosing valid options usies playsound/winsound
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+        
         continue
 
 # user reaches the shore of planet 4546B on line '475'
-print(f"{robin_ayou}: I made it..i should look for resources if i want to make it..\n")
+print(f"{robin_ayou}: I made it..I should look for resources if I want to live..\n")
 
+print("(" + str(2) + ")" + " Objective: Look for resources and find the lifepod.\n")
 
+print(f"{robin_ayou}: Lets take a look around and see what I find.")
+
+input("(press enter)\n")
+
+print(f"{robin_ayou} picks up " + "(" + str(1) + ")" + f"{first_aid_kit}\n")
+
+first_aid_kit_amount += 1 # user collects item!
+
+print(f"{robin_ayou}: Other crafts must have crashed scattering items & resources across the terrain.")
+
+input("(press enter)\n")
+
+while True: # inventory menu loop 
+    print("SYSTEM: Open your inventory and check your items!\n")
+    
+    resp = input("Press [i]) to open inventory.\n")
+    
+    if resp == "i":
+        
+        
+        print("                     █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
+        print("                     █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░\n")
+
+        print("                     𝙘𝙧𝙖𝙛𝙩𝙞𝙣𝙜 𝙩𝙤𝙤𝙡𝙨                      \n")
+
+        print("                     " + "(" + str(fabricator_amount) + ")" + fabricator + "\n")
+
+        print("                     𝙚𝙦𝙪𝙞𝙥𝙢𝙚𝙣𝙩                      \n")
+        print("             use [u] " + "(" + str(first_aid_kit_amount) + ")" + first_aid_kit + "\n")
+
+        print("                      press [x] to close inventory")
+        print("                      press [i] to display inventory")
+    
+        while True:
+            
+            res = input()
+            
+            if res == "u": # user uses first aid kit and gains 100% health
+                
+                # plays the tweek.wav file uses playsound & winsound modules!
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\tweek.wav", winsound.SND_ASYNC)       
+                
+                first_aid_kit_amount -= 1 # de-deucting -1 value from the integer 1 frist_aid_kit_amount
+                health_amount = str(100) + "%" # overwriting the health_amount variable to 100%
+                print(f"{robin_ayou} used a " + first_aid_kit + " and now has " + health_amount + " health regained!\n")
+                break
+            
+            elif resp == "x" and health_amount == "100%": # if user is fully healed they may continue!
+                print("SYSTEM: Closing inventory!\n")
+                break
+            
+            elif resp == "x" and health_amount != "100%": # in the condition if user has not used the first aid kit!
+                
+                # error sound for not using first Aid Kit uses playsound/winsound
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+                
+                print("SYSTEM: use your " + first_aid_kit + " before you continue!\n")
+                continue
+            
+            elif resp == "i": # displays inventory using the [i] keypress
+                    
+                print("                     █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
+                print("                     █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░\n")
+
+                print("                     𝙘𝙧𝙖𝙛𝙩𝙞𝙣𝙜 𝙩𝙤𝙤𝙡𝙨                      \n")
+
+                print("                     " + "(" + str(fabricator_amount) + ")" + fabricator + "\n")
+
+                print("                     𝙚𝙦𝙪𝙞𝙥𝙢𝙚𝙣𝙩                      \n")
+                print("             use [u] " + "(" + str(first_aid_kit_amount) + ")" + first_aid_kit + "\n")
+
+                print("                      press [x] to close inventory")
+                print("                      press [i] to display inventory")
+            
+            else:
+                
+                # error sound for not choosing valid options uses playsound/winsound
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+                
+                print()
+                continue     
+                
+    else:
+        
+        # error sound for not choosing valid options uses playsound/winsound
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+        
+        print("SYSTEM: You must open your inventory as it is part of the tutorial.\n")
+        continue
