@@ -487,43 +487,64 @@ while True: # init.
         time.sleep(random.randint(0,6))
         
         print("building virual meshes..\n")
-        time.sleep(random.randint(0,6))
+        time.sleep(random.randint(1,3))
         
         print("Time fragments being implemented..\n")
-        time.sleep(random.randint(1,6))
+        time.sleep(random.randint(1,3))
         
         print("The ship is preparing for collision..\n")
-        time.sleep(random.randint(0,6))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 15%\n")
-        time.sleep(random.randint(0,6))
+        time.sleep(random.randint(1,3))
+        
+        # plays the loot.wav using playsound/winsound modules used for loading screen audio effects!
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 25%\n")
-        time.sleep(random.randint(0,4))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 35%\n")
-        time.sleep(random.randint(0,2))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 45%\n")
-        time.sleep(random.randint(0,4))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 55%\n")
-        time.sleep(random.randint(0,4))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 65%\n")
-        time.sleep(random.randint(0,2))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 75%\n")
-        time.sleep(random.randint(0,4))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 85%\n")
-        time.sleep(random.randint(0,4))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 95%\n")
-        time.sleep(random.randint(0,4))
+        time.sleep(random.randint(1,3))
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\loot.wav", winsound.SND_ASYNC)
         
         print(f"{world_name} is being rendered 100%\n")
-        time.sleep(random.randint(0,3))
+        time.sleep(random.randint(1,3))
         
         print(f"{world_name} has been created!\n")
         
@@ -539,6 +560,9 @@ while True: # init.
         
         print(f"{robin_ayou}: The Systems are failing I think I wont make it!")
         
+        # HULL DECREASE ALERT
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\decrease.wav", winsound.SND_ASYNC)
+        
         input("(Press enter to continue)\n") # U/I
         
         print("- The sounds of blazing fire ripping apart the craft can be heard and your heading for a full-on collision")
@@ -546,7 +570,24 @@ while True: # init.
         
         input(">>> [press enter]\n") 
         
-        print(f"{robin_ayou}:Set coordinates to x 456, y 25675.3, z 2533.389!\n")
+        print(f"{robin_ayou}:Set coordinates to x " 
+              
+              + str(float(456)) 
+              
+              + "," 
+              
+              + "y" 
+              
+              + str(float(int(25675.3))) 
+              
+              + "," 
+              
+              + "z" 
+              
+              + str(float(2533)) 
+              
+              + "!\n"
+              )
         
         input(">>> [press enter]\n") 
         
@@ -686,7 +727,17 @@ while True: # HULL BREACH loop
 # user reaches the shore of planet 4546B on line '475'
 print(f"{robin_ayou}: I made it..I should look for resources if I want to live..\n")
 
-print("(" + str(2) + ")" + " Objective: Look for resources and find the lifepod.\n")
+# Objective Alert
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\obj.wav", winsound.SND_ASYNC)
+
+print("(" 
+      
+      + str(2) 
+      
+      + ")" 
+      
+      + " Objectives: Look for resources and find the lifepod.\n"
+    )
 
 print(f"{robin_ayou}: Lets take a look around and see what I find.")
 
@@ -701,12 +752,12 @@ print(f"{robin_ayou}: Other crafts must have crashed scattering items & resource
 input("(press enter)\n")
 
 while True: # inventory menu loop 
-    print("SYSTEM: Open your inventory and check your items!\n")
+    
+    print("SYSTEM: Open your inventory to check your items!\n")
     
     resp = input("Press [i]) to open inventory.\n")
     
-    if resp == "i":
-        
+    if resp == "i": # open inventory
         
         print("                     █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
         print("                     █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░\n")
@@ -720,26 +771,32 @@ while True: # inventory menu loop
 
         print("                      press [x] to close inventory")
         print("                      press [i] to display inventory")
-    
-        while True:
-            
-            res = input()
+        
+        while True: # internal while loop
+                
+            res = input("\n")
             
             if res == "u": # user uses first aid kit and gains 100% health
-                
-                # plays the tweek.wav file uses playsound & winsound modules!
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\tweek.wav", winsound.SND_ASYNC)       
-                
+                       
                 first_aid_kit_amount -= 1 # de-deucting -1 value from the integer 1 frist_aid_kit_amount
                 health_amount = str(100) + "%" # overwriting the health_amount variable to 100%
-                print(f"{robin_ayou} used a " + first_aid_kit + " and now has " + health_amount + " health regained!\n")
+                print(f"{robin_ayou} used a " 
+                      
+                      + first_aid_kit + 
+                      
+                      " and now has " + health_amount + " health regained!\n"
+                      
+                      
+                      
+                      
+                      )
                 break
             
-            elif resp == "x" and health_amount == "100%": # if user is fully healed they may continue!
-                print("SYSTEM: Closing inventory!\n")
+            elif res == "x" and health_amount == "100%": # if user is fully healed they may continue!
+                print("SYSTEM: Tutorial finished Closing inventory!\n")
                 break
             
-            elif resp == "x" and health_amount != "100%": # in the condition if user has not used the first aid kit!
+            elif res == "x" and health_amount != "100%": # in the condition if user has not used the first aid kit!
                 
                 # error sound for not using first Aid Kit uses playsound/winsound
                 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
@@ -747,7 +804,7 @@ while True: # inventory menu loop
                 print("SYSTEM: use your " + first_aid_kit + " before you continue!\n")
                 continue
             
-            elif resp == "i": # displays inventory using the [i] keypress
+            elif res == "i": # displays inventory using the [i] keypress
                     
                 print("                     █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
                 print("                     █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░\n")
@@ -769,11 +826,229 @@ while True: # inventory menu loop
                 
                 print()
                 continue     
-                
-    else:
-        
+    
+    else: # play error and direct user to press right keypress!
+            
         # error sound for not choosing valid options uses playsound/winsound
         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
         
         print("SYSTEM: You must open your inventory as it is part of the tutorial.\n")
         continue
+    
+    if health_amount == "100%": # if the health)amount variable is == "100%" break out of the current loop.
+        break
+    
+# user exits inventory and continues program!
+        
+# plays the tweek.wav file uses playsound & winsound modules!    
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\tweek.wav", winsound.SND_ASYNC)
+
+print(f"{robin_ayou}: I feel much better lets go find that life pod.")
+
+input("(press enter)\n")
+
+print("- You walk towards the edge of the shore as the snow rains down upon you in these conditions")
+print("you want survive much longer you will need a " + cold_suit + " to protect you from cold weather.")
+
+input("(press enter)\n")
+
+# Objective Alert
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\obj.wav", winsound.SND_ASYNC)
+
+print("(" # cold suit objective
+      
+      + str(1) 
+      
+      + ")" 
+      
+      + " Objective: Look for the " 
+      
+      + cold_suit 
+      
+      + " at the lifepod in the ocean.\n"
+    )
+
+input("(Start Objective press enter)")
+
+print(f"{robin_ayou}: Looks like we are going swimming!\n")
+
+time.sleep(3)
+
+print(f"- {robin_ayou} jumps into the freezing cold crashing watery waves of the ocean! -\n")
+
+time.sleep(3)
+
+print("- You begin to swim lurking the deep frosty waters until you spot the life pod in the distance! -\n")
+
+time.sleep(3)
+
+print(f"{robin_ayou}: !!! \n")
+
+time.sleep(3)
+
+print(f"- {robin_ayou} reaches the life pod and climbs on top of it with a door slightly peeking above the oceans")
+print("surface and stares at it as the waves crash onto her - \n")
+
+
+
+while True: # life pod hatch prompt loop
+    
+    response = input("open the life pod hatch press [o]")
+    
+    if response == "o": # open the lifes pod hatch to enter using the 'o' keypress
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\open.wav", winsound.SND_ASYNC)
+        
+        print("- The hatch opens and you enter the life pod! - \n")
+        
+        input("(press enter) \n")
+        
+        break # break statement being used to exit the infinite while loop statement!
+    else:
+        print(f"{robin_ayou}: I need to enter the life pod! \n")
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+        
+        continue
+
+# user enters the life pod in search for cold suit
+
+# plays the opencomp.wav to indicate the cold suit has been retrieved
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\opencomp.wav", winsound.SND_ASYNC)
+    
+print(f"{robin_ayou} opens a compartment and retrives the " + cold_suit + "! \n")
+
+cold_suit_amount += 1 # user gains (1) cold suits
+
+print(f"{robin_ayou}: This will help me endure the freezing weathers. this planet is way too cold. \n")
+
+input("(press enter)")
+
+print(f"{robin_ayou}: I should put this on before I freeze to death. \n")
+
+while True: # inventory menu loop 
+    
+    print("SYSTEM: Open your inventory!\n")
+    
+    resp = input("Press [i]) to open inventory.\n")
+    
+    if resp == "i": # open inventory
+        
+        print("                     █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
+        print("                     █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░\n")
+
+        print("                     𝙘𝙧𝙖𝙛𝙩𝙞𝙣𝙜 𝙩𝙤𝙤𝙡𝙨                      \n")
+
+        print("                     " + "(" + str(fabricator_amount) + ")" + fabricator + "\n")
+
+        print("                     𝙚𝙦𝙪𝙞𝙥𝙢𝙚𝙣𝙩                      \n")
+        print("                     " + "(" + str(first_aid_kit_amount) + ")" + first_aid_kit + "\n")
+        # converted the cold_suit_amount to string using str()
+        print("             use [u] " + "(" + str(cold_suit_amount) + ")" + cold_suit + "\n") 
+        
+        
+
+        print("                      press [x] to close inventory")
+        print("                      press [i] to display inventory")
+        
+        while True: # internal while loop
+                
+            res = input("\n")
+            
+            if res == "u": # user equips cold suit
+
+                print(f"{robin_ayou} equipped the " 
+                      
+                      + cold_suit + 
+                      
+                      " and now is vunerable to sub zero tempatures! \n"
+                      
+                      
+                      
+                      
+                      )
+                break
+            
+            elif res == "x" and cold_suit_amount == "1": # if user is fully healed they may continue!
+                print("SYSTEM: " + cold_suit +" has been acquired and equipped Closing inventory!\n")
+                break
+            
+            elif res == "x" and cold_suit_amount != "1": # in the condition if user has not equipped the cold suit!
+                
+                # error sound for not equipping cold suit uses playsound/winsound
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+                
+                print("SYSTEM: Equip your " + cold_suit + " or die from the cold!\n")
+                continue
+            
+            elif res == "i": # displays inventory using the [i] keypress
+                    
+                print("                     █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
+                print("                     █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░\n")
+        
+                print("                     𝙘𝙧𝙖𝙛𝙩𝙞𝙣𝙜 𝙩𝙤𝙤𝙡𝙨                      \n")
+        
+                print("                     " + "(" + str(fabricator_amount) + ")" + fabricator + "\n")
+        
+                print("                     𝙚𝙦𝙪𝙞𝙥𝙢𝙚𝙣𝙩                      \n")
+                print("                     " + "(" + str(first_aid_kit_amount) + ")" + first_aid_kit + "\n")
+                # converted the cold_suit_amount to string using str()
+                print("             use [u] " + "(" +     cold_suit_amount + ")" + cold_suit + "\n") 
+        
+        
+
+                print("                      press [x] to close inventory")
+                print("                      press [i] to display inventory")
+            
+            else:
+                
+                # error sound for not choosing valid options uses playsound/winsound
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+                
+                print()
+                continue     
+    
+    else: # play error and direct user to press right keypress!
+            
+        # error sound for not choosing valid options uses playsound/winsound
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+        
+        print("SYSTEM: You must open your inventory as it is part of the tutorial.\n")
+        continue
+    
+    if cold_suit_amount == "1": # if the health)amount variable is == "100%" break out of the current loop.
+        break
+
+print(f"{robin_ayou}: I should start looking for materials now. \n")
+
+while True: # life pod hatch prompt loop
+    
+    response = input("open the life pod hatch press [o]")
+    
+    if response == "o": # open the lifes pod hatch to enter using the 'o' keypress
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\exit.wav", winsound.SND_ASYNC)
+        
+        print("- The hatch opens and you exit the life pod! - \n")
+        
+        input("(press enter) \n")
+        
+        break # break statement being used to exit the infinite while loop statement!
+    else:
+        print(f"{robin_ayou}: I need to exit the life pod. \n")
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\siren.wav", winsound.SND_ASYNC)
+        
+        continue
+    
+# user exits the life pod in search for materials
+print("- as you exit the life pod the snow and rain hits you but does not effect you due to having the " + cold_suit)
+print("equipped, and it feels rather warmer than before your body tempatures are stable - \n")
+    
+    
+     
+
+
+
+
+ 
