@@ -63,7 +63,7 @@ quartz_ore = "Quartz" # SiO4. Silica in crystalline form.
 ruby_ore = "Ruby" # # Al2O3. Hard, conductive gemstone composed of aluminum oxide. 
 salt_deposit_ore = "Salt Deposit" # NaCl. Culinary and sanitation applications.  
 silver_ore = "Silver Ore" # Ag. Conductive element, and microbicide. 
-snowball = "Snowball" # 
+snowball = "Snowball" 
 titanium_ore = "Titanium" # Ti. Basic building material. 
 uraninite_crystal = "Uraninite Crystal" # U3O8. A highly radioactive material.
 
@@ -441,7 +441,9 @@ print()
 print("all rights & copyrights go to developed by unknown worlds entertainment")
 print()
 print()
+
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\connetc.wav", winsound.SND_ASYNC)
+
 # using the time.sleep() function call to cause a delay in the program execution!
 time.sleep(5)
 
