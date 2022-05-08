@@ -680,6 +680,29 @@ print(f"- The {time_machine} engine starts! -")
 
 input(">>> enter \n")
 
+"""
+
+█▀▀ █▀█ █▀▄▀█ █▀▄▀█ █▀▀ █▄░█ ▀█▀ █▀
+█▄▄ █▄█ █░▀░█ █░▀░█ ██▄ █░▀█ ░█░ ▄█
+
+
+▐▓█▀▀▀▀▀▀▀▀▀█▓▌░▄▄▄▄▄░
+▐▓█░░▀░░▀▄░░█▓▌░█▄▄▄█░
+▐▓█░░▄░░▄▀░░█▓▌░█▄▄▄█░
+▐▓█▄▄▄▄▄▄▄▄▄█▓▌░█████░
+░░░░▄▄███▄▄░░░░░█████░     𝙏𝙞𝙥: 𝙐𝙨𝙚 # 𝙩𝙤 𝙘𝙧𝙚𝙖𝙩𝙚 𝙖 𝙘𝙤𝙢𝙢𝙚𝙣𝙩
+
+Comments can be helpful for people reading your source code or for keeping notes for yourself! You can create a comment
+with the hashtag symbol and anything after will be apart of that comment, keep mental reminders or leave notes for
+a team working on the same code explain what a certain line of code is trying to do etc. comments will be a very powerful 
+tool to use as a programmer and you can even comment out lines of code your having trouble with by putting a # in front
+of that line of code to take it out of the program executions path and take it out when you fixed a problem in your project
+this is called commenting out code! Give it a try
+
+eg. # this is an example of a comment!
+
+"""
+
 # GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
@@ -742,7 +765,22 @@ playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\A
 print(f"- The {time_machine} vanishes right in front of them as it's right about to hit them! - ")
 
 input(">>> enter \n")
+"""
 
+█▀▀ ▄▄ █▀ ▀█▀ █▀█ █ █▄░█ █▀▀ █▀
+█▀░ ░░ ▄█ ░█░ █▀▄ █ █░▀█ █▄█ ▄█
+
+F-strings provide a way to embed expressions inside string literals, using a minimal syntax. It should be noted 
+that an f-string is really an expression evaluated at run time, not a constant value. In Python source code, an
+f-string is a literal string, prefixed with f , which contains expressions inside braces.
+
+eg. print(f"{string_literal}")
+
+eg. print(f"{Cat}")
+
+eg. print(f"{Machine_Box}")
+
+"""
 # GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
@@ -827,6 +865,22 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
 print(f"{gen}: Doc you gotta let me use this thing I..I gotta try this out!")
 
 input(">>> enter \n")
+
+"""
+
+█ █▄░█ █▀█ █░█ ▀█▀ ▄▀ ▀▄
+█ █░▀█ █▀▀ █▄█ ░█░ ▀▄ ▄▀
+
+The input functionality takes user input and the function call evaluates to the string equal of users input. You
+can use this to make user create variables/constants for you without having to set them prematurely and so on
+"input()" is a very powerful tool when first learning to code for the first time and learning it's benefits
+and skills and powers will make you a better and overall programmer overall!
+
+eg. name = input("What is your name?")
+
+you are essentially making user create the value to be stored within the variable/constant 'name'
+
+"""
 
 # Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
@@ -914,6 +968,119 @@ print("to conceal the it from suspicious onlookers from being stolen. -")
 
 input(">>> enter \n")
 
+"""
+
+
+█▀█ █░░ ▄▀█ █▄█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
+█▀▀ █▄▄ █▀█ ░█░ ▄█ █▄█ █▄█ █░▀█ █▄▀   █░▀░█ █▄█ █▄▀ █▄█ █▄▄ ██▄
+
+░░█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+██▀▀▀██▀▀▀▀▀▀██▀▀▀██
+█▒▒▒▒▒█▒▀▀▀▀▒█▒▒▒▒▒█  ~ ♫ ♩ ♬ ♪    
+█▒▒▒▒▒█▒████▒█▒▒▒▒▒█
+██▄▄▄██▄▄▄▄▄▄██▄▄▄██    𝙏𝙞𝙥: 𝙄𝙢𝙥𝙤𝙧𝙩 𝙥𝙡𝙖𝙮𝙨𝙤𝙪𝙣𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮 𝙖𝙪𝙙𝙞𝙤 𝙛𝙞𝙡𝙚𝙨 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙥𝙧𝙤𝙜𝙧𝙖𝙢
+
+Pure Python, cross platform, single function module with no dependencies for playing sounds.
+
+The playsound module must be imported to be used this module is responsible for playing audio files through the program
+as you see through this .py file there are lots of playsound function calls being used these are responsible for outputting
+the audio FX that you hear when you run the program or debug that's playsounds hefty work in cohesion with winsound
+as well.
+
+eg. import playsound, winsound
+
+The playsound module contains only one thing - the function (also named) playsound.
+It requires one argument - the path to the file with the sound you’d like to play. 
+This may be a local file, or a URL.
+
+There’s an optional second argument, block, which is set to True by default. 
+Setting it to False makes the function run asynchronously.
+
+
+█░█░█ █ █▄░█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
+▀▄▀▄▀ █ █░▀█ ▄█ █▄█ █▄█ █░▀█ █▄▀   █░▀░█ █▄█ █▄▀ █▄█ █▄▄ ██▄
+
+░░█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+██▀▀▀██▀▀▀▀▀▀██▀▀▀██
+█▒▒▒▒▒█▒▀▀▀▀▒█▒▒▒▒▒█
+█▒▒▒▒▒█▒████▒█▒▒▒▒▒█
+██▄▄▄██▄▄▄▄▄▄██▄▄▄██   𝙏𝙞𝙥: 𝙐𝙨𝙚 𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙 𝙬𝙞𝙩𝙝 𝙥𝙡𝙖𝙮𝙨𝙤𝙪𝙣𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮 𝙨𝙤𝙪𝙣𝙙𝙨 𝙖𝙨𝙮𝙣𝙘𝙝𝙧𝙤𝙣𝙤𝙪𝙨𝙡𝙮
+
+
+The winsound module provides access to the basic sound-playing machinery provided by Windows platforms. It includes functions
+and several constants.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝘽𝙚𝙚𝙥(𝙛𝙧𝙚𝙦𝙪𝙚𝙣𝙘𝙮, 𝙙𝙪𝙧𝙖𝙩𝙞𝙤𝙣)
+
+Beep the PC’s speaker. The frequency parameter specifies frequency, in hertz, of the sound, and must be in the range 37 through 32,767.
+The duration parameter specifies the number of milliseconds the sound should last. If the system is not able to beep the speaker, RuntimeError is raised
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙋𝙡𝙖𝙮𝙎𝙤𝙪𝙣𝙙(𝙨𝙤𝙪𝙣𝙙, 𝙛𝙡𝙖𝙜𝙨)
+
+Call the underlying PlaySound() function from the Platform API. The sound parameter may be a filename, a system sound alias, audio data as a bytes-like object,
+or None. Its interpretation depends on the value of flags, which can be a bitwise ORed combination of the constants described below. If the sound parameter is None, 
+any currently playing waveform sound is stopped. If the system indicates an error, RuntimeError is raised.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝘽𝙚𝙚𝙥(𝙩𝙮𝙥𝙚=𝙈𝘽_𝙊𝙆)
+
+Call the underlying MessageBeep() function from the Platform API. This plays a sound as specified in the registry. The type argument specifies which sound to play; 
+possible values are -1, MB_ICONASTERISK, MB_ICONEXCLAMATION, MB_ICONHAND, MB_ICONQUESTION, and MB_OK, all described below. The value -1 produces a “simple beep”; 
+this is the final fallback if a sound cannot be played otherwise. If the system indicates an error, RuntimeError is raised.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙁𝙄𝙇𝙀𝙉𝘼𝙈𝙀
+
+The sound parameter is the name of a WAV file. Do not use with SND_ALIAS.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝘼𝙇𝙄𝘼𝙎
+
+The sound parameter is a sound association name from the registry. If the registry contains no such name, play the system default sound unless SND_NODEFAULT is also specified.
+If no default sound is registered, raise RuntimeError. Do not use with SND_FILENAME.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙇𝙊𝙊𝙋
+Play the sound repeatedly. The SND_ASYNC flag must also be used to avoid blocking. Cannot be used with SND_MEMORY.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙈𝙀𝙈𝙊𝙍𝙔
+The sound parameter to PlaySound() is a memory image of a WAV file, as a bytes-like object.
+
+𝙣𝙤𝙩𝙚: This module does not support playing from a memory image asynchronously, so a combination of this flag and SND_ASYNC
+will raise RuntimeError.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙋𝙐𝙍𝙂𝙀
+Stop playing all instances of the specified sound.
+
+𝙉𝙤𝙩𝙚: This flag is not supported on modern Windows platforms.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝘼𝙎𝙔𝙉𝘾
+Return immediately, allowing sounds to play asynchronously.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝘿𝙀𝙁𝘼𝙐𝙇𝙏
+If the specified sound cannot be found, do not play the system default sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝙎𝙏𝙊𝙋
+Do not interrupt sounds currently playing.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝙒𝘼𝙄𝙏
+Return immediately if the sound driver is busy.
+
+𝙉𝙤𝙩𝙚: This flag is not supported on modern Windows platforms.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝘼𝙎𝙏𝙀𝙍𝙄𝙎𝙆
+Play the SystemDefault sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙀𝙓𝘾𝙇𝘼𝙈𝘼𝙏𝙄𝙊𝙉
+Play the SystemExclamation sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙃𝘼𝙉𝘿
+Play the SystemHand sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙌𝙐𝙀𝙎𝙏𝙄𝙊𝙉
+Play the SystemQuestion sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙊𝙆
+Play the SystemDefault sound.
+
+"""
+
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"- {doc} starts driving steadidly into the truck and gets out in  a frantic and closes the trucks door from beind -")
@@ -939,6 +1106,37 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
 print(f"- {gen}: points at the yellow crate like box glowing with radiation! - \n")
 
 time.sleep(3)
+
+"""
+
+▀█▀ █ █▀▄▀█ █▀▀   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
+░█░ █ █░▀░█ ██▄   █░▀░█ █▄█ █▄▀ █▄█ █▄▄ ██▄
+
+The time.sleep() is being used to delay the program execution in short given by the integer in the function call
+these pauses can be used to make little effects witin your program in such cause here
+
+eg. import time
+
+time.sleep(5)
+
+The example above is showing the module time being imported with the import statement and afterwards using the time.sleep()
+function call to pause the program execution by 5 seconds as determined by the integer within the parentheses
+
+eg. time.sleep(1) 
+
+pauses program execution by 1 seconds than resumes!
+
+░░░░░░░▄█▄▄▄█▄
+▄▀░░░░▄▌─▄─▄─▐▄░░░░▀▄
+█▄▄█░░▀▌─▀─▀─▐▀░░█▄▄█
+░▐▌░░░░▀▀███▀▀░░░░▐▌
+████░▄█████████▄░████
+
+𝙏𝙞𝙥: 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙩𝙞𝙢𝙚 𝙢𝙤𝙙𝙪𝙡𝙚 𝙞𝙛 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙘𝙧𝙚𝙖𝙩𝙚 𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙐𝙄 𝙢𝙚𝙣𝙪𝙨
+
+𝙏𝙞𝙥: 𝙩𝙞𝙢𝙚.𝙨𝙡𝙚𝙚𝙥() 𝙞𝙨 𝙖 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣 𝙘𝙖𝙡𝙡 𝙩𝙝𝙖𝙩 𝙘𝙖𝙣 𝙗𝙚 𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚𝙙 𝙩𝙤 𝙥𝙖𝙪𝙨𝙚 𝙥𝙧𝙤𝙜𝙧𝙖𝙢 𝙚𝙭𝙚𝙘𝙪𝙩𝙞𝙤𝙣 𝙩𝙝𝙖𝙣 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 𝙖𝙛𝙩𝙚𝙧 𝙨𝙖𝙞𝙙 𝙞𝙣𝙩𝙚𝙜𝙚𝙧 𝙖𝙧𝙜𝙪𝙢𝙚𝙣𝙩
+
+"""
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
@@ -1143,7 +1341,22 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
 
 print(f"RE: {gen}: Doc this plan is going have to wait for tommorow I'm afraid. \n") # genesigir replies!
 
-time.sleep(random.randint(3,5)) 
+time.sleep(random.randint(3,5))
+
+"""
+
+█▀▀ █▀█ █▀█   █░░ █▀█ █▀█ █▀█   █▀ ▀█▀ ▄▀█ ▀█▀ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀ █▀
+█▀░ █▄█ █▀▄   █▄▄ █▄█ █▄█ █▀▀   ▄█ ░█░ █▀█ ░█░ ██▄ █░▀░█ ██▄ █░▀█ ░█░ ▄█
+
+While the While loop statement can loop infinitely a for loop can execute a block of code a chosen amount of times!
+this can be used to make all types of cool UI menus and systems and for loops can come in handy for alot of reasons.
+
+eg. for i in range(1,11)
+
+The example above is saying for the variable 'i' loop starting at 1 and stop at 11 but not including!
+
+"""
+ 
 
 # iPhone buffer system
 
@@ -1277,6 +1490,36 @@ print(f"{gen}: Let's delete the file. . \n ")
 
 input(">>> enter to boot up your PC \n")
 
+"""
+
+█░█░█ █░█ █ █░░ █▀▀   █░░ █▀█ █▀█ █▀█   █▀ ▀█▀ ▄▀█ ▀█▀ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀ █▀
+▀▄▀▄▀ █▀█ █ █▄▄ ██▄   █▄▄ █▄█ █▄█ █▀▀   ▄█ ░█░ █▀█ ░█░ ██▄ █░▀░█ ██▄ █░▀█ ░█░ ▄█
+
+While loop statements are loops that can re-iterate indefinitely until the condition is found false! Use while loops
+for various tasks and can help when used with flow control statements!
+
+eg. While True:
+        print("Hello!")
+        
+eg. While True:
+        break
+        
+eg. While True:
+        continue
+
+The following code in the example will print out the string literal forever, While we are stuck within this loop we are able to use
+𝙗𝙧𝙚𝙖𝙠 statements to escape a while loops clause! Also you can use break & continue statements in for loops as well.
+
+──────────────▄▀█▀█▀▄
+─────────────▀▀▀▀▀▀▀▀▀ 
+─────────────▄─░░░░░▄
+───█──▄─▄───▐▌▌░░░░░▌▌  𝙏𝙞𝙥: 𝙒𝙝𝙞𝙡𝙚 𝙡𝙤𝙤𝙥𝙨 𝙡𝙤𝙤𝙥 𝙛𝙤𝙧𝙚𝙫𝙚𝙧 𝙪𝙣𝙩𝙞𝙡 𝙩𝙝𝙚 𝙘𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣 𝙞𝙨 𝙛𝙤𝙪𝙣𝙙 𝙛𝙖𝙡𝙨𝙚
+▌▄█▐▌▐█▐▐▌█▌█▌█░░░░░▌▌      
+
+                                𝙏𝙞𝙥: 𝙔𝙤𝙪 𝙘𝙖𝙣 𝙚𝙨𝙘𝙖𝙥𝙚 𝙤𝙪𝙩 𝙖 𝙬𝙝𝙞𝙡𝙚 𝙡𝙤𝙤𝙥 𝙬𝙞𝙩𝙝 𝙩𝙝𝙚 𝙗𝙧𝙚𝙖𝙠 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩
+
+"""
+
 while True: # Reverse engineering the GenesisGir PC menu system to delete the TIME_FRAC.exe action
     
     # file state variable on line '1.222K'
@@ -1398,6 +1641,45 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
 print(f"{gen}: He wanted me to go Twin Pines mall too at 1:00PM \n ")
 
 time.sleep(5)            
+
+"""
+
+
+                                    ▄▀█ █▀█ ▀█▀ █▀ █▄█
+                                    █▀█ █▀▄ ░█░ ▄█ ░█░
+
+
+                                                                                        
+                                                                                        
+░░      ░░      ░░            ░░  ░░  ░░  ░░░░  ░░  ░░░░    ░░            ░░      ░░  ░░
+                      ░░                                          ░░                    
+                                                                                        
+                                                                                        
+                                                                𝘽𝙚 𝘾𝙧𝙚𝙖𝙩𝙞𝙫𝙚                        
+                                                                                        
+                                                                       𝙥𝙪𝙨𝙝 𝙩𝙝𝙚 𝙡𝙞𝙢𝙞𝙩𝙨                 
+                                      ██████████████                                    
+                                    ██              ██                        𝙮𝙤𝙪 𝙬𝙞𝙡𝙡 𝙨𝙪𝙘𝙘𝙚𝙚𝙙          
+                                  ██    ░░░░  ░░░░    ██                                
+                                  ██  ░░░░░░░░░░░░░░  ██                                
+                                  ██    ░░░░░░░░░░    ██                                
+                                  ██      ░░░░░░      ██                                
+                                  ██        ░░        ██                                
+                                    ██              ██                                  
+        ░░      ░░            ░░      ██████████  ██        ░░            ░░      ░░    
+                      ░░                        ████              ░░                    
+                                                  ██                                    
+                                                                                        
+Who said code had to be bland and boring? Not me! bring out your artistic side and splash some art on that wall, The best
+part of programming is being creative and being able to express yourself as an artist and make the source code your canvas
+find websites with ascii art and paste them into your code to breathe some life into them and trust me every little bit matters.
+While of course art isnt needed in code but if you want to personalize your work it was never not allowed!                                                                                        
+
+Heres a website I use for art!
+                                                                                        
+Link: https://fsymbols.com                                                                                        
+                                                                                        
+"""
 
 # Daniela Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
