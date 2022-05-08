@@ -1101,7 +1101,7 @@ print("Support the creators of the game and Support me for putting this together
 
 while True:
     print()
-    print(" visit the Subnautica: Below Zero steam page to buy the game! [s]")
+    print("visit the Subnautica: Below Zero steam page to buy the game! [s]")
     print("Visit GenesisGirs Github page! [g]")
     r = input("Goodbye <3 [x]\n")
     

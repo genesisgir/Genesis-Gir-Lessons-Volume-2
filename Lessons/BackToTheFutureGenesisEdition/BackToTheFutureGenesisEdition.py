@@ -39,7 +39,7 @@ google if you have any doubts in what a function does it will be your greatest t
 """
 
 # importing modules
-import sys, os, winsound, random, time
+import sys, os, winsound, random, time, webbrowser
 
 from playsound import playsound
 
@@ -157,18 +157,21 @@ time.sleep(5)
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{gen}: Almost there. . . \n")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{gen}: The program is in PERFECT condition and all the SRC files are in place! \n")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{gen}: If all goes well this should work. . . \n")
@@ -457,6 +460,7 @@ print(f"{gen}: Who was that guy? and how does he know my name? \n")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{gen}: well I should get some sleep until the meetup. \n")
@@ -486,6 +490,7 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
         
 input(">>> enter \n")
 
+# GenesisGir Dialog 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Okay time to go to the meetup. \n")
@@ -506,18 +511,21 @@ playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\A
 
 input(">>> Speak to the scientist press enter! \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: GREAT SCOTT! You made it!")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Are you the person that messaged me?! \n")
 
 input(">>> enter \n") 
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: Well of course!, My name is Doctor Emmett brown I'm a scientist that likes to dabble in well..")
@@ -525,19 +533,22 @@ print("science and anything extraordinary! I have asked you to come here about T
 print("that you do not run it or even think about it's distribution.")
 
 input(">>> enter \n")
-         
+
+# GenesisGir Dialog          
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: w-what why can't I run it? \n")
 
-input(">>> enter \n") 
-
+input(">>> enter \n")
+ 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: The future!. . .")
 
 input(">>> enter \n")
-         
+
+# GenesisGir Dialog         
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: The future? what does my program have to do with that? with all due respect Doc but I think I've \n")
@@ -545,18 +556,20 @@ print("overstayed my welcome and you need to take a break from science you've lo
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: Gir please! you don't understand!. .")
 
 input(">>> enter \n")
-
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Goodbye Doc. . . * Genesis turns away from him and starts walking away until.. *")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: Wait.")
@@ -569,6 +582,7 @@ print(f"- Genesis turns around and Doc Brown removes tarp off a hidden vehicle a
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: This is something I've been working on for quite awhile and holds all the answers that your are looking")
@@ -576,18 +590,19 @@ print("for Gir. This is the best invention up to date in my arsenal and is capab
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Doc did you just say time travel?")
 
 input(">>> enter \n")
-
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: precisely , and you are about to embark in it's first journey!")
 
 input(">>> enter \n")
-
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Well let's see what it's got Doc kick this baby into gear!")
@@ -600,6 +615,7 @@ print(f"- {doc} reaches for the car door and opens it and {einstein} is in the d
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: Okay hold this Gir")
@@ -612,12 +628,14 @@ print(f"- {doc} hands {gen} a VHS camera -")
 
 input(">>> grab camera press enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: Hello my name is Doctor Emmet Brown and we are about to embark in amazing experiment!")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: I Doctor Emmet Brown have created the world's first TIME MACHINE and I will prove so!")
@@ -630,6 +648,7 @@ print(f"- {doc} walks towards the {time_machine} and opens up the passenger seat
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: {einstein} you will be the world's first time traveler ever!") 
@@ -642,6 +661,7 @@ print(f"- {doc} looks over at {gen} and holds up the remote to the {time_machine
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"{doc}: Your about to see some crazy shit") 
@@ -660,6 +680,7 @@ print(f"- The {time_machine} engine starts! -")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: LOOK AT IT GO DOC THATS INCREDIBLE!")
@@ -678,6 +699,7 @@ print(f"- The {time_machine} starts to drive and makes a drastic drift turing to
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Um Doc?. .")
@@ -692,10 +714,11 @@ input(">>> enter \n")
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\engine.wav", winsound.SND_ASYNC)        
 
-print(f"The {time_machine} begins to head their direction slowly reaching 88 MPH")
+print(f"- The {time_machine} begins to head their direction slowly reaching 88 MPH -")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc}: Wait Watch this! ")
@@ -720,12 +743,14 @@ print(f"- The {time_machine} vanishes right in front of them as it's right about
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"- {gen}: Where did it go? are you KIDDING ME YOU ALMOST KILLED US ARE YOU CRAZY?! -")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"- {doc} stares at Genesis with a happy grin and stands there in emotional content while Genesis continues")
@@ -733,6 +758,7 @@ print("to scream at him in anger and disbelieve and finally lets out the words i
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: ARE YOU GOING TO ANSWER ME? WHATS WRON-. . .")
@@ -752,12 +778,14 @@ print(f"from behind coming to a slow stop and Genesis looks over at Doc as the b
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: . . . There's no way in hell that just happened.")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc}: Oh but it did happen Gir it did! and if my calculation's are correct {einstein} traveled exactly one")
@@ -765,49 +793,56 @@ print("minute into the FUTURE!")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: The future. . ")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc}: What did I tell you boy science will always prevail! ALWAYS come here einstein! Come here!")
 print("who's a good little time traveler? YES YOU ARE! HAHAHA THIS IS HISTORY IN THE MAKING")
 
 input(">>> enter \n")
-
+# Einstein Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{einstein}: BARK! BARK!")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: well I'll be damned. . Time travel. .")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Doc you gotta let me use this thing I..I gotta try this out!")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc}: Oh I can't do that that's far too dangerous you don't even know how it functions boy!")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: Are you kidding me what's so hard about it it's a TIME MACHINE!")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc}: I come here to prevent you from creating that program because it will cause world destruction and the")
@@ -815,36 +850,42 @@ print("the best you can offer me is a ride in the Delorean? No No NO No and NO!"
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: I guess you do know what happens in the future.. I'll ditch the program when I get home.")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc}: as soon as you get home!")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: As soon as I get home alright geez you don't have to baby me I'm not a child you know..")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc}: prove it than. .to yourself and for all hope of mankind!")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: I promise. . ")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc} I will meet you in this same location approximately at 1:00 PM later today and do not be late!  ")
@@ -853,6 +894,7 @@ print("no matter what is to be made clear is that you are in this location at 1:
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{gen}: I got it , I got it 1:00PM! ")
@@ -884,52 +926,51 @@ print("- THE DOOR SLAMS SHUT -")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"{gen}: Hey Um Doc what's that? ")
+print(f"{gen}: Hey Um Doc what's that? \n")
+
+time.sleep(3)
+
+# GenesisGir Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
+
+print(f"- {gen}: points at the yellow crate like box glowing with radiation! - \n")
 
 time.sleep(3)
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"- {gen}: points at the yellow crate like box glowing with radiation! -")
-
-time.sleep(3) # using the time.sleep() function call to add a delay set by the integer in the paraenthesis!
-
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
-
-print(f"- {gen}: points at the yellow crate like box glowing with radiation! -")
+print(f"- {doc} looks over at the {plutonium_case} and raises an eyebrow at Genesis - \n")
 
 time.sleep(3)
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"- {doc} looks over at the {plutonium_case} and raises an eyebrow at Genesis -")
-
-time.sleep(3)
-
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
-
-print(f"{doc} This my boy is Plutonium!")
+print(f"{doc} This my boy is Plutonium! \n")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"{gen} Plu what?")
+print(f"{gen} Plu what? \n")
 
 input(">>> enter \n")
 
+# Doc Brown Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
 print(f"{doc} Plutonium! it's the power source and this sucker need 3.6 GIGAWATTS of power to make it run! without it")
-print("I'm afraid the Delorean would not work. it's an essential piece of my project and must be protected at all costs!")
+print("I'm afraid the Delorean would not work. it's an essential piece of my project and must be protected at all costs! \n")
 
 input(">>> enter \n")
-
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"{gen} radioactive material Doc are you insane?!")
+print(f"{gen} radioactive material Doc are you insane?! \n")
 
 input(">>> enter \n")
 
@@ -937,19 +978,20 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
 
 print(f"- {doc} gestures by looking up at the sky wondering his own self sanity and looks down at the {plutonium_case} and makes sure")
 print("it is secure and nothing is missing than turns back around at Genesis in a quick motion almost so quick he cannot balance himself.")
-print(f"looking over he takes a gaze at his watch and jumps into the air and grabs {gen} by his shoulders -")
+print(f"looking over he takes a gaze at his watch and jumps into the air and grabs {gen} by his shoulders - \n")
+
+input(">>> enter \n")
+# Doc Brown Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
+
+print(f"{doc} Okay it's 7:00 AM now go home and do what I asked from you! \n")
 
 input(">>> enter \n")
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"{doc} Okay it's 7:00 AM now go home and do what I asked from you!")
-
-input(">>> enter \n")
-
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
-
-print(f"{gen} Okay sounds good. I'll see you at 1:00PM!")
+print(f"{gen} Okay sounds good. I'll see you at 1:00PM! \n")
 
 input(">>> enter \n")
 
@@ -959,7 +1001,7 @@ print(f"- {gen} Runs back home as the cool morning dew splashes beneath his conv
 print(f"up and the shining morning light brighten's up the town in such beauty and flair. genesis has met {doc} for the first time and was blown")
 print("away by how intelligent and precise he was in his experiments and as his heart beats faster as he runs back to his home he thinks what")
 print("could have been in his program that will cause mass destruction in the future. The very thought astounds him, It made him feel")
-print("somewhat proud of himself that he was able to pull off such an amazing program that was capable of such proportions!")
+print("somewhat proud of himself that he was able to pull off such an amazing program that was capable of such proportions! \n")
 input(">>> enter \n")
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
@@ -967,59 +1009,61 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
 print("- Genesis makes it to his front door and hears talking from the inside as he approaches the door it sounds like family laughter and happy")
 print("conversations errupting from the house. As enters he can see his his wife has come to visit him speaking to his mother and family")
 print("he walks up to her and gazes into her beautiful eyes as her eyes gaze back the two are madly in love and he gathers his focus back")
-print("and speaks with her. - ")
+print("and speaks with her. - \n")
 
 input(">>> enter \n")
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"{gen} Hey mi amor <3")
+print(f"{gen} Hey mi amor <3 \n")
+
+input(">>> enter \n")
+
+# Daniela Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
+
+print(f"{mrs_genesis}: Good morning mi amor! I came by to visit you , I was in town and I wanted to see how you were doing! <3 \n")
+
+input(">>> enter \n")
+
+# GenesisGir Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
+
+print(f"{gen} That's great actually This is amazing! I'm so glad your here now we can spend time together! \n")
+
+input(">>> enter \n")
+# Daniela Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
+
+print(f"{mrs_genesis}: Mhm! we can spend the whole day together my love! <3 \n")
 
 input(">>> enter \n")
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"{mrs_genesis}: Good morning mi amor! I came by to visit you , I was in town and I wanted to see how you were doing! <3")
-
-input(">>> enter \n")
-
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
-
-print(f"{gen} That's great actually This is amazing! I'm so glad your here now we can spend time together!")
-
-input(">>> enter \n")
-
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
-
-print(f"{mrs_genesis}: Mhm! we can spend the whole day together my love! <3")
-
-input(">>> enter \n")
-
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
-
-print(f"- {mrs_genesis} leans in to give him a huge kiss than all of a sudden. . -")
+print(f"- {mrs_genesis} leans in to give him a huge kiss than all of a sudden. . - \n")
 
 input(">>> enter \n")
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\Noti.wav", winsound.SND_ASYNC)        
 
-print("(" + str(1) + ")" + f" New chat request from {untracked_contact}")
+print("(" + str(1) + ")" + f" New chat request from {untracked_contact} \n")
 
 time.sleep(2)
 
-print(f"- Genesis looks down at his phone and knows that it's urgent and that the message request is likely from {doc} -")
+print(f"- Genesis looks down at his phone and knows that it's urgent and that the message request is likely from {doc} - \n")
 
 time.sleep(3)
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"{gen} Um. . My love I have to take this!")
+print(f"{gen} Um. . My love I have to take this! \n")
 
 input(">>> enter \n")
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)        
 
-print(f"- {gen} leans in and gives {mrs_genesis} a huge loving kiss and she begins to blush heavily -")
+print(f"- {gen} leans in and gives {mrs_genesis} a huge loving kiss and she begins to blush heavily - \n")
 
 input(">>> enter \n")
 
@@ -1048,7 +1092,7 @@ while True: # iPhone prompt open new message!
     
     if res == "t":
         break
-    elif res == "x": # user does not read message and decides to close out PC
+    elif res == "x ": # user does not read message and decides to close out PC
         # plays the error.wav using winsound/playsound modules!
         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\error.wav", winsound.SND_ASYNC)
 
@@ -1058,6 +1102,10 @@ while True: # iPhone prompt open new message!
         # plays the error.wav using winsound/playsound modules!
         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\error.wav", winsound.SND_ASYNC)
         continue
+    
+"""
+🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+"""
 
 # GenesisGir read's the accepts the chat request from Doc brown and chats! on line '1.57K'
 
@@ -1150,113 +1198,292 @@ time.sleep(random.randint(1,5))
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"- Genesis closes out his phone and looks back at {mrs_genesis} in a sad tone -")
+print(f"- Genesis closes out his phone and looks back at {mrs_genesis} in a sad tone - \n")
 
 input(">>> enter \n")
 
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+# Daniela Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav \n", winsound.SND_ASYNC)
 
-print(f"{mrs_genesis}: w-what's wrong my love?  ")
-
-time.sleep(3)
-
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
-
-print(f"{gen}: Mi amor I wont be able to hang out today but some other day something came up that's really important.")
+print(f"{mrs_genesis}: w-what's wrong my love? \n ")
 
 time.sleep(3)
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"{mrs_genesis}: . . .  ")
+print(f"{gen}: Mi amor I wont be able to hang out today but some other day something came up that's really important. \n")
 
 time.sleep(3)
 
+# Daniela Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"{gen}: I know mi amor but this is really top secret stuff and. .  ")
+print(f"{mrs_genesis}: . . .  \n ")
 
 time.sleep(3)
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"- {gen} looks around and has a change of heart and grabs {mrs_genesis} by her shoulders -")
+print(f"{gen}: I know mi amor but this is really top secret stuff and. . \n ")
+
+time.sleep(3)
+
+# GenesisGir Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"- {gen} looks around and has a change of heart and grabs {mrs_genesis} by her shoulders - \n ")
 
 time.sleep(5)
 
+# GenesisGir Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"{gen}: Come with me mi amor")
+print(f"{gen}: Come with me mi amor \n ")
 
 time.sleep(3)
 
+# Daniela Dialog
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"{mrs_genesis}: Okay mi amor! <3")
+print(f"{mrs_genesis}: Okay mi amor! <3 \n ")
 
 time.sleep(3)
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
 print(f"- Genesis & {mrs_genesis} head upstairs to his room and open the door and enter inside while holding hands ")
-print("the walk up to his PC and sit close to eachother and Genesis begins to tell her about the situation -")
+print("they walk up to his PC and sit close to eachother and Genesis begins to tell her about the drastic situation - \n ")
 
 input(">>> enter \n")
 
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{gen}: So it's not that I don't want to spend time with you it's the matter that our future and the world is in danger")
+print("and if I don't delete the program mi amor the world is going to be altered and cause destruction.. \n ")
+
+input(">>> enter \n")
+
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{mrs_genesis}: If that's the case than start deleting it now! \n ")
+
+input(">>> enter \n")
+
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{gen}: Let's delete the file. . \n ")
+
+input(">>> enter to boot up your PC \n")
+
+while True: # Reverse engineering the GenesisGir PC menu system to delete the TIME_FRAC.exe action
+    
+    # file state variable on line '1.222K'
+    file_state = "saved" # the state of the time_frac.exe
+     
+    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\reopenpc.wav", winsound.SND_ASYNC)
+        
+    print("█▀▀ █▀▀ █▄░█ █▀▀ █▀ █ █▀ █▀▀ █ █▀█ █▀   █▀█ █▀▀")
+    print("█▄█ ██▄ █░▀█ ██▄ ▄█ █ ▄█ █▄█ █ █▀▄ ▄█   █▀▀ █▄▄ \n \n \n")
+    
+    
+    
+    print("Welcome GenesisGir! \n \n")
+    
+    
+    print("█▀█ █▀█ █▀█ █▀▀ █▀█ ▄▀█ █▀▄▀█ █▀")
+    print("█▀▀ █▀▄ █▄█ █▄█ █▀▄ █▀█ █░▀░█ ▄█ \n ")
+    
+    print(">>> Delete TIME-FRAC.exe [t]")
+    print("exit PC [x] \n")
+    
+    res = input()
+    
+    if res == "t": # user decides to delete the software
+        
+        while True: # asking user if they are sure to delete said files.
+            
+            winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+            
+            choice = input("[You are about to delete TIME_FRAC.exe are you sure? y/n] \n ")
+            
+            if choice == "y":
+        
+                # buffer deletion process for TIME_FRAC.exe program!
+
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\shutdown.wav", winsound.SND_ASYNC)
+
+                for file in range(0,101,10): # using the range() to create a delete FX
+
+                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\del.wav", winsound.SND_ASYNC)
+
+                    print("File" + str(random.randint(1,10001)) + " deleted " + str(file) + "% \n ")
+
+                    time.sleep(0.4) # adding some delay to program execution.
+                    
+                    if file == 100:
+                        file_state = "removed" # file was removed from the PC!
+                        break
+                                
+            elif choice == "n":
+
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\error.wav", winsound.SND_ASYNC)
+
+                print(f"{gen}: I have no choice it must be deleted. . \n")
+
+                time.sleep(1)
+
+                continue
+            
+            elif file_state == "removed": # break out the while loop if file was deleted!
+
+                break
+            
+            else:
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\error.wav", winsound.SND_ASYNC)
+                continue
+        
+        
+    elif res == "x":
+    
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\error.wav", winsound.SND_ASYNC)
+
+                print(f"{gen}: I have to delete the TIME_FRAC.exe. . \n")
+
+                time.sleep(1)
+
+                continue
+            
+    elif file_state == "removed": # break out the while loop if file was deleted
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\Complete.wav", winsound.SND_ASYNC)
+        
+        print("SYSTEM: The file TIME_FRAC.exe was removed from your system permanently! \n ")
+        
+        time.sleep(1)
+        
+        break
+        
+    else:
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\error.wav", winsound.SND_ASYNC)
+        continue
+    
+"""
+🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+"""
+    
+# User has deleted the TIME_FRAC.exe file successfully and program continues on line '1.311K'
+print()
+print()
+
+# GenesisGir Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{gen}: Well that's the end of that. \n ")
+
+time.sleep(5)
+
+# Daniela Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{mrs_genesis}: So your done? we can spend the rest of the day right? thats all he wnated you to do was delete")
+print("the program right?")
+
+time.sleep(5)
+            
+# GenesisGir Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{gen}: He wanted me to go Twin Pines mall too at 1:00PM \n ")
+
+time.sleep(5)            
+
+# Daniela Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{mrs_genesis}: Okay well I'll be here waiting for you when you get back. .")
+
+time.sleep(3)
+
+# Daniela Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{mrs_genesis}: I love you.")
+
+time.sleep(3)
+
+# GenesisGir Dialog
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
+
+print(f"{gen}: I love you too! \n ")
+
+print("- Genesis smiles at her with love and passion in his eyes looking at her loving grace-")
+
+input("This was a demo press enter to view credits!\n")
+
+print("Thank you for downloading GenesisGirLessonsVolume.2! \n")
+
+time.sleep(3)
+
+print("If you enjoyed this lesson & make sure to follow me on github! \n")
+
+time.sleep(3)
 
 
+print("█▀▀ █▀█ █▀▀ █▀▄ █ ▀█▀ █▀")
+print("█▄▄ █▀▄ ██▄ █▄▀ █ ░█░ ▄█ \n \n")
 
+time.sleep(1)
 
+print("source code by - GenesisGir \n")
 
+time.sleep(1)
 
+print("𝘽𝙖𝙘𝙠 𝙩𝙤 𝙩𝙝𝙚 𝙛𝙪𝙩𝙪𝙧𝙚 𝙒𝙧𝙞𝙩𝙩𝙚𝙣 𝙗𝙮 𝙍𝙤𝙗𝙚𝙧𝙩 𝙕𝙚𝙢𝙚𝙘𝙠𝙞𝙨, 𝘽𝙤𝙗 𝙂𝙖𝙡𝙚 \n ")
 
+print("𝘽𝙖𝙘𝙠 𝙩𝙤 𝙩𝙝𝙚 𝙁𝙪𝙩𝙪𝙧𝙚 𝙞𝙨 𝙖 𝙩𝙧𝙖𝙙𝙚𝙢𝙖𝙧𝙠 𝙖𝙣𝙙 𝙘𝙤𝙥𝙮𝙧𝙞𝙜𝙝𝙩 𝙤𝙛 𝙐𝙣𝙞𝙫𝙚𝙧𝙨𝙖𝙡 𝙎𝙩𝙪𝙙𝙞𝙤𝙨 𝙖𝙣𝙙 𝙐-𝘿𝙧𝙞𝙫𝙚 𝙅𝙤𝙞𝙣𝙩 𝙑𝙚𝙣𝙩𝙪𝙧𝙚. 𝙇𝙞𝙘𝙚𝙣𝙨𝙚𝙙 𝙗𝙮 𝙐𝙣𝙞𝙫𝙚𝙧𝙨𝙖𝙡 𝙎𝙩𝙪𝙙𝙞𝙤𝙨. \n")
 
+time.sleep(1)
 
+print("Support the creators of the movie and Support me for putting this together! \n")
 
+while True:
+    print()
+    print("visit the netflix page to buy the movie! [s]")
+    print("Visit GenesisGirs Github page! [g]")
+    r = input("Goodbye <3 [x]\n")
+    
+    if r == "s":
+        webbrowser.open("https://www.netflix.com/lu-en/title/60010110")
+        continue
+    elif r == "g":
+        webbrowser.open("https://github.com/GenesisGir")
+        continue
+    elif r == "x":
+        sys.exit()
+    else:
+        continue
 
+"""
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡏⠉⠉⠉⠉⠉⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⡇⠀⡇⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⡠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣤⣾⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⠀⠀⠘⠋⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠿⢦⠤⠤⣤⠤⠤⡤⠤⢼⡧⠤⢼⠀⠀⠿⠤⡄⡠⠤⠴⠿⡇⠀⠀⠧⠤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⢸⠀⠀⣿⠀⠀⡇⠀⢸⡇⠀⢸⠀⠀⠀⠀⡏⠀⠀⠀⠀⡇⠀⠀⠀⠀⠈⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠿⢿⠀⠀⠿⠀⠀⠇⠀⢸⡇⠀⢸⠀⠀⠿⠿⡇⠀⠸⠿⠿⡇⠀⠀⣿⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣄⠀⠀⢸⠀⠀⠀⠀⠀⠀⢀⣼⡇⠀⢸⣄⠀⠀⠀⣧⡀⠀⠀⠀⡇⠀⠀⣿⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⢿⣿⣿⡿⢿⣿⣿⣿⢿⣿⡿⢿⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
+ 
+Thank you for downloading this .py find more at my github and learn something new everyday and rememeber
+to not give up on coding! its an artform and anbody can be skilled enough to achieve greatness in your code
+make sure to check out my twitch streams below!
 
+Twitch: https://www.twitch.tv/genesisgir 
+Github: https://github.com/GenesisGir
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+thank you to everyone on twitch who participated in the making of this .py!
+"""
