@@ -126,6 +126,8 @@ BROKEN_SCISSORS_NAILS = "Broken Scissors & nails" # A broken pair of scissors an
 DUCT_TAPE = "Duct tape" # Duct tape.
 ISOPROPYL_ALCOHOL = "Isopropyl Alcohol" # A bottle of isopropyl alcohol.
 WHISKEY = "Whiskey" # A bottle of whiskey.
+MOLOTOV = "Molotov" # A suburban protest weapon used in civil right movements to deter the police.
+MAKE_SHIFT_BOMB = "Make-Shift Bomb" # A make shift explosive.
 
 # craftable item amounts
 sugar_amount = 0
@@ -138,6 +140,8 @@ broken_scissors_nails_amount = 0
 duct_tape_amount = 0
 isopropyl_alcohol_amount = 0
 whiskey_amount = 0
+molotov_amount = 0
+make_shift_bomb_amount = 0
 
 # location constants
 AUSTIN = "Austin"
@@ -206,7 +210,7 @@ print("                                   𝙥𝙧𝙚𝙨𝙚𝙣𝙩𝙨      
 
 time.sleep(3)
 
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\ThelastOfUs.py", winsound.SND_ASYNC)
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\curtin.wav", winsound.SND_ASYNC)
 
 print("                ▀█▀ █░█ █▀▀   █░░ ▄▀█ █▀ ▀█▀   █▀█ █▀▀   █░█ █▀                                 ")
 print("                ░█░ █▀█ ██▄   █▄▄ █▀█ ▄█ ░█░   █▄█ █▀░   █▄█ ▄█                         \n \n \n")
@@ -301,7 +305,7 @@ while True: # main loop
     print(f"{ELLIE} has spotted a drug store and is in desprate need of rations! \n")
     
     print("Enter the drug store [e]") 
-    print("Move along [m]")
+    print("ignore drug store [m]")
     
     choice = input(">>> \n") # user creates the variable for choice w/input() function!
     
@@ -325,6 +329,29 @@ while True: # main loop
             print("Try to open door with hands [h]")
             
             action = input(">>> \n") # user creates variable w/input()
+            
+            """ # what are comments? 
+
+█▀▀ █▀█ █▀▄▀█ █▀▄▀█ █▀▀ █▄░█ ▀█▀ █▀
+█▄▄ █▄█ █░▀░█ █░▀░█ ██▄ █░▀█ ░█░ ▄█
+
+
+▐▓█▀▀▀▀▀▀▀▀▀█▓▌░▄▄▄▄▄░
+▐▓█░░▀░░▀▄░░█▓▌░█▄▄▄█░
+▐▓█░░▄░░▄▀░░█▓▌░█▄▄▄█░
+▐▓█▄▄▄▄▄▄▄▄▄█▓▌░█████░
+░░░░▄▄███▄▄░░░░░█████░     𝙏𝙞𝙥: 𝙐𝙨𝙚 # 𝙩𝙤 𝙘𝙧𝙚𝙖𝙩𝙚 𝙖 𝙘𝙤𝙢𝙢𝙚𝙣𝙩
+
+Comments can be helpful for people reading your source code or for keeping notes for yourself! You can create a comment
+with the hashtag symbol and anything after will be apart of that comment, keep mental reminders or leave notes for
+a team working on the same code explain what a certain line of code is trying to do etc. comments will be a very powerful 
+tool to use as a programmer and you can even comment out lines of code your having trouble with by putting a # in front
+of that line of code to take it out of the program executions path and take it out when you fixed a problem in your project
+this is called commenting out code! Give it a try
+
+eg. # this is an example of a comment!
+
+"""
             
             # flow control statements for door prompts.
             if action == "b": # user decides to break lock with 2x4
@@ -362,6 +389,119 @@ while True: # main loop
                 print("- Then turn over to look at the rations - \n")
                 
                 time.sleep(random.randint(1,2))
+                
+                """ # playsound module tips and tricks uncollapse me to start learning!
+
+
+█▀█ █░░ ▄▀█ █▄█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
+█▀▀ █▄▄ █▀█ ░█░ ▄█ █▄█ █▄█ █░▀█ █▄▀   █░▀░█ █▄█ █▄▀ █▄█ █▄▄ ██▄
+
+░░█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+██▀▀▀██▀▀▀▀▀▀██▀▀▀██
+█▒▒▒▒▒█▒▀▀▀▀▒█▒▒▒▒▒█  ~ ♫ ♩ ♬ ♪    
+█▒▒▒▒▒█▒████▒█▒▒▒▒▒█
+██▄▄▄██▄▄▄▄▄▄██▄▄▄██    𝙏𝙞𝙥: 𝙄𝙢𝙥𝙤𝙧𝙩 𝙥𝙡𝙖𝙮𝙨𝙤𝙪𝙣𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮 𝙖𝙪𝙙𝙞𝙤 𝙛𝙞𝙡𝙚𝙨 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙥𝙧𝙤𝙜𝙧𝙖𝙢
+
+Pure Python, cross platform, single function module with no dependencies for playing sounds.
+
+The playsound module must be imported to be used this module is responsible for playing audio files through the program
+as you see through this .py file there are lots of playsound function calls being used these are responsible for outputting
+the audio FX that you hear when you run the program or debug that's playsounds hefty work in cohesion with winsound
+as well.
+
+eg. import playsound, winsound
+
+The playsound module contains only one thing - the function (also named) playsound.
+It requires one argument - the path to the file with the sound you’d like to play. 
+This may be a local file, or a URL.
+
+There’s an optional second argument, block, which is set to True by default. 
+Setting it to False makes the function run asynchronously.
+
+
+█░█░█ █ █▄░█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
+▀▄▀▄▀ █ █░▀█ ▄█ █▄█ █▄█ █░▀█ █▄▀   █░▀░█ █▄█ █▄▀ █▄█ █▄▄ ██▄
+
+░░█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+██▀▀▀██▀▀▀▀▀▀██▀▀▀██
+█▒▒▒▒▒█▒▀▀▀▀▒█▒▒▒▒▒█
+█▒▒▒▒▒█▒████▒█▒▒▒▒▒█
+██▄▄▄██▄▄▄▄▄▄██▄▄▄██   𝙏𝙞𝙥: 𝙐𝙨𝙚 𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙 𝙬𝙞𝙩𝙝 𝙥𝙡𝙖𝙮𝙨𝙤𝙪𝙣𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮 𝙨𝙤𝙪𝙣𝙙𝙨 𝙖𝙨𝙮𝙣𝙘𝙝𝙧𝙤𝙣𝙤𝙪𝙨𝙡𝙮
+
+
+The winsound module provides access to the basic sound-playing machinery provided by Windows platforms. It includes functions
+and several constants.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝘽𝙚𝙚𝙥(𝙛𝙧𝙚𝙦𝙪𝙚𝙣𝙘𝙮, 𝙙𝙪𝙧𝙖𝙩𝙞𝙤𝙣)
+
+Beep the PC’s speaker. The frequency parameter specifies frequency, in hertz, of the sound, and must be in the range 37 through 32,767.
+The duration parameter specifies the number of milliseconds the sound should last. If the system is not able to beep the speaker, RuntimeError is raised
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙋𝙡𝙖𝙮𝙎𝙤𝙪𝙣𝙙(𝙨𝙤𝙪𝙣𝙙, 𝙛𝙡𝙖𝙜𝙨)
+
+Call the underlying PlaySound() function from the Platform API. The sound parameter may be a filename, a system sound alias, audio data as a bytes-like object,
+or None. Its interpretation depends on the value of flags, which can be a bitwise ORed combination of the constants described below. If the sound parameter is None, 
+any currently playing waveform sound is stopped. If the system indicates an error, RuntimeError is raised.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝘽𝙚𝙚𝙥(𝙩𝙮𝙥𝙚=𝙈𝘽_𝙊𝙆)
+
+Call the underlying MessageBeep() function from the Platform API. This plays a sound as specified in the registry. The type argument specifies which sound to play; 
+possible values are -1, MB_ICONASTERISK, MB_ICONEXCLAMATION, MB_ICONHAND, MB_ICONQUESTION, and MB_OK, all described below. The value -1 produces a “simple beep”; 
+this is the final fallback if a sound cannot be played otherwise. If the system indicates an error, RuntimeError is raised.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙁𝙄𝙇𝙀𝙉𝘼𝙈𝙀
+
+The sound parameter is the name of a WAV file. Do not use with SND_ALIAS.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝘼𝙇𝙄𝘼𝙎
+
+The sound parameter is a sound association name from the registry. If the registry contains no such name, play the system default sound unless SND_NODEFAULT is also specified.
+If no default sound is registered, raise RuntimeError. Do not use with SND_FILENAME.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙇𝙊𝙊𝙋
+Play the sound repeatedly. The SND_ASYNC flag must also be used to avoid blocking. Cannot be used with SND_MEMORY.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙈𝙀𝙈𝙊𝙍𝙔
+The sound parameter to PlaySound() is a memory image of a WAV file, as a bytes-like object.
+
+𝙣𝙤𝙩𝙚: This module does not support playing from a memory image asynchronously, so a combination of this flag and SND_ASYNC
+will raise RuntimeError.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙋𝙐𝙍𝙂𝙀
+Stop playing all instances of the specified sound.
+
+𝙉𝙤𝙩𝙚: This flag is not supported on modern Windows platforms.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝘼𝙎𝙔𝙉𝘾
+Return immediately, allowing sounds to play asynchronously.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝘿𝙀𝙁𝘼𝙐𝙇𝙏
+If the specified sound cannot be found, do not play the system default sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝙎𝙏𝙊𝙋
+Do not interrupt sounds currently playing.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝙒𝘼𝙄𝙏
+Return immediately if the sound driver is busy.
+
+𝙉𝙤𝙩𝙚: This flag is not supported on modern Windows platforms.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝘼𝙎𝙏𝙀𝙍𝙄𝙎𝙆
+Play the SystemDefault sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙀𝙓𝘾𝙇𝘼𝙈𝘼𝙏𝙄𝙊𝙉
+Play the SystemExclamation sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙃𝘼𝙉𝘿
+Play the SystemHand sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙌𝙐𝙀𝙎𝙏𝙄𝙊𝙉
+Play the SystemQuestion sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙊𝙆
+Play the SystemDefault sound.
+
+"""
                 
                 # looting system starts at line '364'
                 
@@ -463,7 +603,35 @@ while True: # main loop
                 
                 
                 
-                
+                """ # while loops tips for beginners!
+
+█░█░█ █░█ █ █░░ █▀▀   █░░ █▀█ █▀█ █▀█   █▀ ▀█▀ ▄▀█ ▀█▀ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀ █▀
+▀▄▀▄▀ █▀█ █ █▄▄ ██▄   █▄▄ █▄█ █▄█ █▀▀   ▄█ ░█░ █▀█ ░█░ ██▄ █░▀░█ ██▄ █░▀█ ░█░ ▄█
+
+While loop statements are loops that can re-iterate indefinitely until the condition is found false! Use while loops
+for various tasks and can help when used with flow control statements!
+
+eg. While True:
+        print("Hello!")
+        
+eg. While True:
+        break
+        
+eg. While True:
+        continue
+
+The following code in the example will print out the string literal forever, While we are stuck within this loop we are able to use
+𝙗𝙧𝙚𝙖𝙠 statements to escape a while loops clause! Also you can use break & continue statements in for loops as well.
+
+──────────────▄▀█▀█▀▄
+─────────────▀▀▀▀▀▀▀▀▀ 
+─────────────▄─░░░░░▄
+───█──▄─▄───▐▌▌░░░░░▌▌  𝙏𝙞𝙥: 𝙒𝙝𝙞𝙡𝙚 𝙡𝙤𝙤𝙥𝙨 𝙡𝙤𝙤𝙥 𝙛𝙤𝙧𝙚𝙫𝙚𝙧 𝙪𝙣𝙩𝙞𝙡 𝙩𝙝𝙚 𝙘𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣 𝙞𝙨 𝙛𝙤𝙪𝙣𝙙 𝙛𝙖𝙡𝙨𝙚
+▌▄█▐▌▐█▐▐▌█▌█▌█░░░░░▌▌      
+
+                                𝙏𝙞𝙥: 𝙔𝙤𝙪 𝙘𝙖𝙣 𝙚𝙨𝙘𝙖𝙥𝙚 𝙤𝙪𝙩 𝙖 𝙬𝙝𝙞𝙡𝙚 𝙡𝙤𝙤𝙥 𝙬𝙞𝙩𝙝 𝙩𝙝𝙚 𝙗𝙧𝙚𝙖𝙠 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩
+
+"""
                 
                 
                 # user chooses to collect isopropyl alcohol!
@@ -512,7 +680,52 @@ while True: # main loop
                     time.sleep(5) # a time.sleep() function call pauses the program execution set by the arguement
                 
                 
-                
+                """ # learn about the round() function!
+🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 
+
+▀█▀ █░█ █▀▀   █▀█ █▀█ █░█ █▄░█ █▀▄ ▄▀ ▀▄   █▀▀ █░█ █▄░█ █▀▀ ▀█▀ █ █▀█ █▄░█
+░█░ █▀█ ██▄   █▀▄ █▄█ █▄█ █░▀█ █▄▀ ▀▄ ▄▀   █▀░ █▄█ █░▀█ █▄▄ ░█░ █ █▄█ █░▀█
+
+The round() function has its place in source code , by using it you can round off numbers with
+its functionalities and make a float into an integer or round down or up but the funtion does this automatically!
+Pretty amazing if i do say so myself!
+
+ex. 5.78 is a floating point data type but if we use round() look what happens
+
+ex. round(5.98) > 6 
+
+ex. round(7.15) > 7
+
+Its rounding off to the nearest integer making it easy to round numbers off it does two things at
+once. converts the float into an integer and also makes it rounded off! Double the trouble sister!
+                                 
+                                 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠤⠖⠚⢉⣩⣭⡭⠛⠓⠲⠦⣄⡀⠀⠀⠀⠀⠀⠀⠀
+⠀                                 ⠀⠀⠀⠀⠀⢀⡴⠋⠁⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⢦⡀⠀⠀⠀⠀
+⠀                                 ⠀⠀⠀⢀⡴⠃⢀⡴⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣆⠀⠀⠀
+                                 ⠀⠀⠀⠀⡾⠁⣠⠋⠀⠈⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀
+                                 ⠀⠀⠀⣸⠁⢰⠃⠀⠀⠀⠈⢣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀
+⠀                                 ⠀⠀⡇⠀⡾⡀⠀⠀⠀⠀⣀⣹⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀
+                                 ⠀⠀⢸⠃⢀⣇⡈⠀⠀⠀⠀⠀⠀⢀⡑⢄⡀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
+                                 ⠀⠀⢸⠀⢻⡟⡻⢶⡆⠀⠀⠀⠀⡼⠟⡳⢿⣦⡑⢄⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇ "I want to develop" - genesis gir
+                                 ⠀⠀⣸⠀⢸⠃⡇⢀⠇⠀⠀⠀⠀⠀⡼⠀⠀⠈⣿⡗⠂⠀⠀⠀⠀⠀⠀⠀⢸⠁
+                                 ⠀⠀⡏⠀⣼⠀⢳⠊⠀⠀⠀⠀⠀⠀⠱⣀⣀⠔⣸⠁⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀
+                                 ⠀⠀⡇⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀    "I want my dreams to come true" - genesis gir
+                                 ⠀⢸⠃⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⢀⠀⠀⠀⠀⠀⣾⠀⠀
+                                 ⠀⣸⠀⠀⠹⡄⠀⠀⠈⠁⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠸⠀⠀⠀⠀⠀⡇⠀⠀
+                                 ⠀⡏⠀⠀⠀⠙⣆⠀⠀⠀⠀⠀⠀⠀⢀⣠⢶⡇⠀⠀⢰⡀⠀⠀⠀⠀⠀⡇⠀⠀      "if I put the time in Ill surely win" - genesis gir
+                                 ⢰⠇⡄⠀⠀⠀⡿⢣⣀⣀⣀⡤⠴⡞⠉⠀⢸⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⣧⠀⠀
+                                 ⣸⠀⡇⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⢹⠀⠀⢸⠀⠀⢀⣿⠇⠀⠀⠀⠁⠀⢸⠀⠀
+                                 ⣿⠀⡇⠀⠀⠀⠀⠀⢀⡤⠤⠶⠶⠾⠤⠄⢸⠀⡀⠸⣿⣀⠀⠀⠀⠀⠀⠈⣇⠀
+                                 ⡇⠀⡇⠀⠀⡀⠀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠸⡌⣵⡀⢳⡇⠀⠀⠀⠀⠀⠀⢹⡀
+                                 ⡇⠀⠇⠀⠀⡇⡸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠮⢧⣀⣻⢂⠀⠀⠀⠀⠀⠀⢧
+                                 ⣇⠀⢠⠀⠀⢳⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡎⣆⠀⠀⠀⠀⠀⠘
+                                 ⢻⠀⠈⠰⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠘⢮⣧⡀⠀⠀⠀⠀
+                                 ⠸⡆⠀⠀⠇⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠆⠀⠀⠀⠀⠀⠀⠀⠙⠳⣄⡀⢢⡀
+                                 
+                  𝙏𝙞𝙥: 𝘾𝙤𝙙𝙞𝙣𝙜 𝙞𝙨 𝙖 𝙨𝙣𝙤𝙬 𝙗𝙖𝙡𝙡 𝙚𝙛𝙛𝙚𝙘𝙩 , 𝘿𝙤𝙣𝙩 𝙗𝙚 𝙖𝙛𝙧𝙖𝙞𝙙 𝙩𝙤 𝙩𝙧𝙮 𝙣𝙚𝙬 𝙩𝙝𝙞𝙣𝙜𝙨
+
+🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁
+"""
                 
                 
                 # user chooses to collect duct tape!
@@ -564,7 +777,46 @@ while True: # main loop
                     time.sleep(5)
                 
                 
-                
+                """ # learn int() click here!
+🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁
+
+▀█▀ █░█ █▀▀   █ █▄░█ ▀█▀ ▄▀ ▀▄   █▀▀ █░█ █▄░█ █▀▀ ▀█▀ █ █▀█ █▄░█
+░█░ █▀█ ██▄   █ █░▀█ ░█░ ▀▄ ▄▀   █▀░ █▄█ █░▀█ █▄▄ ░█░ █ █▄█ █░▀█
+
+The int() function is kinda similar to the round() function it converts any other data type to int!
+can be used on floating point data types to convert them down to integers as well lets go give it a
+whirl and see what it does.
+
+ex. Here we have a float 5.55 and we want to convert it to integer
+
+ex. int(5.55) > 5
+
+as you see it converted pretty simple stuff  and this works like the round() as I said! so make sure
+to test it out in your interactive shell and try out different lines of instruction to see what it does
+and you learn things better when you do them than just reading also.
+
+
+                             ⡿⠋⠄⣀⣀⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣌⠻⣿⣿
+                             ⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠹⣿
+                             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠹
+                             ⣿⣿⡟⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡛⢿⣿⣿⣿⣮⠛⣿⣿⣿⣿⣿⣿⡆
+                             ⡟⢻⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣣⠄⡀⢬⣭⣻⣷⡌⢿⣿⣿⣿⣿⣿
+                             ⠃⣸⡀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠈⣆⢹⣿⣿⣿⡈⢿⣿⣿⣿⣿
+                             ⠄⢻⡇⠄⢛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⡆⠹⣿⣆⠸⣆⠙⠛⠛⠃⠘⣿⣿⣿⣿
+                             ⠄⠸⣡⠄⡈⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠁⣠⣉⣤⣴⣿⣿⠿⠿⠿⡇⢸⣿⣿⣿
+                             ⠄⡄⢿⣆⠰⡘⢿⣿⠿⢛⣉⣥⣴⣶⣿⣿⣿⣿⣻⠟⣉⣤⣶⣶⣾⣿⡄⣿⡿⢸
+                             ⠄⢰⠸⣿⠄⢳⣠⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣼⣿⣿⣿⣿⣿⣿⡇⢻⡇⢸
+                             ⢷⡈⢣⣡⣶⠿⠟⠛⠓⣚⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢸⠇⠘
+                             ⡀⣌⠄⠻⣧⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⢿⣿⣿⣿⣿⣿⡟⠘⠄⠄
+                             ⣷⡘⣷⡀⠘⣿⣿⣿⣿⣿⣿⣿⣿⡋⢀⣠⣤⣶⣶⣾⡆⣿⣿⣿⠟⠁⠄⠄⠄⠄
+                             ⣿⣷⡘⣿⡀⢻⣿⣿⣿⣿⣿⣿⣿⣧⠸⣿⣿⣿⣿⣿⣷⡿⠟⠉⠄⠄⠄⠄⡄⢀
+                             ⣿⣿⣷⡈⢷⡀⠙⠛⠻⠿⠿⠿⠿⠿⠷⠾⠿⠟⣛⣋⣥⣶⣄⠄⢀⣄⠹⣦⢹⣿
+                             
+                             
+      𝙏𝙞𝙥: 𝙄𝙛 𝙮𝙤𝙪 𝙚𝙫𝙚𝙧 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙨𝙚𝙚 𝙬𝙝𝙖𝙩 𝙖 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣  𝙙𝙤𝙚𝙨 𝙩𝙧𝙮 𝙪𝙨𝙞𝙣𝙜 𝙩𝙝𝙚𝙢 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙞𝙣𝙩𝙚𝙧𝙖𝙘𝙩𝙞𝙫𝙚 𝙨𝙝𝙚𝙡𝙡𝙨
+      
+🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁 🅶🅴🅽🅴🆂🅸🆂 🅶🅸🆁      
+"""
                 
                 
                 # user chooses to collect shorty!
@@ -633,8 +885,10 @@ while True: # main loop
         break # escape the second while loop's clause
     elif choice == "m": # user chooses to move along and not enter drug store's path
         
+        # Joel Dialog
         print(f"{JOEL}: We really should go in and have a peak inside \n \n \n")
         continue
+    
     elif loot_state == "looted": # break out the main loop of loot state is == "looted"
         break
     else: # invalid choice re-iterate!
@@ -643,58 +897,445 @@ while True: # main loop
     
 # user has collected loot and program continues
 
-print("You broke out of all loops!")
+#Ellie Dialog
+print(f"{ELLIE}: Okay that's everything lets get out of here before things get bad.")
+input(">>> press enter \n")
+
+#Joel Dialog
+print(f"{JOEL}: Your right and it's almost night.")
+input(">>> press enter \n")
+
+#Ellie Dialog
+print(f"{ELLIE}: The {INFECTED} are bad even in daylight I can't imagine what they are like at night. ")
+input(">>> press enter \n")
+
+print(f"- The sound of the {INFECTED} closing in on your location can be heard - \n")
+
+playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\horde.wav")
+
+#Joel Dialog
+print(f"{JOEL}: They are here.")
+input(">>> press enter \n")
+
+#Ellie Dialog
+print(f"{ELLIE}: Fuck man.")
+input(">>> press enter \n")
+
+#Ellie Dialog
+print(f"{ELLIE}: What do we do... what do we do?")
+input(">>> press enter \n")
+
+#Joel Dialog
+print(f"{JOEL}: Relax stick by me and everything should be fine")
+
+time.sleep(3)
+
+#Joel Dialog
+print(f"{JOEL}: Did you collect the {SHORTY}? Pull it out. \n")
+
+# user protects themselves path
+if shorty_amount == 1: # user owns the shorty firearm
+    
+    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\woodFX.wav", winsound.SND_ASYNC)
+    
+    # Ellie action
+    print(f"- {ELLIE} equips the {SHORTY} and prepares herself with holding it up at the drug stores entrance - \n")
+    input(">>> press enter \n")
+    
+    #Joel Dialog
+    print(f"{JOEL}: {ELLIE}! make a {MOLOTOV} and throw it at the door! We will escape from the backdoor.")
+    input(">>> press enter \n")
+    
+    print(f"Notifcation: {JOEL} wants you to craft a Molotov to fight against the {INFECTED} \n \n \n")
+    
+    time.sleep(3)
+    
+    # user crafts a molotov with inventory U/I
+    while True: # inventory loop prompt
+        
+        # break out the while loops clause if molotovs been crafted.
+        
+        if molotov_amount >= 1: # self explanatory.
+            print("\n \n")
+            break
+         
+        resp = input(f"Press [i] to enter your inventory and craft a {MOLOTOV}! \n \n") # prompting user to open inventory w/i
+        
+        if resp == "i": # user enters the inventory menu 
+
+            print("                       𝐓𝐡𝐞 𝐥𝐚𝐬𝐭 𝐨𝐟 𝐮𝐬 \n")
+
+            print("██████╗░░█████╗░░█████╗░██╗░░██╗██████╗░░█████╗░░█████╗░██╗░░██╗")
+            print("██╔══██╗██╔══██╗██╔══██╗██║░██╔╝██╔══██╗██╔══██╗██╔══██╗██║░██╔╝")
+            print("██████╦╝███████║██║░░╚═╝█████═╝░██████╔╝███████║██║░░╚═╝█████═╝░")
+            print("██╔══██╗██╔══██║██║░░██╗██╔═██╗░██╔═══╝░██╔══██║██║░░██╗██╔═██╗░")
+            print("██████╦╝██║░░██║╚█████╔╝██║░╚██╗██║░░░░░██║░░██║╚█████╔╝██║░╚██╗")
+            print("╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝ \n \n \n")
+            # (ELOC)    
+            # (ELOC)
+            print("             █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
+            print("             █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░ \n \n \n")    
+            
+            
+            
+            print("𝙀𝙡𝙡𝙞𝙚 𝙒𝙞𝙡𝙡𝙞𝙖𝙢𝙨 \n")
+            
+            print("(" + str(whiskey_amount) + ") " + f"{WHISKEY}")
+            print("(" + str(isopropyl_alcohol_amount) + ") " + f"{ISOPROPYL_ALCOHOL}")
+            print("(" + str(shorty_amount) + ") " + f"{SHORTY}")
+            print("(" + str(jar_of_screws_amount) + ") " + f"{JAR_OF_SCREWS}")
+            print("(" + str(duct_tape_amount) + ") " + f"{DUCT_TAPE}")
+            print("\n \n")
+            
+            
+            print("                        𝙘𝙧𝙖𝙛𝙩𝙞𝙣𝙜 𝙢𝙚𝙣𝙪             \n     ")
+            
+            print(f"                    [b] {MAKE_SHIFT_BOMB}                  ")
+            print(f"                    [m] {MOLOTOV}                     \n")
+            
+            response = input(f"Craft a {MOLOTOV} press [m]! \n") # taking user input for response.
+            
+            if response == "b": # user attempts to make a make shift bomb
+                # game notfication!
+                print(f"Notfication: {JOEL} said to craft a {MOLOTOV} not Make-Shift bombs. \n \n \n")
+                continue
+            
+            elif response == "m": # user crafts molotov's
+                print()
+                print()
+                print("█▀▄▀█ █▀█ █░░ █▀█ ▀█▀ █▀█ █░█   █▀▀ █▀█ ▄▀█ █▀▀ ▀█▀   █▀▄▀█ █▀▀ █▄░█ █░█")
+                print("█░▀░█ █▄█ █▄▄ █▄█ ░█░ █▄█ ▀▄▀   █▄▄ █▀▄ █▀█ █▀░ ░█░   █░▀░█ ██▄ █░▀█ █▄█ \n \n")
+                
+                
+                print("You will need the following to craft " +"("+ str(int(1.1)) +")"+ " molotov:")
+                print("(" + str(1) + ") " f" + {DUCT_TAPE}")
+                print("(" + str(1) + ") " f" + {WHISKEY} or {ISOPROPYL_ALCOHOL} \n \n \n")
+                
+                
+                
+                            
+                resp = input(f"Craft {MOLOTOV} [c] \n") # crafting prompt
+                
+                if resp == "c":
+                    
+                    while True: # crafting molotov while loop system!
+                        
+                        print("craft " +"("+ str(int(1.1)) +")"+ f" {MOLOTOV}? [c]")
+                        print("Exit craft menu [x] \n")
+                        
+                        resp = input() # retriving users input!
+                        
+                        # checking amounts    
+                        if resp == "c" and duct_tape_amount and isopropyl_alcohol_amount >= 1:
+                            
+                            molotov_amount += 1 # increment amount's by 1
+                            
+                            duct_tape_amount -= 1 # deduct by 1 
+                            
+                            isopropyl_alcohol_amount -= 1
+                            
+                            winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\bottle.wav", winsound.SND_ASYNC)
+                            
+                            print("Crafted " + "(" + str(1) + ") " + f"{MOLOTOV}! \n \n ")
+                            
+                        elif resp == "c" and duct_tape_amount and isopropyl_alcohol_amount <= 0:
+                            
+                            # System Dialog
+                            print(f"Notifcation: You don't have enough rations to create {MOLOTOV}! \n")
+                            continue # re-iterate
+                        
+                        # exit system
+                        elif resp == "x" and molotov_amount >= 1: # exit the while loop if molotov's have been crafted!
+                            
+                            break # escape the molotov crafting while loop system
+                            
+                        elif resp == "x" and molotov_amount <= 0: # re-iterate if molotovs have not been crafted.
+                            
+                            # Ellie Dialog
+                            print(f"{ELLIE}: I should make some {MOLOTOV}s.")
+                            continue # re-iterate
+                            
+                        else: # invalid option will result in warning user to press c key!
+                            print(f"Craft a {MOLOTOV} by pressing the c key. \n \n \n")
+                                  
+            else: # user invalid option
+                print("\n \n \n")
+                continue
+    
+    
+    
+# Joel protects user path
+elif shorty_amount != 1: # user does not own the shorty
+    
+    # Ellie Dialog
+    print(f"{ELLIE}: I must've forgot or didn't pick it up! \n")
+
+    #Joel Dialog
+    print(f"{JOEL}: It's fine I'll protect you no worries kid.")
+    input(">>> press enter \n")
+    
+    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\rifle.wav", winsound.SND_ASYNC)
+    
+    # Joel action
+    print(f"- {JOEL} pulls out a long gun rifle and prepares for the incoming horde read to break through the drug store doors - \n")
+    input(">>> press enter \n")
+    
+    #Joel Dialog
+    print(f"{JOEL}: {ELLIE}! make a {MOLOTOV} and throw it at the door! We will escape from the backdoor.")
+    input(">>> press enter \n")
+    
+    print(f"Notifcation: {JOEL} wants you to craft a Molotov to fight against the {INFECTED} \n \n \n")
+    
+    time.sleep(3)
+    
+    
+    # user crafts a molotov with inventory U/I
+    while True: # inventory loop prompt
+        
+        # break out the while loops clause if molotovs been crafted.
+        
+        if molotov_amount >= 1: # self explanatory.
+            print("\n \n")
+            break
+         
+        resp = input(f"Press [i] to enter your inventory and craft a {MOLOTOV}! \n \n") # prompting user to open inventory w/i
+        
+        if resp == "i": # user enters the inventory menu 
+
+            print("                       𝐓𝐡𝐞 𝐥𝐚𝐬𝐭 𝐨𝐟 𝐮𝐬 \n")
+
+            print("██████╗░░█████╗░░█████╗░██╗░░██╗██████╗░░█████╗░░█████╗░██╗░░██╗")
+            print("██╔══██╗██╔══██╗██╔══██╗██║░██╔╝██╔══██╗██╔══██╗██╔══██╗██║░██╔╝")
+            print("██████╦╝███████║██║░░╚═╝█████═╝░██████╔╝███████║██║░░╚═╝█████═╝░")
+            print("██╔══██╗██╔══██║██║░░██╗██╔═██╗░██╔═══╝░██╔══██║██║░░██╗██╔═██╗░")
+            print("██████╦╝██║░░██║╚█████╔╝██║░╚██╗██║░░░░░██║░░██║╚█████╔╝██║░╚██╗")
+            print("╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝ \n \n \n")
+            # (ELOC)    
+            # (ELOC)
+            print("             █ █▄░█ █░█ █▀▀ █▄░█ ▀█▀ █▀█ █▀█ █▄█")
+            print("             █ █░▀█ ▀▄▀ ██▄ █░▀█ ░█░ █▄█ █▀▄ ░█░ \n \n \n")    
+            
+            
+            
+            print("𝙀𝙡𝙡𝙞𝙚 𝙒𝙞𝙡𝙡𝙞𝙖𝙢𝙨 \n")
+            
+            print("(" + str(whiskey_amount) + ") " + f"{WHISKEY}")
+            print("(" + str(isopropyl_alcohol_amount) + ") " + f"{ISOPROPYL_ALCOHOL}")
+            print("(" + str(shorty_amount) + ") " + f"{SHORTY}")
+            print("(" + str(jar_of_screws_amount) + ") " + f"{JAR_OF_SCREWS}")
+            print("(" + str(duct_tape_amount) + ") " + f"{DUCT_TAPE}")
+            print("\n \n")
+            
+            
+            print("                        𝙘𝙧𝙖𝙛𝙩𝙞𝙣𝙜 𝙢𝙚𝙣𝙪             \n     ")
+            
+            print(f"                    [b] {MAKE_SHIFT_BOMB}                  ")
+            print(f"                    [m] {MOLOTOV}                     \n")
+            
+            response = input(f"Craft a {MOLOTOV} press [m]! \n") # taking user input for response.
+            
+            if response == "b": # user attempts to make a make shift bomb
+                # game notfication!
+                print(f"Notfication: {JOEL} said to craft a {MOLOTOV} not Make-Shift bombs. \n \n \n")
+                continue
+            
+            elif response == "m": # user crafts molotov's
+                print()
+                print()
+                print("█▀▄▀█ █▀█ █░░ █▀█ ▀█▀ █▀█ █░█   █▀▀ █▀█ ▄▀█ █▀▀ ▀█▀   █▀▄▀█ █▀▀ █▄░█ █░█")
+                print("█░▀░█ █▄█ █▄▄ █▄█ ░█░ █▄█ ▀▄▀   █▄▄ █▀▄ █▀█ █▀░ ░█░   █░▀░█ ██▄ █░▀█ █▄█ \n \n")
+                
+                
+                print("You will need the following to craft " +"("+ str(int(1.1)) +")"+ " molotov:")
+                print("(" + str(1) + ") " f" + {DUCT_TAPE}")
+                print("(" + str(1) + ") " f" + {WHISKEY} or {ISOPROPYL_ALCOHOL} \n \n \n")
+                
+                
+                
+                            
+                resp = input(f"Craft {MOLOTOV} [c] \n") # crafting prompt
+                
+                if resp == "c":
+                    
+                    while True: # crafting molotov while loop system!
+                        
+                        print("craft " +"("+ str(int(1.1)) +")"+ f" {MOLOTOV}? [c]")
+                        print("Exit craft menu [x] \n")
+                        
+                        resp = input() # retriving users input!
+                        
+                        # checking amounts    
+                        if resp == "c" and duct_tape_amount and isopropyl_alcohol_amount >= 1:
+                            
+                            molotov_amount += 1 # increment amount's by 1
+                            
+                            duct_tape_amount -= 1 # deduct by 1 
+                            
+                            isopropyl_alcohol_amount -= 1
+                            
+                            winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\bottle.wav", winsound.SND_ASYNC)
+                            
+                            print("Crafted " + "(" + str(1) + ") " + f"{MOLOTOV}! \n \n ")
+                            
+                        elif resp == "c" and duct_tape_amount and isopropyl_alcohol_amount <= 0:
+                            
+                            # System Dialog
+                            print(f"Notifcation: You don't have enough rations to create {MOLOTOV}! \n")
+                            continue # re-iterate
+                        
+                        # exit system
+                        elif resp == "x" and molotov_amount >= 1: # exit the while loop if molotov's have been crafted!
+                            
+                            break # escape the molotov crafting while loop system
+                            
+                        elif resp == "x" and molotov_amount <= 0: # re-iterate if molotovs have not been crafted.
+                            
+                            # Ellie Dialog
+                            print(f"{ELLIE}: I should make some {MOLOTOV}s.")
+                            continue # re-iterate
+                            
+                        else: # invalid option will result in warning user to press c key!
+                            print(f"Craft a {MOLOTOV} by pressing the c key. \n \n \n")
+      
+            else: # user invalid option
+                print("\n \n \n")
+                continue           
+
+        else: # user invalid option
+            print("\n \n \n")
+            continue
+
+# user crafted molotovs and program continues on line '962'!
+
+# Joel Dialog
+print(f"{JOEL}: Great you crafted the {MOLOTOV}s!")
+input(">>> press enter \n")
+
+# Joel Dialog
+print(f"{JOEL}: THROW THEM AT THE DOOR THEY ARE COMING IN!")
+input(">>> press enter \n")
+
+while True: # molotov throw while loop!
+    
+    print("Notifcation: You have " + "(" + str(molotov_amount) + ") " + f"{MOLOTOV}s! \n")
+    
+    time.sleep(3)
+    
+    action = input(f"Throw {MOLOTOV} at drug store door! [m] \n")
+    
+    if action == "m":
+        
+        # infected dying!
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\hordecrd.wav", winsound.SND_ASYNC)
+        
+        # Ellie action
+        print(f"- {ELLIE} throws a {MOLOTOV} at the door and " + str(round(120)) + f" {INFECTED} begin to burn and die -") 
+        input(">>> press enter \n")
+        
+        # Joel Dialog
+        print(f"{JOEL}: RUN ELLIE RUN! \n")
+        input(">>> press enter \n")
+        
+        print(f"- {ELLIE} & {JOEL} run for their lives as they {INFECTED} burn to a crisp. . . -")
+        input("This was a demo press enter to view credits!\n")
+        
+        winsound.PlaySound(None, winsound.SND_PURGE)
+
+        print("Thank you for downloading GenesisGirLessonsVolume.2! \n")
+        print("I want to thank everyone for the support on twitch and my lovely wife for the motivation! These")
+        print("programs are really fun to make and I enjoy making them if your new to programming with time and practice")
+        print("you can achieve anything you set your mind too!~ \n")
+
+        time.sleep(3)
+
+        print("If you learned something from this lesson & make sure to follow me on github! \n")
+
+        time.sleep(3)
 
 
+        print("█▀▀ █▀█ █▀▀ █▀▄ █ ▀█▀ █▀")
+        print("█▄▄ █▀▄ ██▄ █▄▀ █ ░█░ ▄█ \n \n")
 
+        time.sleep(1)
 
+        print("source code by - GenesisGir \n")
 
+        time.sleep(1)
 
+        print("𝙏𝙝𝙚 𝙡𝙖𝙨𝙩 𝙤𝙛 𝙪𝙨 𝙬𝙖𝙨 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙙 𝙗𝙮 𝙣𝙖𝙪𝙜𝙝𝙩𝙮𝙙𝙤𝙜 \n ")
 
+        time.sleep(1)
 
+        print("Support the creators of the game and Support me for putting this together! \n")
 
+        while True:
+            print()
+            print("visit the game page to buy the last of us! [s]")
+            print("Visit GenesisGirs Github page! [g]")
+            r = input("Goodbye <3 [x]\n")
 
+            if r == "s":
+                webbrowser.open("https://store.playstation.com/en-us/product/UP9000-CUSA00552_00-THELASTOFUS00000")
+                continue
+            elif r == "g":
+                webbrowser.open("https://github.com/GenesisGir")
+                continue
+            elif r == "x":
+                sys.exit()
+            else:
+                continue
+            
+"""
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡏⠉⠉⠉⠉⠉⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⡇⠀⡇⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⡠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣤⣾⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⠀⠀⠘⠋⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠿⢦⠤⠤⣤⠤⠤⡤⠤⢼⡧⠤⢼⠀⠀⠿⠤⡄⡠⠤⠴⠿⡇⠀⠀⠧⠤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⢸⠀⠀⣿⠀⠀⡇⠀⢸⡇⠀⢸⠀⠀⠀⠀⡏⠀⠀⠀⠀⡇⠀⠀⠀⠀⠈⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠿⢿⠀⠀⠿⠀⠀⠇⠀⢸⡇⠀⢸⠀⠀⠿⠿⡇⠀⠸⠿⠿⡇⠀⠀⣿⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣄⠀⠀⢸⠀⠀⠀⠀⠀⠀⢀⣼⡇⠀⢸⣄⠀⠀⠀⣧⡀⠀⠀⠀⡇⠀⠀⣿⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⢿⣿⣿⡿⢿⣿⣿⣿⢿⣿⡿⢿⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀
+Thank you for downloading this .py find more at my github and learn something new everyday and rememeber
+to not give up on coding! its an artform and anbody can be skilled enough to achieve greatness in your code
+make sure to check out my twitch streams below
+Twitch: https://www.twitch.tv/genesisgir 
+Github: https://github.com/GenesisGi
+thank you to everyone on twitch who participated in the making of this .py!
+"""
 
+"""
 
+█▀█ █▀▀ █▀ █▀█ █░█ █▀█ █▀▀ █▀▀ █▀
+█▀▄ ██▄ ▄█ █▄█ █▄█ █▀▄ █▄▄ ██▄ ▄█
 
+link: >>> https://www.twitch.tv/genesisgir  <<< Find Livestreams and more!
+link: >>> https://automatetheboringstuff.com <<< Discover and learn how i did!
+"""
+"""
+🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
 
+▀█▀ █░█░█ █ ▀█▀ █▀▀ █░█   █▀ ▀█▀ █▀█ █▀█ █▀▀ █▀▄   █▄▄ █▀█ █▀█ ▄▀█ █▀▄ █▀▀ ▄▀█ █▀ ▀█▀ █▀
+░█░ ▀▄▀▄▀ █ ░█░ █▄▄ █▀█   ▄█ ░█░ █▄█ █▀▄ ██▄ █▄▀   █▄█ █▀▄ █▄█ █▀█ █▄▀ █▄▄ █▀█ ▄█ ░█░ ▄█
 
+Fun Fact this .py was made on stream and can be found on my Twitch page @ GenesisGir! Subscribers can 
+go back a rewatch how .pf files are made in cohesion and learn step by step how projects like these are made 
+very useful to those starting out. Subscribe and stay in the loop!
 
+link:https://www.twitch.tv/genesisgir Watch resourceful livestreams and chat , code!
 
+🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+"""
+"""
+🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
 
+█▀▀ █░█ █▀▀ █▀▀ █▄▀   █▀█ █░█ ▀█▀   █▀▄▀█ █▄█   █▀▀ █ ▀█▀ █░█ █░█ █▄▄
+█▄▄ █▀█ ██▄ █▄▄ █░█   █▄█ █▄█ ░█░   █░▀░█ ░█░   █▄█ █ ░█░ █▀█ █▄█ █▄█
 
+Discover , Explore and learn from my programs that Ive pushed to my remote repositories!
+and dont forget to follow me! (;
 
+link: >>> https://github.com/GenesisGir <<<
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+"""
