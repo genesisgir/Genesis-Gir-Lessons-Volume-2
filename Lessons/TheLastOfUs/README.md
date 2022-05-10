@@ -10,6 +10,7 @@ civilian government. The country is turned into a police state under the control
 and cities across the nation are placed under martial law one by one. Survivors of the pandemic are assigned to designated
 quarantine zones that are supposed to separate them from the infected and keep them safe.
 
+![1065466 (1)](https://user-images.githubusercontent.com/87259615/167644170-b968f4e1-a119-4d14-acb3-a13011d47449.png)
 
 
 Sometime within the twenty years leading up to the main events of the game, a paramilitary group calling themselves the 
