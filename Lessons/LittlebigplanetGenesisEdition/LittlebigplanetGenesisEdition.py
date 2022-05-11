@@ -31,11 +31,15 @@ for? Hop right into it sack fellow!
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
 """
 
-# importing modules
-import winsound, time, random, sys, webbrowser
+# importing modules/libraries
+import os, time, random, sys, webbrowser, winsound
 from playsound import playsound
 
+
 # defining variables/constants
+
+# player status variable
+player = "new player"
 
 # sackboy/sackgirl constants
 SACKBOY = "Sackboy™" # a friendly creative lot!
@@ -43,6 +47,50 @@ SACKGIRL = "Sackgirl™" # sackboy's bestfriend!
 
 # mode constants
 CREATIVE = "Create mode"
+STORY = "Story mode"
+
+# trophie constants
+_100_COMPLETE = "100% Complete trophie" # Earn all LittleBigPlanet™ trophies to unlock this platinum trophy.
+THE_GARDENS = "The Gardens trophie" # Complete all levels in The Gardens.
+THE_SAVANNAH = "The Savannah trophie" # Complete all levels in The Savannah.
+THE_WEDDING = "The Wedding trophie" # Complete all levels in The Wedding.
+THE_CANYONS = "The Canyons trophie" # Complete all levels in The Canyons.
+THE_METROPOLIS = "The Metropolis trophie" # Complete all levels in The Metropolis 
+THE_ISLANDS = "The Islands trophie" # Complete all levels in The Islands.
+THE_TEMPLES = "The Temples trophie" # Complete all levels in The Temples.
+EXPERT_CREATOR = "Expert Creator trophie" # Complete all levels in the Tutorials.
+ARTIST = "Artist trophie" # Place a sticker.
+HOMEMAKER = "Homemaker trophie" # Place 10 stickers or decorations in your pod.
+FASHION_SENSE = "Fashion Sense trophie" # Choose a costume for your sackperson with at least one item on your head, at least one item on your body, and a material.
+TRENDSETTER = "Trendsetter trophie" # Place a sticker or a decoration on another player's sackperson.
+FORAGER = "Forager trophie" # Collect 25% of the prize bubbles on the story levels.
+STICKY_FINGERS = "Sticky Fingers trophie" # Collect 50% of the prize bubbles on the story levels.
+TREASURE_HUNTER = "Treasure Hunter trophie" # Collect 75% of the prize bubbles on the story levels.
+_2X_MULTIPLIER = "2X Multiplier! trophie" # Get a 2X Multiplier.
+_8X_MULTIPLIER = "8X Multiplier! trophie" # Get a 8X Multiplier.
+
+# trophie progress variables
+_100_complete_progress = "locked" 
+the_gardens_progress = "locked"
+the_savannah_progress = "locked"
+the_wedding_progress = "locked"
+the_canyons_progress = "locked"
+the_metropolis_progress = "locked"
+expert_creator_progress = "locked"
+artist_progress = "locked"
+homemaker_progress = "locked"
+fashion_sense_progress = "locked"
+trendsetter_progress = "locked"
+forager_progress = "locked"
+sticky_fingers_progress = "locked"
+treasure_hunter_progress = "locked"
+_2x_multiplier_progress = "locked"
+_8x_multiplier_progress = "locked"
+
+
+
+
+
 
 # tool constants
 POPIT = "Popit"
@@ -204,6 +252,7 @@ They are accessible to the player in both Play and Create Mode, and may even be 
 """
 
 # character constants
+GENESISGIR = "GenesisGir™"
 
 STEPHEN_FRY = "Stephen Fry™"
 
@@ -370,6 +419,13 @@ THE_WEDDING = "The Wedding" # The Wedding is the third area in LittleBigPlanet b
 THE_CANYONS = "The Canyons" # The Canyons is the fourth area in LittleBigPlanet based on the Aztec Empire and the Mexico in the 19th century.
 THE_METROPOLIS = "The Metropolis" # The Metropolis is the fifth area in LittleBigPlanet based on USA.
 
+#  story level completion variables
+the_gardens_progress = "0%"
+the_savannah_progress = "0%"
+the_wedding_progress = "0%"
+the_canyons_progress = "0%"
+the_metropolis_progress = "0%"
+
 # basic material constants
 CARDBOARD = "Cardboard material" 
 DARK_MATTER = "Dark Matter material"
@@ -397,6 +453,7 @@ print("                                               a                         
 print("                     █▀▄▀█ █▀▀ █▀▄ █ ▄▀█   █▀▄▀█ █▀█ █░░ █▀▀ █▀▀ █░█ █░░ █▀▀")
 print("                     █░▀░█ ██▄ █▄▀ █ █▀█   █░▀░█ █▄█ █▄▄ ██▄ █▄▄ █▄█ █▄▄ ██▄ \n \n")
 
+time.sleep(2)
 
 print("                                           𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙞𝙤𝙣                          \n \n")
 
@@ -408,31 +465,195 @@ print("██║░░░░░██║╚══██╔══╝╚══█�
 print("██║░░░░░██║░░░██║░░░░░░██║░░░██║░░░░░█████╗░░██████╦╝██║██║░░██╗░██████╔╝██║░░░░░███████║██╔██╗██║█████╗░░░░░██║░░░")
 print("██║░░░░░██║░░░██║░░░░░░██║░░░██║░░░░░██╔══╝░░██╔══██╗██║██║░░╚██╗██╔═══╝░██║░░░░░██╔══██║██║╚████║██╔══╝░░░░░██║░░░")
 print("███████╗██║░░░██║░░░░░░██║░░░███████╗███████╗██████╦╝██║╚██████╔╝██║░░░░░███████╗██║░░██║██║░╚███║███████╗░░░██║░░░")
-print("╚══════╝╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░╚═╝░╚═════╝░╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝░░░╚═╝░░░")
+print("╚══════╝╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░╚═╝░╚═════╝░╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝░░░╚═╝░░░ \n \n \n \n \n")
 
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\Phrase05.wav", winsound.SND_ASYNC)
-
-
+#playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\logo.wav")
 
 
+# Story Dialog
+print(f"- A {SACKBOY} can be seen running into frame and adjusts the view - \n \n \n \n \n")
+
+#playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\sackboy.wav")
+
+# Pod menu U/I logic!
+while True: # Main pod menu loop
+    print()
+    print()
+    print("                 █░░ █ ▀█▀ ▀█▀ █░░ █▀▀ █▄▄ █ █▀▀ █▀█ █░░ ▄▀█ █▄░█ █▀▀ ▀█▀")
+    print("                 █▄▄ █ ░█░ ░█░ █▄▄ ██▄ █▄█ █ █▄█ █▀▀ █▄▄ █▀█ █░▀█ ██▄ ░█░tm \n \n")
 
 
+    print("     *                           ██████╗░░█████╗░██████╗░                                        ")
+    print("                 +               ██╔══██╗██╔══██╗██╔══██╗                       *        *       ")
+    print("                                 ██████╔╝██║░░██║██║░░██║           +                            ")
+    print("           *                     ██╔═══╝░██║░░██║██║░░██║                                        ")
+    print("                                 ██║░░░░░╚█████╔╝██████╔╝                                        ")
+    print("                                 ╚═╝░░░░░░╚════╝░╚═════╝░                                        ")
+    print("                        *                                                          +             ")
+    print(" *                               █▀▄▀█ █▀▀ █▄░█ █░█                                              ")
+    print("                                 █░▀░█ ██▄ █░▀█ █▄█ \n \n                                        ")
 
 
+    print("                      Welcome to Littlebigplanet:Genesis Edition! \n                          ")
 
+    print("                        丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺                                \n")
 
+    print("                    𝙨𝙩𝙤𝙧𝙮 𝙢𝙤𝙙𝙚 [s]    𝙢𝙮 𝙢𝙤𝙤𝙣 [m]     𝙢𝙮 𝙥𝙧𝙤𝙛𝙞𝙡𝙚 [p]                          \n")
 
+    print("                                       𝙚𝙭𝙞𝙩 𝙥𝙤𝙙 [x]                                             ")
+    print("       *                                                                                 +      ")
+    print("                                                                                                ")
+    print("             +                                                           +           *          ")
+    print("                               *                  .--.                                          ")
+    print("                                                 / /  `          +               +              ")
+    print("      +                          +               | |                                            ")
+    print("                                       '         \ \__,                                         ")
+    print("               +                   *          +   '--'  *                 +                     ")
+    print("                                       +   /\                    --*                   *        ")
+    print("     *                     +             .'  '.   *           --                                ")
+    print("            *                    *      /======\      +                                         ")
+    print("                                       ;:.  _   ;                                               ")
+    print("                                       |:. (_)  |                                *              ")
+    print("                                       |:.  _   |                                               ")
+    print("   +                         +         |:. (_)  |          *                                    ")
+    print("                                       ;:.      ;                                               ")
+    print("                                     .' \:.    / `.                                  *          ")
+    print("                                    / .-'':._.'`-. \                                            ")
+    print("                                    |/    /||\    \|                   *                        ")
+    print("            *                     _..----````----.._                                            ")
+    print("                            _.-'``        LBP        ``'-._                                    ")
+    print("                          -'                                '-                                 \n \n")
+    
+    # pod audio source
+    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\Pod.wav")
+    
+    if player == "new player": # if user is new to Littlebigplanet greet them like every sackfolk deserves!
+        
+        player = "player"
+        
+        # Introduction to the pod using playsound 
+        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\MyPod.wav")
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\tutorial.wav", winsound.SND_ASYNC)
+        # In-game Dialog notifcation
+        print("You have " + "(" + str(int(round(1.15))) + ")" + " Popit Notifcation!")
+        print(f"{GENESISGIR}: Welcome to your pod! I see you met {STEPHEN_FRY}! You can now navigate through the menu! go ahead")
+        print("give it a whirl why won't you?") 
+    
+    resp = input(">>>")
+    
+    if resp == "s": # user decides to play story mode!
+        print()
+        
+    elif resp == "m": # user wants to  go to moon!
+        print()
+        
+    elif resp == "p": # user wishes to look at their profile!
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\profile.wav", winsound.SND_ASYNC)
+        
+        # my profile system
+        while True: # profile menu loop
+            
+            print("\n \n")
+            print("█▀▄▀█ █▄█   █▀█ █▀█ █▀█ █▀▀ █ █░░ █▀▀")
+            print("█░▀░█ ░█░   █▀▀ █▀▄ █▄█ █▀░ █ █▄▄ ██▄ \n")
 
+            print("𝙨𝙩𝙤𝙧𝙚 𝙢𝙤𝙙𝙚 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙚 \n")
+            print(f"{THE_GARDENS} {the_gardens_progress}")
+            print(f"{THE_SAVANNAH} {the_savannah_progress}")
+            print(f"{THE_WEDDING} {the_wedding_progress}")
+            print(f"{THE_CANYONS} {the_canyons_progress}")
+            print(f"{THE_METROPOLIS} {the_metropolis_progress} \n")
 
+            print("𝙩𝙧𝙤𝙥𝙝𝙞𝙚𝙨")
+            print(f"{_100_COMPLETE} {_100_complete_progress}")
+            print("Earn all LittleBigPlanet™ trophies to unlock this platinum trophy. \n")
 
+            print(f"{THE_GARDENS} {the_gardens_progress}")
+            print("Complete all levels in The Gardens. \n")
 
+            print(f"{THE_SAVANNAH} {the_savannah_progress}")
+            print("Complete all levels in The Savannah. \n")
 
+            print(f"{THE_WEDDING} {the_wedding_progress}")
+            print("Complete all levels in The Wedding. \n")
 
+            print(f"{THE_CANYONS} {the_canyons_progress}")
+            print("Complete all levels in The Canyons. \n")
 
+            print(f"{THE_METROPOLIS} {the_metropolis_progress}")
+            print("Complete all levels in The Metropolis  \n")
 
+            print(f"{EXPERT_CREATOR} {expert_creator_progress}")
+            print("Complete all levels in the Tutorials. \n")
 
+            print(f"{ARTIST} {artist_progress}")
+            print("Place a sticker. \n")
 
+            print(f"{HOMEMAKER} {homemaker_progress}")
+            print("Place 10 stickers or decorations in your pod. \n")
 
+            print(f"{FASHION_SENSE} {fashion_sense_progress}")
+            print("Choose a costume for your sackperson with at least one item on your head,")
+            print("at least one item on your body, and a material. \n")
+
+            print(f"{TRENDSETTER} {trendsetter_progress}")
+            print("Place a sticker or a decoration on another player's sackperson. \n")
+
+            print(f"{FORAGER} {forager_progress}")
+            print("Collect 25% of the prize bubbles on the story levels. \n")
+
+            print(f"{STICKY_FINGERS} {sticky_fingers_progress}")
+            print("Collect 50% of the prize bubbles on the story levels. \n")
+
+            print(f"{TREASURE_HUNTER} {treasure_hunter_progress}") 
+            print("Collect 75% of the prize bubbles on the story levels. \n")  
+
+            print(f"{_2X_MULTIPLIER} {_2x_multiplier_progress}")
+            print("Get a 2X Multiplier. \n")
+
+            print(f"{_8X_MULTIPLIER} {_8x_multiplier_progress}")  
+            print("Get a 8X Multiplier. \n \n")
+        
+            # exit to pod prompt
+            print("Exit back to your pod [x]")
+            
+            response = input() # user creates response variable w/input functionality!
+            
+            if response == "x": # user closes my profile menu system.
+                break # escape the my profile loops clause
+            else: # re-iterate!
+                continue  
+                    
+    elif resp == "x": # user exits program early!
+    
+        # user choice to end early uses the sys.exit function call
+        while True: # exit program while loop!
+            
+            print("You will exit Littlebigplanet: Genesis Edition! Are you sure? [y/n]")
+            
+            resp = input() # takes users input()
+            
+            if resp == "y": # user closed out of apllication
+                
+                print("Closing application!")
+                
+                time.sleep(random.randint(1,3)) # randomize the time to close w/random module!
+                
+                sys.exit()
+                
+            elif resp == "n":
+                break # returns user to main loop system.
+            else: # invalid return!
+                print("\n \n")
+                continue
+    else: # invalid return
+        print("\n \n")
+        continue
+
+    
+        
 
 
 
