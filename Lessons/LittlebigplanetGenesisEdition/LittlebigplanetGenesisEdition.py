@@ -71,11 +71,11 @@ _8X_MULTIPLIER = "8X Multiplier! trophie" # Get a 8X Multiplier.
 
 # trophie progress variables
 _100_complete_progress = "locked" 
-the_gardens_progress = "locked"
-the_savannah_progress = "locked"
-the_wedding_progress = "locked"
-the_canyons_progress = "locked"
-the_metropolis_progress = "locked"
+the_gardens_trophie_progress = "locked"
+the_savannah_trophie_progress = "locked"
+the_wedding_trophie_progress = "locked"
+the_canyons_trophie_progress = "locked"
+the_metropolis_trophie_progress = "locked"
 expert_creator_progress = "locked"
 artist_progress = "locked"
 homemaker_progress = "locked"
@@ -446,14 +446,14 @@ WOOD = "Wood material"
 # program begins on line '391'
 print("\n \n \n")
 
-
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\leftbank.wav", winsound.SND_ASYNC)
 
 print("                                               a                                   \n")
 
 print("                     █▀▄▀█ █▀▀ █▀▄ █ ▄▀█   █▀▄▀█ █▀█ █░░ █▀▀ █▀▀ █░█ █░░ █▀▀")
 print("                     █░▀░█ ██▄ █▄▀ █ █▀█   █░▀░█ █▄█ █▄▄ ██▄ █▄▄ █▄█ █▄▄ ██▄ \n \n")
 
-time.sleep(2)
+time.sleep(5)
 
 print("                                           𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙞𝙤𝙣                          \n \n")
 
@@ -467,13 +467,15 @@ print("██║░░░░░██║░░░██║░░░░░░█�
 print("███████╗██║░░░██║░░░░░░██║░░░███████╗███████╗██████╦╝██║╚██████╔╝██║░░░░░███████╗██║░░██║██║░╚███║███████╗░░░██║░░░")
 print("╚══════╝╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░╚═╝░╚═════╝░╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝░░░╚═╝░░░ \n \n \n \n \n")
 
-#playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\logo.wav")
 
+time.sleep(5)
+
+winsound.PlaySound(None, winsound.SND_PURGE)
 
 # Story Dialog
 print(f"- A {SACKBOY} can be seen running into frame and adjusts the view - \n \n \n \n \n")
 
-#playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\sackboy.wav")
+playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\sackboy.wav")
 
 # Pod menu U/I logic!
 while True: # Main pod menu loop
@@ -490,8 +492,8 @@ while True: # Main pod menu loop
     print("                                 ██║░░░░░╚█████╔╝██████╔╝                                        ")
     print("                                 ╚═╝░░░░░░╚════╝░╚═════╝░                                        ")
     print("                        *                                                          +             ")
-    print(" *                               █▀▄▀█ █▀▀ █▄░█ █░█                                              ")
-    print("                                 █░▀░█ ██▄ █░▀█ █▄█ \n \n                                        ")
+    print(" *                                 █▀▄▀█ █▀▀ █▄░█ █░█                                              ")
+    print("                                   █░▀░█ ██▄ █░▀█ █▄█ \n \n                                        ")
 
 
     print("                      Welcome to Littlebigplanet:Genesis Edition! \n                          ")
@@ -524,15 +526,133 @@ while True: # Main pod menu loop
     print("                            _.-'``        LBP        ``'-._                                    ")
     print("                          -'                                '-                                 \n \n")
     
+    """ Learn about playsound & winsound intergrations here!
+
+
+█▀█ █░░ ▄▀█ █▄█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
+█▀▀ █▄▄ █▀█ ░█░ ▄█ █▄█ █▄█ █░▀█ █▄▀   █░▀░█ █▄█ █▄▀ █▄█ █▄▄ ██▄
+
+░░█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+██▀▀▀██▀▀▀▀▀▀██▀▀▀██
+█▒▒▒▒▒█▒▀▀▀▀▒█▒▒▒▒▒█  ~ ♫ ♩ ♬ ♪    
+█▒▒▒▒▒█▒████▒█▒▒▒▒▒█
+██▄▄▄██▄▄▄▄▄▄██▄▄▄██    𝙏𝙞𝙥: 𝙄𝙢𝙥𝙤𝙧𝙩 𝙥𝙡𝙖𝙮𝙨𝙤𝙪𝙣𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮 𝙖𝙪𝙙𝙞𝙤 𝙛𝙞𝙡𝙚𝙨 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙥𝙧𝙤𝙜𝙧𝙖𝙢
+
+Pure Python, cross platform, single function module with no dependencies for playing sounds.
+
+The playsound module must be imported to be used this module is responsible for playing audio files through the program
+as you see through this .py file there are lots of playsound function calls being used these are responsible for outputting
+the audio FX that you hear when you run the program or debug that's playsounds hefty work in cohesion with winsound
+as well.
+
+eg. import playsound, winsound
+
+The playsound module contains only one thing - the function (also named) playsound.
+It requires one argument - the path to the file with the sound you’d like to play. 
+This may be a local file, or a URL.
+
+There’s an optional second argument, block, which is set to True by default. 
+Setting it to False makes the function run asynchronously.
+
+
+█░█░█ █ █▄░█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
+▀▄▀▄▀ █ █░▀█ ▄█ █▄█ █▄█ █░▀█ █▄▀   █░▀░█ █▄█ █▄▀ █▄█ █▄▄ ██▄
+
+░░█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+██▀▀▀██▀▀▀▀▀▀██▀▀▀██
+█▒▒▒▒▒█▒▀▀▀▀▒█▒▒▒▒▒█
+█▒▒▒▒▒█▒████▒█▒▒▒▒▒█
+██▄▄▄██▄▄▄▄▄▄██▄▄▄██   𝙏𝙞𝙥: 𝙐𝙨𝙚 𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙 𝙬𝙞𝙩𝙝 𝙥𝙡𝙖𝙮𝙨𝙤𝙪𝙣𝙙 𝙩𝙤 𝙥𝙡𝙖𝙮 𝙨𝙤𝙪𝙣𝙙𝙨 𝙖𝙨𝙮𝙣𝙘𝙝𝙧𝙤𝙣𝙤𝙪𝙨𝙡𝙮
+
+
+The winsound module provides access to the basic sound-playing machinery provided by Windows platforms. It includes functions
+and several constants.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝘽𝙚𝙚𝙥(𝙛𝙧𝙚𝙦𝙪𝙚𝙣𝙘𝙮, 𝙙𝙪𝙧𝙖𝙩𝙞𝙤𝙣)
+
+Beep the PC’s speaker. The frequency parameter specifies frequency, in hertz, of the sound, and must be in the range 37 through 32,767.
+The duration parameter specifies the number of milliseconds the sound should last. If the system is not able to beep the speaker, RuntimeError is raised
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙋𝙡𝙖𝙮𝙎𝙤𝙪𝙣𝙙(𝙨𝙤𝙪𝙣𝙙, 𝙛𝙡𝙖𝙜𝙨)
+
+Call the underlying PlaySound() function from the Platform API. The sound parameter may be a filename, a system sound alias, audio data as a bytes-like object,
+or None. Its interpretation depends on the value of flags, which can be a bitwise ORed combination of the constants described below. If the sound parameter is None, 
+any currently playing waveform sound is stopped. If the system indicates an error, RuntimeError is raised.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝘽𝙚𝙚𝙥(𝙩𝙮𝙥𝙚=𝙈𝘽_𝙊𝙆)
+
+Call the underlying MessageBeep() function from the Platform API. This plays a sound as specified in the registry. The type argument specifies which sound to play; 
+possible values are -1, MB_ICONASTERISK, MB_ICONEXCLAMATION, MB_ICONHAND, MB_ICONQUESTION, and MB_OK, all described below. The value -1 produces a “simple beep”; 
+this is the final fallback if a sound cannot be played otherwise. If the system indicates an error, RuntimeError is raised.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙁𝙄𝙇𝙀𝙉𝘼𝙈𝙀
+
+The sound parameter is the name of a WAV file. Do not use with SND_ALIAS.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝘼𝙇𝙄𝘼𝙎
+
+The sound parameter is a sound association name from the registry. If the registry contains no such name, play the system default sound unless SND_NODEFAULT is also specified.
+If no default sound is registered, raise RuntimeError. Do not use with SND_FILENAME.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙇𝙊𝙊𝙋
+Play the sound repeatedly. The SND_ASYNC flag must also be used to avoid blocking. Cannot be used with SND_MEMORY.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙈𝙀𝙈𝙊𝙍𝙔
+The sound parameter to PlaySound() is a memory image of a WAV file, as a bytes-like object.
+
+𝙣𝙤𝙩𝙚: This module does not support playing from a memory image asynchronously, so a combination of this flag and SND_ASYNC
+will raise RuntimeError.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙋𝙐𝙍𝙂𝙀
+Stop playing all instances of the specified sound.
+
+𝙉𝙤𝙩𝙚: This flag is not supported on modern Windows platforms.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝘼𝙎𝙔𝙉𝘾
+Return immediately, allowing sounds to play asynchronously.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝘿𝙀𝙁𝘼𝙐𝙇𝙏
+If the specified sound cannot be found, do not play the system default sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝙎𝙏𝙊𝙋
+Do not interrupt sounds currently playing.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙎𝙉𝘿_𝙉𝙊𝙒𝘼𝙄𝙏
+Return immediately if the sound driver is busy.
+
+𝙉𝙤𝙩𝙚: This flag is not supported on modern Windows platforms.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝘼𝙎𝙏𝙀𝙍𝙄𝙎𝙆
+Play the SystemDefault sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙀𝙓𝘾𝙇𝘼𝙈𝘼𝙏𝙄𝙊𝙉
+Play the SystemExclamation sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙃𝘼𝙉𝘿
+Play the SystemHand sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙄𝘾𝙊𝙉𝙌𝙐𝙀𝙎𝙏𝙄𝙊𝙉
+Play the SystemQuestion sound.
+
+𝙬𝙞𝙣𝙨𝙤𝙪𝙣𝙙.𝙈𝘽_𝙊𝙆
+Play the SystemDefault sound.
+
+"""
+    
     # pod audio source
     playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\Pod.wav")
     
-    if player == "new player": # if user is new to Littlebigplanet greet them like every sackfolk deserves!
+    if player == "player": # play pod theme if player passed introduction!
+        
+                # play pod theme
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\podtheme.wav", winsound.SND_LOOP + winsound.SND_ASYNC)
+           
+    if player == "new player": # user is new to Littlebigplanet greet them like every sackfolk deserves!
         
         player = "player"
         
         # Introduction to the pod using playsound 
-        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\MyPod.wav")
+        #playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\MyPod.wav")
         
         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\tutorial.wav", winsound.SND_ASYNC)
         # In-game Dialog notifcation
@@ -543,7 +663,133 @@ while True: # Main pod menu loop
     resp = input(">>>")
     
     if resp == "s": # user decides to play story mode!
-        print()
+        
+        if player == "player": # play pod theme if player passed introduction!
+        
+                # play pod theme
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\podtheme.wav", winsound.SND_LOOP + winsound.SND_ASYNC)
+        
+        # story mode while loop menu U/I
+        while True: # story loop menu!
+            
+            print("                     █▀ ▀█▀ █▀█ █▀█ █▄█   █▀▄▀█ █▀█ █▀▄ █▀▀")
+            print("                     ▄█ ░█░ █▄█ █▀▄ ░█░   █░▀░█ █▄█ █▄▀ ██▄ \n \n")
+
+
+            print("                                𝙥𝙡𝙖𝙮 The gardens [p]                 ")
+            print("                                Exit to pod [x]")
+            playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\story.wav")
+
+            resp = input()
+            
+            # flow control if statement for story mode prompts
+            if resp == "p": # user plays gardens!
+                
+                print("                         █░░ █▀█ ▄▀█ █▀▄ █ █▄░█ █▀▀")
+                print("                         █▄▄ █▄█ █▀█ █▄▀ █ █░▀█ █▄█ \n")
+                
+                # loading screen audio source
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\advice.wav", winsound.SND_ASYNC)
+                
+                # buffer logic U/I
+                for buff in range(0,101,10):
+                    
+                    time.sleep(random.randint(3,5)) # loading time
+                    
+                    # hint flow controls
+                    if buff == 0: # release hint at 0%
+                        print("Fun fact: Did you know you can unlock trophies in Littlebigplanet™? \n \n")
+                        
+                    elif buff == 20: # release hint at 20%
+                        print("Fun fact: Littlebigplanet™ was crafted in 2008 by Media molecule! \n \n")
+                        
+                        time.sleep(abs(random.randint(1.5,1.4)))
+                        
+                        print("Fun fact: You are the coolest Sack person ever! \n \n")
+                        
+                    elif buff == 50: # release hint at 50%
+                        print("Fun fact: Genesisgir has a Github where he posts all his work! \n \n")
+                        
+                    elif buff == 70: # release hint at 70%
+                        print("Fun fact: This lesson was created for beginners and pro's like you! \n \n")
+                
+                    elif buff == 90: # release hint at 90%
+                        print("Fun fact: You can watch Genesisgir craft programs from scratch on his twitch! \n \n")
+                
+                # loading has finished and user now enter's the gardens on line '720'!
+                
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\garden.wav", winsound.SND_ASYNC + winsound.SND_LOOP)
+                
+                
+                print("                                                     ▀█▀ █░█ █▀▀   █▀▀ ▄▀█ █▀█ █▀▄ █▀▀ █▄░█ █▀")
+                print("                                                     ░█░ █▀█ ██▄   █▄█ █▀█ █▀▄ █▄▀ ██▄ █░▀█ ▄█ \n \n")   
+                
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                
+                                                                                                                                                                           
+                print("                                 ▓▓                              ░░                                                                                            ")            
+                print("                                 ▒▒▒▒                      ▓▓    ▓▓                                                    ▒▒                                      ")            
+                print("                               ▓▓▒▒▒▒                    ▓▓▓▓░░▓▓▓▓                                                ░░  ░░▒▒                                    ")            
+                print("                           ▒▒  ▓▓▒▒▓▓                    ▓▓▓▓▒▒▓▓▓▓░░                ░░  ░░▒▒░░                    ▒▒▒▒▒▒▓▓                                    ")            
+                print("                         ░░░░░░░░▒▒░░░░░░▒▒            ▒▒░░░░░░░░░░░░              ▒▒░░░░░░▒▒░░▒▒░░            ░░░░░░▒▒░░░░▒▒▒▒                                ")            
+                print("                       ░░    ░░▒▒░░░░░░░░▒▒          ▒▒░░░░░░░░░░▓▓░░░░          ▒▒░░▒▒▒▒░░░░░░░░░░▒▒        ▒▒░░░░░░░░░░▒▒▒▒░░▒▒                              ")            
+                print("                       ▓▓██▒▒▒▒▒▒░░░░░░░░▒▒░░      ░░░░▒▒░░░░░░░░▒▒░░░░░░      ░░░░░░▓▓▒▒░░░░░░▒▒░░░░▒▒    ▒▒░░▒▒▓▓░░░░░░▒▒▒▒░░▒▒▒▒                            ")            
+                print("                     ▓▓░░▒▒  ░░░░░░▒▒░░░░░░░░▓▓  ▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒  ░░░░░░░░░░░░░░░░░░▒▒░░░░░░    ░░░░░░░░░░░░░░░░░░░░░░▒▒                            ")            
+                print("                     ░░░░░░▒▒░░░░░░▒▒░░░░░░░░░░  ▒▒░░░░░░░░░░░░░░░░░░░░░░░░  ▒▒░░░░░░░░░░▒▒░░░░░░░░░░░░▓▓▒▒░░░░░░░░░░▒▒▒▒░░░░░░░░░░░░                          ")            
+                print("                     ▒▒▓▓▒▒▒▒▒▒░░░░░░░░░░░░░░░░  ░░░░░░░░░░▓▓▓▓░░░░░░░░░░░░░░▓▓░░▒▒░░░░░░░░░░░░▒▒▓▓░░░░  ▒▒░░▓▓▓▓░░░░░░░░░░▓▓▒▒░░░░░░                          ")            
+                print("                     ░░▓▓▒▒▒▒▒▒░░░░░░░░▒▒▒▒░░░░  ░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░▒▒░░▒▒░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░▓▓                          ")            
+                print("                     ░░▓▓▓▓▓▓▒▒▓▓░░░░░░▓▓░░░░░░  ░░░░▓▓▒▒░░░░░░░░░░░░░░░░▓▓  ▒▒░░░░░░░░░░░░░░░░░░░░░░▓▓▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░▓▓▓▓                          ")            
+                print("                     ▒▒▒▒▒▒░░▒▒▓▓░░░░░░░░░░░░▓▓  ▓▓░░▓▓▓▓░░░░░░▒▒▓▓░░░░░░▒▒    ░░░░░░░░░░▒▒▒▒░░░░░░░░▒▒  ░░░░░░░░░░▒▒▓▓░░░░░░▒▒▒▒▒▒                            ")            
+                print("                       ▓▓▒▒▒▒▒▒░░░░░░░░░░▒▒▒▒      ░░░░░░░░░░░░░░░░░░░░▒▒      ▒▒░░░░░░░░░░░░░░░░░░░░▓▓    ▓▓░░░░░░░░░░░░░░░░░░▒▒▒▒                            ")            
+                print("                           ▒▒░░░░▒▒░░▒▒░░░░▒▒          ░░▒▒░░▒▒▓▓▒▒▒▒░░▒▒                                                                                      ")
+                print("                                   ▒▒                            ▒▒                        ▓▓                                ▒▒                  ")
+                print("                                   ▒▒                            ▒▒                        ▓▓                              ▒▒▒▒░░                ")
+                print("                                   ▒▒                            ▒▒            ▒▒▒▒▒▒      ▓▓                    ▓▓    ░░▓▓▓▓▓▓▓▓  ▓▓            ")
+                print("                       ▒▒        ▒▒▓▓▓▓            ▒▒          ▓▓░░▓▓            ▒▒          ▓▓▒▒░░▒▒  ▒▒▒▒▓▓      ▓▓  ▒▒        ▒▒▒▒  ▒▒▓▓▓▓▓▓▓▓▒▒▒▒▒▒        ")  
+                print("                       ▒▒      ▒▒  ▒▒▒▒  ░░▒▒▒▒░░░░▒▒▒▒░░  ░░▒▒▒▒▓▓    ▒▒  ░░▒▒  ▒▒  ░░▒▒▒▒    ▒▒    ▒▒▒▒▒▒▓▓        ▒▒░░      ░░▒▒▒▒░░  ▓▓░░▒▒▓▓░░▒▒░░▓▓▓▓    ")  
+                print("                       ▒▒      ██▒▒▓▓▒▒▓▓    ▒▒▓▓▓▓      ▒▒    ▒▒▒▒  ▓▓▒▒▒▒▒▒▒▒  ▓▓▒▒▒▒  ▒▒▒▒  ▓▓▒▒▓▓▓▓    ▓▓    ▓▓  ▓▓  ▓▓▓▓  ▒▒▒▒▓▓▒▒  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      ")  
+                print("                       ▓▓  ▒▒  ▒▒▓▓▒▒▓▓▓▓▒▒▓▓▒▒▒▒▓▓▒▒██▒▒▓▓▒▒▓▓▒▒▓▓▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▓▓  ▓▓▒▒▒▒░░▒▒  ░░▓▓      ░░▓▓░░░░  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▒▒    ")  
+                print("                       ▓▓  ▒▒▒▒██▓▓▓▓▒▒▒▒▓▓██▓▓▒▒▓▓  ▒▒▓▓▒▒▓▓██▓▓▓▓▓▓▓▓▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓░░▒▒▓▓▒▒▓▓▓▓▒▒░░▓▓▒▒▓▓▒▒  ▒▒▒▒▓▓▒▒▒▒▓▓▒▒░░░░░░░░▒▒▒▒  ▒▒▓▓▒▒▓▓▒▒▒▒▒▒▓▓▓▓")  
+                print("                       ▓▓▓▓▒▒▓▓  ▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒▒▒▒▓▓▓▓▒▒▒▒▒▒▓▓▓▓▒▒░░░░░░░░░░░░░░░░▒▒░░▓▓▓▓▓▓▒▒▒▒▒▒  ░░▓▓▓▓▓▓▓▓░░░░▒▒ \n \n \n \n")
+                
+                time.sleep(5)
+                
+                # The king's voice audio src
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                
+                # The King Dialog
+                print(f"{THE_KING}: Hello there {SACKBOY} welcome to {THE_GARDENS} it's nice to have you!")
+                input(">>> press enter \n")
+                
+                # The king's voice audio src
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                
+                # The King Dialog
+                print(f"{THE_KING}: This is The Gardens a beautiful place where you can trot and make new friends!")
+                input(">>> press enter \n")
+                    
+                # The king's voice audio src
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                
+                # The King Dialog
+                print(f"{THE_KING}: But first you'll need to learn how to use your popit menu, This will help you complete this level and collect")
+                print("prizes and even trophies and much more!")
+                input(">>> press enter \n")
+                
+                # The king's voice audio src
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                
+                # The King Dialog
+                print(f"{THE_KING}: ")
+                input(">>> press enter \n")
+                
+                
+                
+                
+            elif resp == "x": # user returns back to pod!
+                break
+            else: # invalid return
+                continue
         
     elif resp == "m": # user wants to  go to moon!
         print()
@@ -570,19 +816,19 @@ while True: # Main pod menu loop
             print(f"{_100_COMPLETE} {_100_complete_progress}")
             print("Earn all LittleBigPlanet™ trophies to unlock this platinum trophy. \n")
 
-            print(f"{THE_GARDENS} {the_gardens_progress}")
+            print(f"{THE_GARDENS} {the_gardens_trophie_progress}") 
             print("Complete all levels in The Gardens. \n")
 
-            print(f"{THE_SAVANNAH} {the_savannah_progress}")
+            print(f"{THE_SAVANNAH} {the_savannah_trophie_progress}")
             print("Complete all levels in The Savannah. \n")
 
-            print(f"{THE_WEDDING} {the_wedding_progress}")
+            print(f"{THE_WEDDING} {the_wedding_trophie_progress}")
             print("Complete all levels in The Wedding. \n")
 
-            print(f"{THE_CANYONS} {the_canyons_progress}")
+            print(f"{THE_CANYONS} {the_canyons_trophie_progress}")
             print("Complete all levels in The Canyons. \n")
 
-            print(f"{THE_METROPOLIS} {the_metropolis_progress}")
+            print(f"{THE_METROPOLIS} {the_metropolis_trophie_progress}")
             print("Complete all levels in The Metropolis  \n")
 
             print(f"{EXPERT_CREATOR} {expert_creator_progress}")
