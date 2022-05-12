@@ -446,7 +446,7 @@ WOOD = "Wood material"
 # program begins on line '391'
 print("\n \n \n")
 
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\leftbank.wav", winsound.SND_ASYNC)
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\leftbank.wav", winsound.SND_ASYNC + winsound.SND_NOSTOP)
 
 print("                                               a                                   \n")
 
@@ -470,12 +470,10 @@ print("╚══════╝╚═╝░░░╚═╝░░░░░░╚�
 
 time.sleep(5)
 
-winsound.PlaySound(None, winsound.SND_PURGE)
-
 # Story Dialog
 print(f"- A {SACKBOY} can be seen running into frame and adjusts the view - \n \n \n \n \n")
 
-playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\sackboy.wav")
+time.sleep(5)
 
 # Pod menu U/I logic!
 while True: # Main pod menu loop
@@ -640,7 +638,7 @@ Play the SystemDefault sound.
 """
     
     # pod audio source
-    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\Pod.wav")
+    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\Pod.wav", winsound.SND_ASYNC)
     
     if player == "player": # play pod theme if player passed introduction!
         
@@ -653,6 +651,8 @@ Play the SystemDefault sound.
         
         # Introduction to the pod using playsound 
         #playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\MyPod.wav")
+        
+        winsound.PlaySound(None, winsound.SND_PURGE) # cut off all instances of sound with SND_PURGE!
         
         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\tutorial.wav", winsound.SND_ASYNC)
         # In-game Dialog notifcation
@@ -680,7 +680,7 @@ Play the SystemDefault sound.
             print("                                Exit to pod [x]")
             playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\story.wav")
 
-            resp = input()
+            resp = input(">>>")
             
             # flow control if statement for story mode prompts
             if resp == "p": # user plays gardens!
@@ -703,7 +703,7 @@ Play the SystemDefault sound.
                     elif buff == 20: # release hint at 20%
                         print("Fun fact: Littlebigplanet™ was crafted in 2008 by Media molecule! \n \n")
                         
-                        time.sleep(abs(random.randint(1.5,1.4)))
+                        time.sleep(abs(random.randint(3,5)))
                         
                         print("Fun fact: You are the coolest Sack person ever! \n \n")
                         
@@ -718,40 +718,13 @@ Play the SystemDefault sound.
                 
                 # loading has finished and user now enter's the gardens on line '720'!
                 
+                # the gardens theme music!
                 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\garden.wav", winsound.SND_ASYNC + winsound.SND_LOOP)
                 
                 
                 print("                                                     ▀█▀ █░█ █▀▀   █▀▀ ▄▀█ █▀█ █▀▄ █▀▀ █▄░█ █▀")
                 print("                                                     ░█░ █▀█ ██▄   █▄█ █▀█ █▀▄ █▄▀ ██▄ █░▀█ ▄█ \n \n")   
-                
-                                                                                                                                                                                                                        
-                                                                                                                                                                                                
-                                                                                                                                                                           
-                print("                                 ▓▓                              ░░                                                                                            ")            
-                print("                                 ▒▒▒▒                      ▓▓    ▓▓                                                    ▒▒                                      ")            
-                print("                               ▓▓▒▒▒▒                    ▓▓▓▓░░▓▓▓▓                                                ░░  ░░▒▒                                    ")            
-                print("                           ▒▒  ▓▓▒▒▓▓                    ▓▓▓▓▒▒▓▓▓▓░░                ░░  ░░▒▒░░                    ▒▒▒▒▒▒▓▓                                    ")            
-                print("                         ░░░░░░░░▒▒░░░░░░▒▒            ▒▒░░░░░░░░░░░░              ▒▒░░░░░░▒▒░░▒▒░░            ░░░░░░▒▒░░░░▒▒▒▒                                ")            
-                print("                       ░░    ░░▒▒░░░░░░░░▒▒          ▒▒░░░░░░░░░░▓▓░░░░          ▒▒░░▒▒▒▒░░░░░░░░░░▒▒        ▒▒░░░░░░░░░░▒▒▒▒░░▒▒                              ")            
-                print("                       ▓▓██▒▒▒▒▒▒░░░░░░░░▒▒░░      ░░░░▒▒░░░░░░░░▒▒░░░░░░      ░░░░░░▓▓▒▒░░░░░░▒▒░░░░▒▒    ▒▒░░▒▒▓▓░░░░░░▒▒▒▒░░▒▒▒▒                            ")            
-                print("                     ▓▓░░▒▒  ░░░░░░▒▒░░░░░░░░▓▓  ▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒  ░░░░░░░░░░░░░░░░░░▒▒░░░░░░    ░░░░░░░░░░░░░░░░░░░░░░▒▒                            ")            
-                print("                     ░░░░░░▒▒░░░░░░▒▒░░░░░░░░░░  ▒▒░░░░░░░░░░░░░░░░░░░░░░░░  ▒▒░░░░░░░░░░▒▒░░░░░░░░░░░░▓▓▒▒░░░░░░░░░░▒▒▒▒░░░░░░░░░░░░                          ")            
-                print("                     ▒▒▓▓▒▒▒▒▒▒░░░░░░░░░░░░░░░░  ░░░░░░░░░░▓▓▓▓░░░░░░░░░░░░░░▓▓░░▒▒░░░░░░░░░░░░▒▒▓▓░░░░  ▒▒░░▓▓▓▓░░░░░░░░░░▓▓▒▒░░░░░░                          ")            
-                print("                     ░░▓▓▒▒▒▒▒▒░░░░░░░░▒▒▒▒░░░░  ░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░▒▒░░▒▒░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░▓▓                          ")            
-                print("                     ░░▓▓▓▓▓▓▒▒▓▓░░░░░░▓▓░░░░░░  ░░░░▓▓▒▒░░░░░░░░░░░░░░░░▓▓  ▒▒░░░░░░░░░░░░░░░░░░░░░░▓▓▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░▓▓▓▓                          ")            
-                print("                     ▒▒▒▒▒▒░░▒▒▓▓░░░░░░░░░░░░▓▓  ▓▓░░▓▓▓▓░░░░░░▒▒▓▓░░░░░░▒▒    ░░░░░░░░░░▒▒▒▒░░░░░░░░▒▒  ░░░░░░░░░░▒▒▓▓░░░░░░▒▒▒▒▒▒                            ")            
-                print("                       ▓▓▒▒▒▒▒▒░░░░░░░░░░▒▒▒▒      ░░░░░░░░░░░░░░░░░░░░▒▒      ▒▒░░░░░░░░░░░░░░░░░░░░▓▓    ▓▓░░░░░░░░░░░░░░░░░░▒▒▒▒                            ")            
-                print("                           ▒▒░░░░▒▒░░▒▒░░░░▒▒          ░░▒▒░░▒▒▓▓▒▒▒▒░░▒▒                                                                                      ")
-                print("                                   ▒▒                            ▒▒                        ▓▓                                ▒▒                  ")
-                print("                                   ▒▒                            ▒▒                        ▓▓                              ▒▒▒▒░░                ")
-                print("                                   ▒▒                            ▒▒            ▒▒▒▒▒▒      ▓▓                    ▓▓    ░░▓▓▓▓▓▓▓▓  ▓▓            ")
-                print("                       ▒▒        ▒▒▓▓▓▓            ▒▒          ▓▓░░▓▓            ▒▒          ▓▓▒▒░░▒▒  ▒▒▒▒▓▓      ▓▓  ▒▒        ▒▒▒▒  ▒▒▓▓▓▓▓▓▓▓▒▒▒▒▒▒        ")  
-                print("                       ▒▒      ▒▒  ▒▒▒▒  ░░▒▒▒▒░░░░▒▒▒▒░░  ░░▒▒▒▒▓▓    ▒▒  ░░▒▒  ▒▒  ░░▒▒▒▒    ▒▒    ▒▒▒▒▒▒▓▓        ▒▒░░      ░░▒▒▒▒░░  ▓▓░░▒▒▓▓░░▒▒░░▓▓▓▓    ")  
-                print("                       ▒▒      ██▒▒▓▓▒▒▓▓    ▒▒▓▓▓▓      ▒▒    ▒▒▒▒  ▓▓▒▒▒▒▒▒▒▒  ▓▓▒▒▒▒  ▒▒▒▒  ▓▓▒▒▓▓▓▓    ▓▓    ▓▓  ▓▓  ▓▓▓▓  ▒▒▒▒▓▓▒▒  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      ")  
-                print("                       ▓▓  ▒▒  ▒▒▓▓▒▒▓▓▓▓▒▒▓▓▒▒▒▒▓▓▒▒██▒▒▓▓▒▒▓▓▒▒▓▓▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▓▓  ▓▓▒▒▒▒░░▒▒  ░░▓▓      ░░▓▓░░░░  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▒▒    ")  
-                print("                       ▓▓  ▒▒▒▒██▓▓▓▓▒▒▒▒▓▓██▓▓▒▒▓▓  ▒▒▓▓▒▒▓▓██▓▓▓▓▓▓▓▓▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓░░▒▒▓▓▒▒▓▓▓▓▒▒░░▓▓▒▒▓▓▒▒  ▒▒▒▒▓▓▒▒▒▒▓▓▒▒░░░░░░░░▒▒▒▒  ▒▒▓▓▒▒▓▓▒▒▒▒▒▒▓▓▓▓")  
-                print("                       ▓▓▓▓▒▒▓▓  ▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒▒▒▒▓▓▓▓▒▒▒▒▒▒▓▓▓▓▒▒░░░░░░░░░░░░░░░░▒▒░░▓▓▓▓▓▓▒▒▒▒▒▒  ░░▓▓▓▓▓▓▓▓░░░░▒▒ \n \n \n \n")
-                
+                                                                                                                                                                                                                                
                 time.sleep(5)
                 
                 # The king's voice audio src
@@ -774,18 +747,130 @@ Play the SystemDefault sound.
                 # The King Dialog
                 print(f"{THE_KING}: But first you'll need to learn how to use your popit menu, This will help you complete this level and collect")
                 print("prizes and even trophies and much more!")
-                input(">>> press enter \n")
+                input(">>> press enter \n \n")
                 
-                # The king's voice audio src
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                # pop-it tutorial logic!
+                while True: # popit while loop!
+                    
+                    # The king's voice audio src
+                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+
+                    # The King Dialog
+                    print(f"{THE_KING}: Open up your Popit menu with [p] action key! \n \n")
+                    
+                    action_key = input() # input function takes users input
+                    
+                    # defining variables/constants
+                    player = "popit tut" # user is new to popit menu's
+                    
+                    if action_key == "p": # user opens popit menu for the first time!
+                            
+                            # popit menu U/I
+                            while True: # popit menu while loop
+                                
+                                # popit menu audio src
+                                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\popit.wav", winsound.SND_ASYNC)
+                                
+                                print()
+                                print("                 █▀█ █▀█ █▀█   █ ▀█▀")
+                                print("                 █▀▀ █▄█ █▀▀   █ ░█░ \n")
+
+                                print("                 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨 & 𝙙𝙚𝙘𝙤𝙧𝙖𝙩𝙞𝙤𝙣𝙨 [s]")
+                                print("                 𝙜𝙤𝙤𝙙𝙞𝙚𝙨 𝙗𝙖𝙜 [g] locked")
+                                print("                 𝙩𝙤𝙤𝙡𝙨 𝙗𝙖𝙜 [t] locked \n \n")
+
+                                if player == "popit tut": # execute if user is new to popit!
+                                    # The king's voice audio src
+                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+
+                                    # The King Dialog
+                                    print(f"{THE_KING}: This is the {POPIT} menu! where you can find stickers, goodies, and even tools! A creative pallete of fun things")
+
+                                    time.sleep(5)
+
+                                    # The king's voice audio src
+                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+
+                                    # The King Dialog
+                                    print(f"{THE_KING}: Enter your stickers and decorations and select the {SACKBOY} smile sticker! \n \n")
+
+                                    time.sleep(8)
+
+                                    player = "player" # reverting back to original variable!
+                                
+                                response = input()
+                                
+                                if response == "s": # user enters stickers & decorations!
+                                    
+                                    # select audio effect!  
+                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
+                                    
+                                    print("█▀ ▀█▀ █ █▀▀ █▄▀ █▀▀ █▀█ █▀     █▀▄ █▀▀ █▀▀ █▀█ █▀█ ▄▀█ ▀█▀ █ █▀█ █▄░█ █▀")
+                                    print("▄█ ░█░ █ █▄▄ █░█ ██▄ █▀▄ ▄█     █▄▀ ██▄ █▄▄ █▄█ █▀▄ █▀█ ░█░ █ █▄█ █░▀█ ▄█ \n \n")
+                                    
+                                    
+                                    print(f"select press the [u] action key! {SACKBOY} smile sticker")
+                                    
+                                    action_key = input(">>>")
+                                    
+                                    if action_key == "u":
+                                        
+                                        # create variables
+                                        sticker_selected = f"{SACKBOY} smile sticker"
+                                        
+                                        # select audio effect!  
+                                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
+                                        
+                                        break   
+                                    
+                                    
+                                elif response == "g": # user attempted to enter goodie's bag
+                                    
+                                    # select audio effect!  
+                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
+                                    
+                                    print("\n \n") # creating space on next 2 lines of code!
+                                    continue
+                                    
+                                elif response == "t": # user attempted to enter tool's bag
+                                    
+                                    # select audio effect!  
+                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
+                                    
+                                    print("\n \n")
+                                    continue
+                                
+                                
+                                
+                                else: # invalid return
+                                    continue # re-iterate
+                    
+                    elif sticker_selected == f"{SACKBOY} smile sticker": # user has selected a sticker!
+                        print("\n \n")
+                        break # escape main popit while loop!
+                        
+                    else: # invalid return
+                        
+                        # The king's voice audio src
+                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\king2.wav", winsound.SND_ASYNC)
+
+                        # The King Dialog
+                        print(f"{THE_KING}: Wrong key use the [p] action key!  \n \n")
+                        
+                        time.sleep(3)
+                        
+                        continue
                 
-                # The King Dialog
-                print(f"{THE_KING}: ")
-                input(">>> press enter \n")
+                # user has exited popit menu and code starts on line '881'!
                 
-                
-                
-                
+                print("broke out of all loops!")
+            
+                break
+            
+            
+            
+            
+                            
             elif resp == "x": # user returns back to pod!
                 break
             else: # invalid return
@@ -873,7 +958,7 @@ Play the SystemDefault sound.
                 continue  
                     
     elif resp == "x": # user exits program early!
-    
+        
         # user choice to end early uses the sys.exit function call
         while True: # exit program while loop!
             
