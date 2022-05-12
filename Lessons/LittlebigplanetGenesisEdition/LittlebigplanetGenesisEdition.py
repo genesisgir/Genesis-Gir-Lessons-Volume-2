@@ -449,7 +449,8 @@ WOOD = "Wood material"
 # program begins on line '391'
 print("\n \n \n")
 
-winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\leftbank.wav", winsound.SND_ASYNC + winsound.SND_NOSTOP)
+# left bank introduction music audio SRC
+winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\leftbank.wav", winsound.SND_ASYNC)
 
 print("                                               a                                   \n")
 
@@ -675,7 +676,7 @@ Play the SystemDefault sound.
         # In-game Dialog notifcation
         print("You have " + "(" + str(int(round(1.15))) + ")" + " Popit Notifcation!")
         print(f"{GENESISGIR}: You beat the gardens and met {THE_KING} and even placed down your own stickers")
-        print("I'm proud of you and now you can go into this .py file and reverse engineer as much as you'd like!")
+        print("I'm proud of you and now you can go into this .py file and reverse engineer as much as you'd like! \n \n")
         
         # in game notifcation audio src
         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\tutorial.wav")
@@ -815,6 +816,9 @@ Play the SystemDefault sound.
             if the_gardens_progress == "0%":
                 playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\story.wav")
             
+            if the_gardens_progress == "100%": # user has comepleted story mode
+                break
+            
             resp = input(">>>")
             
             # flow control if statement for story mode prompts
@@ -862,26 +866,29 @@ Play the SystemDefault sound.
                                                                                                                                                                                                                                 
                 time.sleep(5)
                 
-                # The king's voice audio src
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
-                
                 # The King Dialog
                 print(f"{THE_KING}: Hello there {SACKBOY} welcome to {THE_GARDENS} it's nice to have you!")
-                input(">>> press enter \n")
                 
                 # The king's voice audio src
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                
+                input(">>> press enter \n")
                 
                 # The King Dialog
                 print(f"{THE_KING}: This is The Gardens a beautiful place where you can trot and make new friends!")
-                input(">>> press enter \n")
-                    
+                
                 # The king's voice audio src
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                
+                input(">>> press enter \n")
                 
                 # The King Dialog
                 print(f"{THE_KING}: But first you'll need to learn how to use your popit menu, This will help you complete this level and collect")
                 print("prizes and even trophies and much more!")
+                
+                # The king's voice audio src
+                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                
                 input(">>> press enter \n \n")
                 
                 # pop-it tutorial logic!
@@ -890,14 +897,14 @@ Play the SystemDefault sound.
                     if sticker_selected == f"{SACKBOY} smile sticker": # user has selected a sticker!
                         print("\n \n")
                         break # escape main popit while loop!
-                    
-                    # The king's voice audio src
-                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
 
                     # The King Dialog
                     print(f"{THE_KING}: Open up your Popit menu with [p] action key! \n \n")
                     
-                    action_key = input() # input function takes users input
+                    # The king's voice audio src
+                    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                    
+                    action_key = input(">>>") # input function takes users input
                     
                     # defining variables/constants
                     player = "popit tut" # user is new to popit menu's
@@ -920,21 +927,18 @@ Play the SystemDefault sound.
                                 playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\popit.wav")
                                 
                                 if player == "popit tut": # execute if user is new to popit!
-                                    # The king's voice audio src
-                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
 
                                     # The King Dialog
                                     print(f"{THE_KING}: This is the {POPIT} menu! where you can find stickers, goodies, and even tools! A creative pallete of fun things")
 
-                                    time.sleep(5)
-
                                     # The king's voice audio src
-                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                                    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
 
                                     # The King Dialog
                                     print(f"{THE_KING}: Enter your stickers and decorations and select the {SACKBOY} smile sticker! \n \n")
 
-                                    time.sleep(8)
+                                    # The king's voice audio src
+                                    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
 
                                     player = "player" # reverting back to original variable!
                                 
@@ -942,14 +946,14 @@ Play the SystemDefault sound.
                                 
                                 if response == "s": # user enters stickers & decorations!
                                     
-                                    # select audio effect!  
-                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
-                                    
                                     print("█▀ ▀█▀ █ █▀▀ █▄▀ █▀▀ █▀█ █▀     █▀▄ █▀▀ █▀▀ █▀█ █▀█ ▄▀█ ▀█▀ █ █▀█ █▄░█ █▀")
                                     print("▄█ ░█░ █ █▄▄ █░█ ██▄ █▀▄ ▄█     █▄▀ ██▄ █▄▄ █▄█ █▀▄ █▀█ ░█░ █ █▄█ █░▀█ ▄█ \n \n")
                                     
                                     
-                                    print(f"select press the [u] action key! {SACKBOY} smile sticker")
+                                    print(f"press the [u] action key! {SACKBOY} smile sticker")
+                                    
+                                    # select audio effect!  
+                                    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav")
                                     
                                     action_key = input(">>>")
                                     
@@ -959,7 +963,7 @@ Play the SystemDefault sound.
                                         sticker_selected = f"{SACKBOY} smile sticker"
                                         
                                         # select audio effect!  
-                                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
+                                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav")
                                         
                                         break   
                                     
@@ -967,7 +971,7 @@ Play the SystemDefault sound.
                                 elif response == "g": # user attempted to enter goodie's bag
                                     
                                     # select audio effect!  
-                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
+                                    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav")
                                     
                                     print("\n \n") # creating space on next 2 lines of code!
                                     continue
@@ -975,7 +979,7 @@ Play the SystemDefault sound.
                                 elif response == "t": # user attempted to enter tool's bag
                                     
                                     # select audio effect!  
-                                    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav", winsound.SND_ASYNC)
+                                    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\select.wav")
                                     
                                     print("\n \n")
                                     continue
@@ -989,12 +993,12 @@ Play the SystemDefault sound.
                         break
                         
                     else: # invalid return
-                        
-                        # The king's voice audio src
-                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\king2.wav", winsound.SND_ASYNC)
 
                         # The King Dialog
                         print(f"{THE_KING}: Wrong key use the [p] action key!  \n \n")
+                        
+                        # The king's voice audio src
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
                         
                         time.sleep(3)
                         
@@ -1004,39 +1008,42 @@ Play the SystemDefault sound.
                 
                 # popit menu audio src
                 playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\popit.wav")
-
-                # The king's voice audio src
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
                 
                 # The King Dialog
                 print(f"{THE_KING}: Great you selected the {sticker_selected}!")
-                input(">>> press enter \n \n")
                 
                 # The king's voice audio src
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                
+                input(">>> press enter \n \n")
                 
                 # The King Dialog
                 print(f"{THE_KING}: Time to place it down somewhere!")
-                input(">>> press enter \n \n")
-            
+
                 # The king's voice audio src
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                
+                input(">>> press enter \n \n")
                 
                 # place sticker prompt
                 while True: # sticker while loop!
                     # The King Dialog
-                    print(f"{THE_KING}: To place the sticker press the [s] action key! \n")
+                    print(f"{THE_KING}: Place the sticker down with the [s] action key! \n")
                     
-                    action_key = input(">>> press the [s] action key to place down your sticker!")
+                    # The king's voice audio src
+                    playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                    
+                    action_key = input(">>> press the [s] action key! \n ")
                     
                     if action_key == "s":
                         
-                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\sticker.wav", winsound.SND_ASYNC)
-
                         webbrowser.open("https://ih1.redbubble.net/image.2772506924.2213/st,small,507x507-pad,600x600,f8f8f8.u1.jpg")
+                        
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\sticker.wav")
 
                         time.sleep(5)
                         
+                        winsound.PlaySound(None, winsound.SND_PURGE) # stop backround music
                         
                         # In-game trophie Dialog notifcation
                         print("You have " + "(" + str(int(round(1.10))) + ")" + " Popit Notifcation!")
@@ -1047,25 +1054,27 @@ Play the SystemDefault sound.
                         
                         time.sleep(3) 
                         
-                        # The king's voice audio src
-                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
-                        
                         # The King Dialog
                         print(f"{THE_KING}: Wow your very first sticker place very intresting indeed!")
-                        input(">>> press enter \n \n")
                         
                         # The king's voice audio src
-                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                        
+                        input(">>> press enter \n \n")
                         
                         # The King Dialog
                         print(f"{THE_KING}: That's all i wanted to teach you! you did great {SACKBOY} come by again next time!")
+                        
+                        # The king's voice audio src
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
+                        
                         input(">>> press enter \n \n")
                         
                         # level progress variable
                         the_gardens_progress = "100%"
                         
                         # user has comepleted The Gardens story mode!
-                        print(f"{SACKBOY} has comepleted {THE_GARDENS}! \n")
+                        print(f"{SACKBOY} has completed {THE_GARDENS}! \n")
                         
                         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\success.wav")
                         
@@ -1090,9 +1099,6 @@ Play the SystemDefault sound.
                     else: # invalid return
                         print("\n \n")
                         continue
-            
-            elif the_gardens_progress == "100%": # user has comepleted story mode
-                break # escape current while loop
                             
             elif resp == "x": # user returns back to pod!
                 break
