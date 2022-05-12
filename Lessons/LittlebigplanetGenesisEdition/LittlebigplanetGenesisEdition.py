@@ -41,6 +41,9 @@ from playsound import playsound
 # player status variable
 player = "new player"
 
+# sticker state variable
+sticker_selected = ""
+
 # sackboy/sackgirl constants
 SACKBOY = "Sackboy™" # a friendly creative lot!
 SACKGIRL = "Sackgirl™" # sackboy's bestfriend!
@@ -51,13 +54,13 @@ STORY = "Story mode"
 
 # trophie constants
 _100_COMPLETE = "100% Complete trophie" # Earn all LittleBigPlanet™ trophies to unlock this platinum trophy.
-THE_GARDENS = "The Gardens trophie" # Complete all levels in The Gardens.
-THE_SAVANNAH = "The Savannah trophie" # Complete all levels in The Savannah.
-THE_WEDDING = "The Wedding trophie" # Complete all levels in The Wedding.
-THE_CANYONS = "The Canyons trophie" # Complete all levels in The Canyons.
-THE_METROPOLIS = "The Metropolis trophie" # Complete all levels in The Metropolis 
-THE_ISLANDS = "The Islands trophie" # Complete all levels in The Islands.
-THE_TEMPLES = "The Temples trophie" # Complete all levels in The Temples.
+THE_GARDENS_TROPHIE = "The Gardens trophie" # Complete all levels in The Gardens.
+THE_SAVANNAH_TROPHIE = "The Savannah trophie" # Complete all levels in The Savannah.
+THE_WEDDING_TROPHIE = "The Wedding trophie" # Complete all levels in The Wedding.
+THE_CANYONS_TROPHIE = "The Canyons trophie" # Complete all levels in The Canyons.
+THE_METROPOLIS_TROPHIE = "The Metropolis trophie" # Complete all levels in The Metropolis 
+THE_ISLANDS_TROPHIE = "The Islands trophie" # Complete all levels in The Islands.
+THE_TEMPLES_TROPHIE = "The Temples trophie" # Complete all levels in The Temples.
 EXPERT_CREATOR = "Expert Creator trophie" # Complete all levels in the Tutorials.
 ARTIST = "Artist trophie" # Place a sticker.
 HOMEMAKER = "Homemaker trophie" # Place 10 stickers or decorations in your pod.
@@ -420,7 +423,7 @@ THE_CANYONS = "The Canyons" # The Canyons is the fourth area in LittleBigPlanet 
 THE_METROPOLIS = "The Metropolis" # The Metropolis is the fifth area in LittleBigPlanet based on USA.
 
 #  story level completion variables
-the_gardens_progress = "0%"
+the_gardens_progress = "0%" # player level progression tracker
 the_savannah_progress = "0%"
 the_wedding_progress = "0%"
 the_canyons_progress = "0%"
@@ -498,7 +501,7 @@ while True: # Main pod menu loop
 
     print("                        丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺                                \n")
 
-    print("                    𝙨𝙩𝙤𝙧𝙮 𝙢𝙤𝙙𝙚 [s]    𝙢𝙮 𝙢𝙤𝙤𝙣 [m]     𝙢𝙮 𝙥𝙧𝙤𝙛𝙞𝙡𝙚 [p]                          \n")
+    print("                            𝙨𝙩𝙤𝙧𝙮 𝙢𝙤𝙙𝙚 [s]     𝙢𝙮 𝙥𝙧𝙤𝙛𝙞𝙡𝙚 [p]                          \n")
 
     print("                                       𝙚𝙭𝙞𝙩 𝙥𝙤𝙙 [x]                                             ")
     print("       *                                                                                 +      ")
@@ -660,7 +663,136 @@ Play the SystemDefault sound.
         print(f"{GENESISGIR}: Welcome to your pod! I see you met {STEPHEN_FRY}! You can now navigate through the menu! go ahead")
         print("give it a whirl why won't you?") 
     
-    resp = input(">>>")
+    if the_gardens_progress == "100%": # user has comepleted story mode
+        
+        player = "player"
+        
+        # Introduction to the pod using playsound 
+        #playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\MyPod.wav")
+        
+        winsound.PlaySound(None, winsound.SND_PURGE) # cut off all instances of sound with SND_PURGE!
+        
+        # In-game Dialog notifcation
+        print("You have " + "(" + str(int(round(1.15))) + ")" + " Popit Notifcation!")
+        print(f"{GENESISGIR}: You beat the gardens and met {THE_KING} and even placed down your own stickers")
+        print("I'm proud of you and now you can go into this .py file and reverse engineer as much as you'd like!")
+        
+        # in game notifcation audio src
+        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\tutorial.wav")
+        
+        time.sleep(3)
+        
+        print(f"{GENESISGIR}: Coding is a creative and logical playing field and with alot of practice and hard work you")
+        print("can achieve results like these in the matter of hours! don't rush your learning process. go at your own")
+        print("pace! \n")
+        
+        input("This was a lesson of the Littlebigplanet:genesis Edition.py press enter to view credits! >>>\n")
+        
+        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\leftbank.wav", winsound.SND_ASYNC)
+
+        print("Thank you for downloading GenesisGirLessonsVolume.2! \n")
+        print("I want to thank everyone for the support on twitch and my lovely wife for the motivation! These")
+        print("programs are really fun to make and I enjoy making them if your new to programming with time and practice")
+        print("you can achieve anything you set your mind too!~ \n")
+
+        time.sleep(3) # delay program execution by set integer in function call
+
+        print("If you learned something from this lesson & make sure to follow me on github! \n")
+
+        time.sleep(3)
+
+
+        print("█▀▀ █▀█ █▀▀ █▀▄ █ ▀█▀ █▀")
+        print("█▄▄ █▀▄ ██▄ █▄▀ █ ░█░ ▄█ \n \n")
+
+        time.sleep(1)
+
+        print("source code by - GenesisGir \n")
+
+        time.sleep(1)
+
+        print("𝙡𝙞𝙩𝙩𝙡𝙚𝙗𝙞𝙜𝙥𝙡𝙖𝙣𝙚𝙩 𝙬𝙖𝙨 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙙 𝙗𝙮 𝙢𝙚𝙙𝙞𝙖 𝙢𝙤𝙡𝙚𝙘𝙪𝙡𝙚 \n ")
+
+        time.sleep(1)
+
+        print("Support the creators of the game and Support me for putting this together! \n")
+
+        while True:
+            print()
+            print("visit the game page to buy Littlebigplanet! [s]")
+            print("Visit GenesisGirs Github page! [g]")
+            r = input("Goodbye <3 [x]\n")
+
+            if r == "s":
+                webbrowser.open("https://www.amazon.com/LittleBigPlanet-Playstation-3/dp/B001IVXI7C")
+                continue
+            elif r == "g":
+                webbrowser.open("https://github.com/GenesisGir")
+                continue
+            elif r == "x":
+                # stop all audio instances from playing w/winsound.SND_PURGE!
+                winsound.PlaySound(None, winsound.SND_PURGE)
+                sys.exit()
+            else:
+                continue # re-iterate!
+            
+            """ my twitch channel come stop by!
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡏⠉⠉⠉⠉⠉⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⡇⠀⡇⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⡠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣤⣾⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⠀⠀⠘⠋⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠿⢦⠤⠤⣤⠤⠤⡤⠤⢼⡧⠤⢼⠀⠀⠿⠤⡄⡠⠤⠴⠿⡇⠀⠀⠧⠤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⢸⠀⠀⣿⠀⠀⡇⠀⢸⡇⠀⢸⠀⠀⠀⠀⡏⠀⠀⠀⠀⡇⠀⠀⠀⠀⠈⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠿⢿⠀⠀⠿⠀⠀⠇⠀⢸⡇⠀⢸⠀⠀⠿⠿⡇⠀⠸⠿⠿⡇⠀⠀⣿⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣄⠀⠀⢸⠀⠀⠀⠀⠀⠀⢀⣼⡇⠀⢸⣄⠀⠀⠀⣧⡀⠀⠀⠀⡇⠀⠀⣿⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⢿⣿⣿⡿⢿⣿⣿⣿⢿⣿⡿⢿⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀
+            Thank you for downloading this .py find more at my github and learn something new everyday and rememeber
+            to not give up on coding! its an artform and anbody can be skilled enough to achieve greatness in your code
+            make sure to check out my twitch streams below
+            Twitch: https://www.twitch.tv/genesisgir 
+            Github: https://github.com/GenesisGi
+            thank you to everyone on twitch who participated in the making of this .py!
+            """
+
+            """ resources
+
+            █▀█ █▀▀ █▀ █▀█ █░█ █▀█ █▀▀ █▀▀ █▀
+            █▀▄ ██▄ ▄█ █▄█ █▄█ █▀▄ █▄▄ ██▄ ▄█
+
+            link: >>> https://www.twitch.tv/genesisgir  <<< Find Livestreams and more!
+            link: >>> https://automatetheboringstuff.com <<< Discover and learn how i did!
+            """
+            """ twitch stored broadcasts
+            🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+
+            ▀█▀ █░█░█ █ ▀█▀ █▀▀ █░█   █▀ ▀█▀ █▀█ █▀█ █▀▀ █▀▄   █▄▄ █▀█ █▀█ ▄▀█ █▀▄ █▀▀ ▄▀█ █▀ ▀█▀ █▀
+            ░█░ ▀▄▀▄▀ █ ░█░ █▄▄ █▀█   ▄█ ░█░ █▄█ █▀▄ ██▄ █▄▀   █▄█ █▀▄ █▄█ █▀█ █▄▀ █▄▄ █▀█ ▄█ ░█░ ▄█
+
+            Fun Fact this .py was made on stream and can be found on my Twitch page @ GenesisGir! Subscribers can 
+            go back a rewatch how .pf files are made in cohesion and learn step by step how projects like these are made 
+            very useful to those starting out. Subscribe and stay in the loop!
+
+            link:https://www.twitch.tv/genesisgir Watch resourceful livestreams and chat , code!
+
+            🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+            """
+            """ check out my github!
+            🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+
+            █▀▀ █░█ █▀▀ █▀▀ █▄▀   █▀█ █░█ ▀█▀   █▀▄▀█ █▄█   █▀▀ █ ▀█▀ █░█ █░█ █▄▄
+            █▄▄ █▀█ ██▄ █▄▄ █░█   █▄█ █▄█ ░█░   █░▀░█ ░█░   █▄█ █ ░█░ █▀█ █▄█ █▄█
+
+            Discover , Explore and learn from my programs that Ive pushed to my remote repositories!
+            and dont forget to follow me!
+
+            link: >>> https://github.com/GenesisGir <<<
+
+            🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
+            """
+        
+        
+    resp = input(">>>") # user createss resp variable!
     
     if resp == "s": # user decides to play story mode!
         
@@ -668,7 +800,7 @@ Play the SystemDefault sound.
         
                 # play pod theme
                 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\podtheme.wav", winsound.SND_LOOP + winsound.SND_ASYNC)
-        
+            
         # story mode while loop menu U/I
         while True: # story loop menu!
             
@@ -678,8 +810,11 @@ Play the SystemDefault sound.
 
             print("                                𝙥𝙡𝙖𝙮 The gardens [p]                 ")
             print("                                Exit to pod [x]")
-            playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\story.wav")
-
+            
+            # Story tutorial audio SRC!
+            if the_gardens_progress == "0%":
+                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\story.wav")
+            
             resp = input(">>>")
             
             # flow control if statement for story mode prompts
@@ -752,6 +887,10 @@ Play the SystemDefault sound.
                 # pop-it tutorial logic!
                 while True: # popit while loop!
                     
+                    if sticker_selected == f"{SACKBOY} smile sticker": # user has selected a sticker!
+                        print("\n \n")
+                        break # escape main popit while loop!
+                    
                     # The king's voice audio src
                     winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
 
@@ -764,13 +903,11 @@ Play the SystemDefault sound.
                     player = "popit tut" # user is new to popit menu's
                     
                     if action_key == "p": # user opens popit menu for the first time!
-                            
+                        
+                            # variables & constants
+                        
                             # popit menu U/I
                             while True: # popit menu while loop
-                                
-                                # popit menu audio src
-                                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\popit.wav", winsound.SND_ASYNC)
-                                
                                 print()
                                 print("                 █▀█ █▀█ █▀█   █ ▀█▀")
                                 print("                 █▀▀ █▄█ █▀▀   █ ░█░ \n")
@@ -779,6 +916,9 @@ Play the SystemDefault sound.
                                 print("                 𝙜𝙤𝙤𝙙𝙞𝙚𝙨 𝙗𝙖𝙜 [g] locked")
                                 print("                 𝙩𝙤𝙤𝙡𝙨 𝙗𝙖𝙜 [t] locked \n \n")
 
+                                # popit menu audio src
+                                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\popit.wav")
+                                
                                 if player == "popit tut": # execute if user is new to popit!
                                     # The king's voice audio src
                                     winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
@@ -798,7 +938,7 @@ Play the SystemDefault sound.
 
                                     player = "player" # reverting back to original variable!
                                 
-                                response = input()
+                                response = input(">>>")
                                 
                                 if response == "s": # user enters stickers & decorations!
                                     
@@ -845,9 +985,8 @@ Play the SystemDefault sound.
                                 else: # invalid return
                                     continue # re-iterate
                     
-                    elif sticker_selected == f"{SACKBOY} smile sticker": # user has selected a sticker!
-                        print("\n \n")
-                        break # escape main popit while loop!
+                    elif the_gardens_progress == "100%":
+                        break
                         
                     else: # invalid return
                         
@@ -863,21 +1002,102 @@ Play the SystemDefault sound.
                 
                 # user has exited popit menu and code starts on line '881'!
                 
-                print("broke out of all loops!")
+                # popit menu audio src
+                playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\popit.wav")
+
+                # The king's voice audio src
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                
+                # The King Dialog
+                print(f"{THE_KING}: Great you selected the {sticker_selected}!")
+                input(">>> press enter \n \n")
+                
+                # The king's voice audio src
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                
+                # The King Dialog
+                print(f"{THE_KING}: Time to place it down somewhere!")
+                input(">>> press enter \n \n")
             
-                break
+                # The king's voice audio src
+                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                
+                # place sticker prompt
+                while True: # sticker while loop!
+                    # The King Dialog
+                    print(f"{THE_KING}: To place the sticker press the [s] action key! \n")
+                    
+                    action_key = input(">>> press the [s] action key to place down your sticker!")
+                    
+                    if action_key == "s":
+                        
+                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\sticker.wav", winsound.SND_ASYNC)
+
+                        webbrowser.open("https://ih1.redbubble.net/image.2772506924.2213/st,small,507x507-pad,600x600,f8f8f8.u1.jpg")
+
+                        time.sleep(5)
+                        
+                        
+                        # In-game trophie Dialog notifcation
+                        print("You have " + "(" + str(int(round(1.10))) + ")" + " Popit Notifcation!")
+                        print(f"{GENESISGIR}: You've unlocked the {ARTIST} good job sackling! \n")
+                        
+                        # trophie award audio src
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophie.wav")
+                        
+                        time.sleep(3) 
+                        
+                        # The king's voice audio src
+                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                        
+                        # The King Dialog
+                        print(f"{THE_KING}: Wow your very first sticker place very intresting indeed!")
+                        input(">>> press enter \n \n")
+                        
+                        # The king's voice audio src
+                        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav", winsound.SND_ASYNC)
+                        
+                        # The King Dialog
+                        print(f"{THE_KING}: That's all i wanted to teach you! you did great {SACKBOY} come by again next time!")
+                        input(">>> press enter \n \n")
+                        
+                        # level progress variable
+                        the_gardens_progress = "100%"
+                        
+                        # user has comepleted The Gardens story mode!
+                        print(f"{SACKBOY} has comepleted {THE_GARDENS}! \n")
+                        
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\success.wav")
+                        
+                        # In-game trophie Dialog notifcation
+                        print("You have " + "(" + str(int(round(1.10))) + ")" + " Popit Notifcation!")
+                        print(f"{GENESISGIR}: You've unlocked the {THE_GARDENS_TROPHIE} nice one! \n")
+                        
+                        # trophie award audio src
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophie.wav")
+                        
+                        time.sleep(3)
+                        
+                        print("returning back to pod!")
+                        
+                        time.sleep(random.randint(3,4))
+                        
+                        # exit to pod
+                        if the_gardens_progress == "100%": # user has completed the gardens level congrats!
+                            break
+                         
+                        
+                    else: # invalid return
+                        print("\n \n")
+                        continue
             
-            
-            
-            
+            elif the_gardens_progress == "100%": # user has comepleted story mode
+                break # escape current while loop
                             
             elif resp == "x": # user returns back to pod!
                 break
             else: # invalid return
                 continue
-        
-    elif resp == "m": # user wants to  go to moon!
-        print()
         
     elif resp == "p": # user wishes to look at their profile!
         
