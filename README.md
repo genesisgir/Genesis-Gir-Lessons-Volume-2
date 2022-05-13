@@ -6,7 +6,8 @@ programs to dig threw and understand! volume 2 is currently under development so
 - Tutorials on python source code
 - tips and tricks to use in your own code
 
-![Rick-and-Morty-Zoom-Backgrounds-Garage-1](https://user-images.githubusercontent.com/87259615/162636978-3fb2fecc-1b59-40ac-b76e-21ae3369f31a.png)
+![genesisgir lessons vol 2](https://user-images.githubusercontent.com/87259615/168378665-3995781d-add1-4282-951a-bf73bb936ffd.png)
+
 
 
 # Learn, Explore, Study!
