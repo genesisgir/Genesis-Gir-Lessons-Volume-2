@@ -2,7 +2,7 @@
 It's here the second installment of my workflows for all of you to research and dig threw and understand how to code way faster and more intuitive
 programs to dig threw and understand! volume 2 is currently under development so sofware will be addded day by day or whenever they do I cannot stress enough how important it is to reference the automatetheboringstuff for these tutorials but some learning value can be found in them for sure! This repo has alot of useful information on getting started with python coding and contains alot of .py files to inspect and learn from! things get more complex than VOL.1 and it's free and open source.
 
-- 10 .py files 
+- 4 .py files 
 - Tutorials on python source code
 - tips and tricks to use in your own code
 
