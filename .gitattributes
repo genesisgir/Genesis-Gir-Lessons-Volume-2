@@ -1,6 +1,8 @@
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.rar filter=lfs diff=lfs merge=lfs -text
-*.wav binary
+<<<<<<< HEAD
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.mp3 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+=======
+>>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
