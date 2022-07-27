@@ -60,7 +60,7 @@ hoverboard = "Hoverboard"
 # vehicle amount
 hoverboard_amount = 0
 
-# componets
+# components
 mr_fusion = "Mr.Fusion" # refer to line '65'
 
 """
@@ -89,7 +89,7 @@ At their heart, the 'Time Circuits' are a clock – three separate displays, sho
 present time, destination time, and last departed time.
 """
 
-# componet amount
+# component amount
 mr_fusion_amount = 0
 flux_capacitor_amount = 0
 time_circuit_amount = 0
@@ -110,7 +110,7 @@ radiation_suit = "Radiation Jump Suit " # protects the user from ultra dangerous
 nike = "Future Nike Self lace shoes" # self lacing shoes from the year 2045!
 hologram_cap = "Futuristic Hologram cap" # Look cool with some holographic prada
 marty_mcFly_leather_jacket = "Marty Mcfly's Jacket" # self adjusting jacket from the year 2045
-girs_swimsuit = "GenesiGirs Grey Swimsuit" # genesisgirs famous gray swimsuit found in his avatar on twitch/github
+girs_swimsuit = "genesisgirs Grey Swimsuit" # genesisgirs famous gray swimsuit found in his avatar on twitch/github
 
 # clothes amount
 radiation_suit_amount = 0
@@ -194,7 +194,7 @@ while True: # Run TIME_FRAC.exe prompt
     print("█▀▀ █▀▀ █▄░█ █▀▀ █▀ █ █▀ █▀▀ █ █▀█ █▀   █▀█ █▀▀")
     print("█▄█ ██▄ █░▀█ ██▄ ▄█ █ ▄█ █▄█ █ █▀▄ ▄█   █▀▀ █▄▄ \n \n \n")
 
-    print("Welcome GenesiGir! \n")
+    print("Welcome GenesisGir! \n")
 
     print("run TIME FRAC.exe [t]") # prompts user to run .exe
     print("exit PC [x]") # prompts user to shut down PC
@@ -276,7 +276,7 @@ while True: # Run TIME_FRAC.exe prompt
             print("█▀▀ █▀▀ █▄░█ █▀▀ █▀ █ █▀ █▀▀ █ █▀█ █▀   █▀█ █▀▀")
             print("█▄█ ██▄ █░▀█ ██▄ ▄█ █ ▄█ █▄█ █ █▀▄ ▄█   █▀▀ █▄▄ \n \n \n")
 
-            print("Welcome GenesiGir to your PC! \n \n")
+            print("Welcome GenesisGir to your PC! \n \n")
 
 
             print("█ █▄░█ █▄▄ █▀█ ▀▄▀")
@@ -332,7 +332,7 @@ time.sleep(random.randint(3,4))
 # msg from genesisgir
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"RE: {gen}: Who are you?. . . \n") # genesigir replies!
+print(f"RE: {gen}: Who are you?. . . \n") # genesisgir replies!
 
 time.sleep(random.randint(3,5))
 
@@ -368,7 +368,7 @@ time.sleep(random.randint(3,5))
 # msg from genesisgir
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"RE: {gen}: what's in it for me?. .  \n") # genesigir replies!
+print(f"RE: {gen}: what's in it for me?. .  \n") # genesisgir replies!
 
 time.sleep(random.randint(3,5)) 
 
@@ -670,7 +670,7 @@ input(">>> enter \n")
 
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"- {doc} flips down his gogles and starts the engine to the {time_machine} -") 
+print(f"- {doc} flips down his googles and starts the engine to the {time_machine} -") 
 
 input(">>> enter \n")
 
@@ -692,7 +692,7 @@ input(">>> enter \n")
 ▐▓█▄▄▄▄▄▄▄▄▄█▓▌░█████░
 ░░░░▄▄███▄▄░░░░░█████░     𝙏𝙞𝙥: 𝙐𝙨𝙚 # 𝙩𝙤 𝙘𝙧𝙚𝙖𝙩𝙚 𝙖 𝙘𝙤𝙢𝙢𝙚𝙣𝙩
 
-Comments can be helpful for people reading your source code or for keeping notes for yourself! You can create a comment
+comments can be helpful for people reading your source code or for keeping notes for yourself! You can create a comment
 with the hashtag symbol and anything after will be apart of that comment, keep mental reminders or leave notes for
 a team working on the same code explain what a certain line of code is trying to do etc. comments will be a very powerful 
 tool to use as a programmer and you can even comment out lines of code your having trouble with by putting a # in front
@@ -984,7 +984,7 @@ Pure Python, cross platform, single function module with no dependencies for pla
 
 The playsound module must be imported to be used this module is responsible for playing audio files through the program
 as you see through this .py file there are lots of playsound function calls being used these are responsible for outputting
-the audio FX that you hear when you run the program or debug that's playsounds hefty work in cohesion with winsound
+the audio FX that you hear when you run the program or debug that's playsound's hefty work in cohesion with winsound
 as well.
 
 eg. import playsound, winsound
@@ -1197,7 +1197,7 @@ winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesis
 
 print(f"- {gen} Runs back home as the cool morning dew splashes beneath his converse making his way back home , The sun starts to creep")
 print(f"up and the shining morning light brighten's up the town in such beauty and flair. genesis has met {doc} for the first time and was blown")
-print("away by how intelligent and precise he was in his experiments and as his heart beats faster as he runs back to his home he thinks what")
+print("away by how intelligent and precise he was in his experimeants and as his heart beats faster as he runs back to his home he thinks what")
 print("could have been in his program that will cause mass destruction in the future. The very thought astounds him, It made him feel")
 print("somewhat proud of himself that he was able to pull off such an amazing program that was capable of such proportions! \n")
 input(">>> enter \n")
@@ -1275,7 +1275,7 @@ while True: # iPhone prompt open new message!
     
     
     
-    print("Welcome GenesiGir to your iPhone! \n \n")
+    print("Welcome genesisgir to your iPhone! \n \n")
     
     
     print("█ █▄░█ █▄▄ █▀█ ▀▄▀")
@@ -1317,7 +1317,7 @@ time.sleep(random.randint(2,4))
 # msg from genesisgir
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"RE: {gen}: Doc my wife is here I want to spend the rest of the day with her! \n") # genesigir replies!
+print(f"RE: {gen}: Doc my wife is here I want to spend the rest of the day with her! \n") # genesisgir replies!
 
 time.sleep(random.randint(3,5))    
 
@@ -1339,7 +1339,7 @@ time.sleep(random.randint(3,4))
 # msg from genesisgir
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"RE: {gen}: Doc this plan is going have to wait for tommorow I'm afraid. \n") # genesigir replies!
+print(f"RE: {gen}: Doc this plan is going have to wait for tommorow I'm afraid. \n") # genesisgir replies!
 
 time.sleep(random.randint(3,5))
 
@@ -1349,7 +1349,7 @@ time.sleep(random.randint(3,5))
 █▀░ █▄█ █▀▄   █▄▄ █▄█ █▄█ █▀▀   ▄█ ░█░ █▀█ ░█░ ██▄ █░▀░█ ██▄ █░▀█ ░█░ ▄█
 
 While the While loop statement can loop infinitely a for loop can execute a block of code a chosen amount of times!
-this can be used to make all types of cool UI menus and systems and for loops can come in handy for alot of reasons.
+this can be used to make all types of cool UI menus and systems and for loops can come in handy for a lot of reasons.
 
 eg. for i in range(1,11)
 
@@ -1391,7 +1391,7 @@ print()
 # msg from genesisgir
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"RE: {gen}: Fuck. .  \n") # genesigir replies!
+print(f"RE: {gen}: Fuck. .  \n") # genesisgir replies!
 
 time.sleep(random.randint(1,5)) 
 
@@ -1405,7 +1405,7 @@ time.sleep(random.randint(3,4))
 # msg from genesisgir
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\BackToTheFutureGenesisEdition\Audio Resources\prompt.wav", winsound.SND_ASYNC)
 
-print(f"RE: {gen}: No worries.  \n") # genesigir replies!
+print(f"RE: {gen}: No worries.  \n") # genesisgir replies!
 
 time.sleep(random.randint(1,5))
 

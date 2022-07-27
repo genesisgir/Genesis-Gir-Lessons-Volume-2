@@ -129,7 +129,7 @@ WHISKEY = "Whiskey" # A bottle of whiskey.
 MOLOTOV = "Molotov" # A suburban protest weapon used in civil right movements to deter the police.
 MAKE_SHIFT_BOMB = "Make-Shift Bomb" # A make shift explosive.
 
-# craftable item amounts
+# craft-able item amounts
 sugar_amount = 0
 sugar_container_amount = 0
 rag_amount = 0
@@ -249,7 +249,7 @@ input(">>> press enter \n")
 
 # Story Dialog
 print(f"- {ELLIE} holds onto {JOEL} as they ride on the horse through the abandoned city of {AUSTIN} and the city is")
-print("covered in foilage and burnout cars and the bodies of dead civilians. The year is 2033 and a fungal infection")
+print("covered in foliage and burnout cars and the bodies of dead civilians. The year is 2033 and a fungal infection")
 print("has overcome the world and 60 percent of the world's population has been effected leaving people in most cases")
 print("dead or stranded as lifeless husks of infected scum waiting to kill, spread or be killed by survivers. -")
 input(">>> press enter \n") # prompting user to press enter to continue down the lines of code.
@@ -269,7 +269,7 @@ time.sleep(1) # delay the execution by one second
 
 print(f"{ELLIE}: I'm tired. \n")
 
-time.sleep(1) # a function call that delays the program execution set by the arguement!
+time.sleep(1) # a function call that delays the program execution set by the argument!
 
 # Joel Dialog
 print(f"{JOEL}: Quit your nagging we still have to get to {BOSTON}.")
@@ -295,14 +295,14 @@ input(">>> press enter \n")
 print(f"{ELLIE}: We need rations. Let's go inside and see what we can find!")
 input(">>> press enter \n")
 
-# supply on rations propmt!
+# supply on rations prompt!
 while True: # main loop
     
     # loot state variables
     loot_state = "unlooted" # user has not looted the drug store yet!
     
     # Ellie Action
-    print(f"{ELLIE} has spotted a drug store and is in desprate need of rations! \n")
+    print(f"{ELLIE} has spotted a drug store and is in desperate need of rations! \n")
     
     print("Enter the drug store [e]") 
     print("ignore drug store [m]")
@@ -342,7 +342,7 @@ while True: # main loop
 ▐▓█▄▄▄▄▄▄▄▄▄█▓▌░█████░
 ░░░░▄▄███▄▄░░░░░█████░     𝙏𝙞𝙥: 𝙐𝙨𝙚 # 𝙩𝙤 𝙘𝙧𝙚𝙖𝙩𝙚 𝙖 𝙘𝙤𝙢𝙢𝙚𝙣𝙩
 
-Comments can be helpful for people reading your source code or for keeping notes for yourself! You can create a comment
+comments can be helpful for people reading your source code or for keeping notes for yourself! You can create a comment
 with the hashtag symbol and anything after will be apart of that comment, keep mental reminders or leave notes for
 a team working on the same code explain what a certain line of code is trying to do etc. comments will be a very powerful 
 tool to use as a programmer and you can even comment out lines of code your having trouble with by putting a # in front
@@ -390,7 +390,7 @@ eg. # this is an example of a comment!
                 
                 time.sleep(random.randint(1,2))
                 
-                """ # playsound module tips and tricks uncollapse me to start learning!
+                """ # playsound module tips and tricks collapse me to start learning!
 
 
 █▀█ █░░ ▄▀█ █▄█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
@@ -642,7 +642,7 @@ The following code in the example will print out the string literal forever, Whi
                     
                     if resp == "y": # user decides to pick up isopropyl alcohol
                         
-                        # implementing playsound to play .wav
+                        # implemeanting playsound to play .wav
                         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\bottle.wav", winsound.SND_ASYNC)
                         
                         isopropyl_alcohol_amount += 4 # increases amount to 1!
@@ -677,7 +677,7 @@ The following code in the example will print out the string literal forever, Whi
                     # Joel Dialog
                     print(f"{JOEL}: {ISOPROPYL_ALCOHOL} could have been used to craft molotovs oh well. \n")
                     
-                    time.sleep(5) # a time.sleep() function call pauses the program execution set by the arguement
+                    time.sleep(5) # a time.sleep() function call pauses the program execution set by the arguemeant
                 
                 
                 """ # learn about the round() function!
@@ -736,7 +736,7 @@ once. converts the float into an integer and also makes it rounded off! Double t
                 
                     if resp == "y": # user decides to pick up duct tape
                         
-                        # implementing playsound to play .wav
+                        # implemeanting playsound to play .wav
                         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\jar.wav", winsound.SND_ASYNC)
                         
                         duct_tape_amount += 20 # increases amount to 1!
@@ -827,7 +827,7 @@ and you learn things better when you do them than just reading also.
                 
                     if resp == "y": # user decides to pick up shorty
                         
-                        # implementing playsound to play .wav
+                        # implemeanting playsound to play .wav
                         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\TheLastOfUs\Audio Resources\shorty.wav", winsound.SND_ASYNC)
                         
                         shorty_amount += 1 # increases amount to 1!
@@ -1028,7 +1028,7 @@ if shorty_amount == 1: # user owns the shorty firearm
                         # checking amounts    
                         if resp == "c" and duct_tape_amount and isopropyl_alcohol_amount >= 1:
                             
-                            molotov_amount += 1 # increment amount's by 1
+                            molotov_amount += 1 # incremeant amount's by 1
                             
                             duct_tape_amount -= 1 # deduct by 1 
                             
@@ -1167,7 +1167,7 @@ elif shorty_amount != 1: # user does not own the shorty
                         # checking amounts    
                         if resp == "c" and duct_tape_amount and isopropyl_alcohol_amount >= 1:
                             
-                            molotov_amount += 1 # increment amount's by 1
+                            molotov_amount += 1 # incremeant amount's by 1
                             
                             duct_tape_amount -= 1 # deduct by 1 
                             
@@ -1319,7 +1319,7 @@ link: >>> https://automatetheboringstuff.com <<< Discover and learn how i did!
 ░█░ ▀▄▀▄▀ █ ░█░ █▄▄ █▀█   ▄█ ░█░ █▄█ █▀▄ ██▄ █▄▀   █▄█ █▀▄ █▄█ █▀█ █▄▀ █▄▄ █▀█ ▄█ ░█░ ▄█
 
 Fun Fact this .py was made on stream and can be found on my Twitch page @ GenesisGir! Subscribers can 
-go back a rewatch how .pf files are made in cohesion and learn step by step how projects like these are made 
+go back a re-watch how .pf files are made in cohesion and learn step by step how projects like these are made 
 very useful to those starting out. Subscribe and stay in the loop!
 
 link:https://www.twitch.tv/genesisgir Watch resourceful livestreams and chat , code!

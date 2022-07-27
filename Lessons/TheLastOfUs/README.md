@@ -5,7 +5,7 @@
 The Last of Us takes place in the year 2033, twenty years after a fungal-based, brain-altering pandemic has spread
 and infected over 60 percent of the world's population. Since the outbreak, the world has gone into a state of panic and
 frenzy as officials try to fix and keep the situation under control. When the World Health Organization's attempts to
-procure a vaccine fail, the United States government does away with the bureaucrats in power and the establishment of
+procure a vaccine fail, the United States government does away with the bureaucrats in power and the establishmeant of
 civilian government. The country is turned into a police state under the control of homeland security and the military, 
 and cities across the nation are placed under martial law one by one. Survivors of the pandemic are assigned to designated
 quarantine zones that are supposed to separate them from the infected and keep them safe.
@@ -23,15 +23,15 @@ uprisings.
 
 𝙏𝙝𝙚 𝙡𝙖𝙨𝙩 𝙤𝙛 𝙪𝙨 𝙬𝙖𝙨 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙙 𝙗𝙮 𝙣𝙖𝙪𝙜𝙝𝙩𝙮𝙙𝙤𝙜
 
-# Learn , Discover , Explore!
-In this .py you can learn alot from what I did and discover methods I use to make things work! This is very Novice level friendly
+# Learn , Discover , Explore
+In this .py you can learn a lot from what I did and discover methods I use to make things work! This is very Novice level friendly
 and if you find yourself lost just make sure to look at the comments next to the lines of code to see what each line does and why 
-I added those functions and how they are being implmented. again this is very user friendly and very easy to understand I made
+I added those functions and how they are being implemented. again this is very user friendly and very easy to understand I made
 these projects so someone new to coding can learn and develop skills like I have to make their own programs and have somewhere to
 start in the world of coding!
 
 # Twitch
-I also stream my progress on Twitch and store the broadcasts so subscribers can rewatch and see how i made them from scratch! I stream for hours
+I also stream my progress on Twitch and store the broadcasts so subscribers can re-watch and see how i made them from scratch! I stream for hours
 at a time and make sure to stop by and ask me any questions or , Chat , watch my progress!
 
 # screenshots
