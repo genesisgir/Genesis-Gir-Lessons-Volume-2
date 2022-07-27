@@ -25,15 +25,9 @@ for? Hop right into it sack fellow!
 
 𝙡𝙞𝙩𝙩𝙡𝙚𝙗𝙞𝙜𝙥𝙡𝙖𝙣𝙚𝙩 𝙬𝙖𝙨 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙙 𝙗𝙮 𝙢𝙚𝙙𝙞𝙖 𝙢𝙤𝙡𝙚𝙘𝙪𝙡𝙚
 
-<<<<<<< HEAD
 Github Link: https://github.com/GenesisGir
 Twitch Link: https://www.twitch.tv/genesisgir
 
-=======
- Github Link: https://github.com/GenesisGir
- Twitch Link: https://www.twitch.tv/genesisgir
- 
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
 """
 
@@ -96,14 +90,6 @@ treasure_hunter_progress = "locked"
 _2x_multiplier_progress = "locked"
 _8x_multiplier_progress = "locked"
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
 # tool constants
 POPIT = "Popit"
 
@@ -490,10 +476,7 @@ time.sleep(5)
 
 # Pod menu U/I logic!
 while True: # Main pod menu loop
-<<<<<<< HEAD
     
-=======
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
     print()
     print()
     print("                 █░░ █ ▀█▀ ▀█▀ █░░ █▀▀ █▄▄ █ █▀▀ █▀█ █░░ ▄▀█ █▄░█ █▀▀ ▀█▀")
@@ -536,11 +519,7 @@ while True: # Main pod menu loop
     print("                                       ;:.      ;                                               ")
     print("                                     .' \:.    / `.                                  *          ")
     print("                                    / .-'':._.'`-. \                                            ")
-<<<<<<< HEAD
     print("                                     |/    /||\    \|                   *                        ")
-=======
-    print("                                    |/    /||\    \|                   *                        ")
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
     print("            *                     _..----````----.._                                            ")
     print("                            _.-'``        LBP        ``'-._                                    ")
     print("                          -'                                '-                                 \n \n")
@@ -658,57 +637,27 @@ Play the SystemDefault sound.
 
 """
     
-<<<<<<< HEAD
     # play pod theme
     winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\podtheme.wav", winsound.SND_LOOP + winsound.SND_ASYNC)
     
     # pod audio source
     playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\Pod.wav")
 
-=======
-    # pod audio source
-    winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\Pod.wav", winsound.SND_ASYNC)
-    
-    if player == "player": # play pod theme if player passed introduction!
-        
-                # play pod theme
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\podtheme.wav", winsound.SND_LOOP + winsound.SND_ASYNC)
-           
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
     if player == "new player": # user is new to Littlebigplanet greet them like every sackfolk deserves!
         
         player = "player"
         
-<<<<<<< HEAD
         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\noti.wav")
-=======
-        # Introduction to the pod using playsound 
-        #playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\MyPod.wav")
-        
-        winsound.PlaySound(None, winsound.SND_PURGE) # cut off all instances of sound with SND_PURGE!
-        
-        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\tutorial.wav", winsound.SND_ASYNC)
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
         # In-game Dialog notifcation
         print("You have " + "(" + str(int(round(1.15))) + ")" + " Popit Notifcation!")
         print(f"{GENESISGIR}: Welcome to your pod! I see you met {STEPHEN_FRY}! You can now navigate through the menu! go ahead")
         print("give it a whirl why won't you?") 
     
-<<<<<<< HEAD
     
     if the_gardens_progress == "100%": # user has comepleted story mode 
         
         player = "player"
         
-=======
-    if the_gardens_progress == "100%": # user has comepleted story mode
-        
-        player = "player"
-        
-        # Introduction to the pod using playsound 
-        #playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\MyPod.wav")
-        
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
         winsound.PlaySound(None, winsound.SND_PURGE) # cut off all instances of sound with SND_PURGE!
         
         # In-game Dialog notifcation
@@ -717,11 +666,7 @@ Play the SystemDefault sound.
         print("I'm proud of you and now you can go into this .py file and reverse engineer as much as you'd like! \n \n")
         
         # in game notifcation audio src
-<<<<<<< HEAD
         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\noti.wav")
-=======
-        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\tutorial.wav")
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
         
         time.sleep(3)
         
@@ -761,19 +706,14 @@ Play the SystemDefault sound.
         print("Support the creators of the game and Support me for putting this together! \n")
 
         while True:
-<<<<<<< HEAD
             
             print() # ("ELOC")
             
-=======
-            print()
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
             print("visit the game page to buy Littlebigplanet! [s]")
             print("Visit GenesisGirs Github page! [g]")
             r = input("Goodbye <3 [x]\n")
 
             if r == "s":
-<<<<<<< HEAD
                 
                 webbrowser.open("https://www.amazon.com/LittleBigPlanet-Playstation-3/dp/B001IVXI7C")
                 continue
@@ -789,17 +729,6 @@ Play the SystemDefault sound.
                 winsound.PlaySound(None, winsound.SND_PURGE)
                 sys.exit()
                 
-=======
-                webbrowser.open("https://www.amazon.com/LittleBigPlanet-Playstation-3/dp/B001IVXI7C")
-                continue
-            elif r == "g":
-                webbrowser.open("https://github.com/GenesisGir")
-                continue
-            elif r == "x":
-                # stop all audio instances from playing w/winsound.SND_PURGE!
-                winsound.PlaySound(None, winsound.SND_PURGE)
-                sys.exit()
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
             else:
                 continue # re-iterate!
             
@@ -857,7 +786,6 @@ Play the SystemDefault sound.
 
             🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
             """
-<<<<<<< HEAD
     
     
     resp = input(">>>") # user creates resp variable!
@@ -865,18 +793,6 @@ Play the SystemDefault sound.
     
     # flow control of pod menu U/I
     if resp == "s": # user decides to play story mode!
-=======
-        
-        
-    resp = input(">>>") # user createss resp variable!
-    
-    if resp == "s": # user decides to play story mode!
-        
-        if player == "player": # play pod theme if player passed introduction!
-        
-                # play pod theme
-                winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\podtheme.wav", winsound.SND_LOOP + winsound.SND_ASYNC)
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
             
         # story mode while loop menu U/I
         while True: # story loop menu!
@@ -890,11 +806,8 @@ Play the SystemDefault sound.
             
             # Story tutorial audio SRC!
             if the_gardens_progress == "0%":
-<<<<<<< HEAD
                 
                 # story.wav renders w/playsound
-=======
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
                 playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\story.wav")
             
             if the_gardens_progress == "100%": # user has comepleted story mode
@@ -1175,16 +1088,11 @@ Play the SystemDefault sound.
                         # exit to pod
                         if the_gardens_progress == "100%": # user has completed the gardens level congrats!
                             break
-<<<<<<< HEAD
                         
-=======
-                         
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
                         
                     else: # invalid return
                         print("\n \n")
                         continue
-<<<<<<< HEAD
             
             elif resp == "x": # user returns back to pod!
                 break
@@ -1195,17 +1103,6 @@ Play the SystemDefault sound.
     elif resp == "p": # user wishes to look at their profile!
         
         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\pod.wav", winsound.SND_ASYNC)
-=======
-                            
-            elif resp == "x": # user returns back to pod!
-                break
-            else: # invalid return
-                continue
-        
-    elif resp == "p": # user wishes to look at their profile!
-        
-        winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\profile.wav", winsound.SND_ASYNC)
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
         
         # my profile system
         while True: # profile menu loop
@@ -1280,11 +1177,7 @@ Play the SystemDefault sound.
                 break # escape the my profile loops clause
             else: # re-iterate!
                 continue  
-<<<<<<< HEAD
     
-=======
-                    
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
     elif resp == "x": # user exits program early!
         
         # user choice to end early uses the sys.exit function call
@@ -1307,7 +1200,6 @@ Play the SystemDefault sound.
             else: # invalid return!
                 print("\n \n")
                 continue
-<<<<<<< HEAD
     
     elif resp == '': # user just presses enter
         pass
@@ -1316,34 +1208,3 @@ Play the SystemDefault sound.
         
         print("\n \n")
         pass
-=======
-    else: # invalid return
-        print("\n \n")
-        continue
-
-    
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> c1fcd6d6a5e2731333f5f445334769a5b565e6d4
