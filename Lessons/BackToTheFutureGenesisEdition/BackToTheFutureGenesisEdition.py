@@ -46,7 +46,7 @@ from playsound import playsound
 # defining variables/constants on line '48' 
 
 # characters
-gen = "GenesisGir"
+gen = "GenesisGirz"
 mrs_genesis = "Daniela"
 doc = "Doc Brown"
 freeman = "freeman"
