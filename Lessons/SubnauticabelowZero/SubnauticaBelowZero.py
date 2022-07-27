@@ -14,7 +14,7 @@
 █▀ █░█ █▄▄ █▄░█ ▄▀█ █░█ ▀█▀ █ █▀▀ ▄▀█ ▀ █▄▄ █▀▀ █░░ █▀█ █░█░█   ▀█ █▀▀ █▀█ █▀█
 ▄█ █▄█ █▄█ █░▀█ █▀█ █▄█ ░█░ █ █▄▄ █▀█ ▄ █▄█ ██▄ █▄▄ █▄█ ▀▄▀▄▀   █▄ ██▄ █▀▄ █▄█
 
-Subnautica:BELOW ZERO is a program that takes the user into a thrilling survival horror experince that leaves 
+Subnautica: BELOW ZERO is a program that takes the user into a thrilling survival horror experience that leaves 
 them want to discover the oceans mysterious and depths, fight the blizzard and the cold and try to stay alive
 the blistering heat of the changing seasons and find items and supplies to keep your hunger and food in check
 gigantic creatures from out of this world! being stranded on an uncharted planet brings rewards but danger fight
@@ -22,14 +22,14 @@ the opposition. Below Zero is an underwater adventure game set on an alien ocean
 Subnautica universe, and is developed by Unknown Worlds. Submerge yourself in an all-new, sub-zero expedition in an
 arctic region of Planet 4546B. Arriving with little more than your wits and some survival equipment, you set out to 
 investigate what happened to your sister...Alterra left in a hurry after a mysterious incident. Abandoned research 
-stations dot the region. What happened to the scientists who lived and worked here? Logs, items, and databanks scattered 
+stations dot the region. What happened to the scientists who lived and worked here? Logs, items, and data banks scattered 
 among the debris paint a new picture of the incident. With limited resources, you must improvise to survive on your own. 
 Survive the harsh climate by constructing extensive habitats, scavenging for resources, and crafting equipment. Blast
-across the snowy tundra on a Snowfox hoverbike. Cruise through enchanting and perilous biomes in your modular Seatruck.
+across the snowy tundra on a Snow fox hover bike. Cruise through enchanting and perilous biomes in your modular Sea truck.
 
 𝙍𝙚𝙨𝙚𝙖𝙧𝙘𝙝 𝙖𝙡𝙞𝙚𝙣 𝙡𝙞𝙛𝙚𝙛𝙤𝙧𝙢𝙨
-Something undiscovered lurks around every corner. Swim through the giant Titan Holefish, encounter the haunting Shadow Leviathan,
-and visit the adorable Pengwings. Keep your wits about you. Not all creatures in this strange world are friendly.
+Something undiscovered lurks around every corner. Swim through the giant Titan Hole fish, encounter the haunting Shadow Leviathan,
+and visit the adorable Peng wings. Keep your wits about you. Not all creatures in this strange world are friendly.
 
 丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺
 
@@ -258,17 +258,17 @@ first_aid_kit = "First Aid Kit" # Treated bandages. Apply to staunch blood-flow 
 floating_air_pump = "Floating Air Pump" # Floating device that pumps air into pipes. Acts as starting point for a pipe chain. 
 headlamp = "Headlamp" # Battery-powered, all-environment head-mounted light source. 
 high_capacity_O2_tank = "High Capacity O₂ Tank" # O2 mix. Highly Compressed breathable air. 
-lightweight_high_capacity_tank = "Lightweight High Capacity Tank" # Lighter build allows for enhanced manoeuvrability. 
+lightweight_high_capacity_tank = "Lightweight High Capacity Tank" # Lighter build allows for enhanced maneuverability. 
 orange_tablet = "Orange Tablet" # Ancient tablet with a orange symbol. 
 pipe = "Pipe" # A chain of pipes can be used to transport breathable air from a functional pump. 
-pruple_tablet = "Purple Tablet" # Ancient tablet with a purple symbol. 
+purple_tablet = "Purple Tablet" # Ancient tablet with a purple symbol. 
 radiation_suit = "Radiation Suit" # Lead-lined suit providing insulation from radiation. 
 rebreather = "Rebreather" # Conserves oxygen when diving deeper. Absorbs and recycles CO2 into breathable air. 
 reinforced_dive_suit = "Reinforced Dive Suit" # Heavy synthetic fiber dive suit providing 50% physical protection and enhanced survival in extreme temperatures. 
 scanner_room_hud_chip = "Scanner Room HUD Chip" # Streams data from scanner rooms to the HUD.
 standard_O2_tank = "Standard O₂ Tank" # O₂ mix. Compressed, breathable air. 
-still_suit = "Stillsuit" # Reclaims moisture from the body and provides clean, drinkable water. 
-swim_charge_fins = "Swim Charge Fins" # Wirelessly charges your held tool while you swim. 
+still_suit = "Still suit" # Reclaims moisture from the body and provides clean, drinkable water. 
+swim_charge_fins = "Swim Charge Fins" # Wireless charge for your hand-held tool while you swim. 
 thermos = "Thermos" # Real Italian espresso, diluted with tasteless American water. 
 ultra_glide_fins = "Ultra Glide Fins" # Streamline construction enhances swim speed. 
 ultra_high_capacity_tank = "Ultra High Capacity Tank" # Additional air capacity (+180).
@@ -287,7 +287,7 @@ high_capacity_O2_tank_amount = 0
 lightweight_high_capacity_tank_amount = 0 
 orange_tablet_amount = 0 
 pipe_amount = 0 
-pruple_tablet_amount = 0 
+purple_tablet_amount = 0 
 radiation_suit_amount = 0 
 rebreather_amount = 0
 reinforced_dive_suit_amount = 0
@@ -314,7 +314,7 @@ repulsion_cannon = "Repulsion Cannon" # Applies percussive force to entities in 
 scanner = "Scanner" # Spectroscope scanner used to acquire technology blueprints and data on living organisms. 
 statis_rifle = "Stasis Rifle" # Freezes physical objects in place. 
 survival_knife = "Survival Knife" # Standard survival tool. Multi-functional. 
-tether_tool = "Tether Tool" # Teleport to a nearby teleportation seatruck module. 
+tether_tool = "Tether Tool" # Teleport to a nearby teleportation sea truck module. 
 thermoblade = "Thermoblade" # Cooks and sterilizes small organisms for immediate consumption. 
 thumper = "Thumper" # Makes thumping noises to confuse ice worms.
 
@@ -361,7 +361,7 @@ mechanical rock puncher — rock grub ingestion not required.
 
 """
 𝙎𝙚𝙖𝙢𝙤𝙩𝙝
-The Seamoth is a small, versatile one-person submersible and spacecraft capable of sustained high-speed travel
+The Sea moth is a small, versatile one-person submersible and spacecraft capable of sustained high-speed travel
 over considerable distances. It boasts an omnidirectional propulsion system that allows for lateral and vertical
 movement that gradually increases to a maximum of 11.25 m/s in any single direction. The speed in any direction
 is independent of other directions and can be added together using vector addition. Thus, if going forward and
@@ -377,7 +377,7 @@ robin_ayou = "Robin Ayou" # refer to line '241'
 
 """
 𝙍𝙤𝙗𝙞𝙣 𝘼𝙮𝙤𝙪
-Robin is a Xenoworker and Xenologist. She arrived to 4546B with the intent of uncovering what truly happened to
+Robin is a Xeno worker and Xenologist. She arrived to 4546B with the intent of uncovering what truly happened to
 her sister Sam Ayou after the Alterra Corporation reported her to have died. 
 """
 
@@ -398,12 +398,12 @@ inv = "" # users inventory variable
 
 Variables are useful in the sense you can store data types & values within them to use in your program later on,
 variables and constants have their differences in a way. variables values change throughout a program and constants
-never change their values of the entire instance of a program! you make variables/constnats with assignment
+never change their values of the entire instance of a program! you make variables/constants with assignment
 statements refer to the examples below to learn how to make them.
 
 eg. rusty_crate = "plasma rifle"
 
-the statement above is an assignment statement and consists of a variable/constant name, an assigment operator,
+the statement above is an assignment statement and consists of a variable/constant name, an assignment operator,
 and the value that you wish to store inside its contents. use them , manipulate them, harness their capabilities.
 
       v a r i a b l e s
@@ -438,7 +438,7 @@ print("███████╗███████╗██║░░██║�
 print("╚══════╝╚══════╝╚═╝░░╚═╝░╚════╝░")
 print() # (ELOC)
 print() 
-print("all rights & copyrights go to developed by unknown worlds entertainment")
+print("all rights & copyrights go to developed by unknown worlds Entertainment")
 print()
 print()
 
@@ -491,7 +491,7 @@ while True: # init.
         print("building virual meshes..\n")
         time.sleep(random.randint(1,3))
         
-        print("Time fragments being implemented..\n")
+        print("Time fragmeants being implemented..\n")
         time.sleep(random.randint(1,3))
         
         print("The ship is preparing for collision..\n")
@@ -667,7 +667,7 @@ while True: # init.
     
 while True: # HULL BREACH loop
     
-    winsound.PlaySound(r"C:\Users\daint\Documents\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\breach.wav", winsound.SND_ASYNC | winsound.SND_ALIAS)
+    winsound.PlaySound(r"C:\Users\daint\Documeants\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\breach.wav", winsound.SND_ASYNC | winsound.SND_ALIAS)
     
     print("- WARNING: HULL BREACH! - \n")
     
@@ -683,7 +683,7 @@ while True: # HULL BREACH loop
         input(">>> press [enter]\n")
         
         #play escape.wav
-        winsound.PlaySound(r"C:\Users\daint\Documents\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\escape.wav", winsound.SND_ASYNC)
+        winsound.PlaySound(r"C:\Users\daint\Documeants\github\Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Lifepod\Pod\escape.wav", winsound.SND_ASYNC)
         
         print("- You kick the door open for a hope to escape the drowing craft! -")
         print("(Press enter) \n")
@@ -932,7 +932,7 @@ while True: # life pod hatch prompt loop
 # plays the opencomp.wav to indicate the cold suit has been retrieved
 winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\SubnauticabelowZero\Subnautica - Tools\Tools\opencomp.wav", winsound.SND_ASYNC)
     
-print(f"{robin_ayou} opens a compartment and sees the " + cold_suit + "! \n")
+print(f"{robin_ayou} opens a compartmeant and sees the " + cold_suit + "! \n")
 
 input("(press enter to collect the " + cold_suit + "!)")
 
@@ -1093,7 +1093,7 @@ print("source code by - GenesisGir \n")
 
 time.sleep(1)
 
-print("Subnautica: Below Zero was developed and created by Unknown Worlds Enterainment! \n")
+print("Subnautica: Below Zero was developed and created by Unknown Worlds Enterainmeant! \n")
 
 time.sleep(1)
 

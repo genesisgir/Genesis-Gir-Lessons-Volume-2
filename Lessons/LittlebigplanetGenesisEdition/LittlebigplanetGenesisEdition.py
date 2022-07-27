@@ -46,39 +46,39 @@ sticker_selected = ""
 
 # sackboy/sackgirl constants
 SACKBOY = "Sackboy™" # a friendly creative lot!
-SACKGIRL = "Sackgirl™" # sackboy's bestfriend!
+SACKGIRL = "Sackgirl™" # sackboy's best friend!
 
 # mode constants
 CREATIVE = "Create mode"
 STORY = "Story mode"
 
-# trophie constants
-_100_COMPLETE = "100% Complete trophie" # Earn all LittleBigPlanet™ trophies to unlock this platinum trophy.
-THE_GARDENS_TROPHIE = "The Gardens trophie" # Complete all levels in The Gardens.
-THE_SAVANNAH_TROPHIE = "The Savannah trophie" # Complete all levels in The Savannah.
-THE_WEDDING_TROPHIE = "The Wedding trophie" # Complete all levels in The Wedding.
-THE_CANYONS_TROPHIE = "The Canyons trophie" # Complete all levels in The Canyons.
-THE_METROPOLIS_TROPHIE = "The Metropolis trophie" # Complete all levels in The Metropolis 
-THE_ISLANDS_TROPHIE = "The Islands trophie" # Complete all levels in The Islands.
-THE_TEMPLES_TROPHIE = "The Temples trophie" # Complete all levels in The Temples.
-EXPERT_CREATOR = "Expert Creator trophie" # Complete all levels in the Tutorials.
-ARTIST = "Artist trophie" # Place a sticker.
-HOMEMAKER = "Homemaker trophie" # Place 10 stickers or decorations in your pod.
-FASHION_SENSE = "Fashion Sense trophie" # Choose a costume for your sackperson with at least one item on your head, at least one item on your body, and a material.
-TRENDSETTER = "Trendsetter trophie" # Place a sticker or a decoration on another player's sackperson.
-FORAGER = "Forager trophie" # Collect 25% of the prize bubbles on the story levels.
-STICKY_FINGERS = "Sticky Fingers trophie" # Collect 50% of the prize bubbles on the story levels.
-TREASURE_HUNTER = "Treasure Hunter trophie" # Collect 75% of the prize bubbles on the story levels.
-_2X_MULTIPLIER = "2X Multiplier! trophie" # Get a 2X Multiplier.
-_8X_MULTIPLIER = "8X Multiplier! trophie" # Get a 8X Multiplier.
+# trophy constants
+_100_COMPLETE = "100% Complete trophy" # Earn all LittleBigPlanet™ trophys to unlock this platinum trophy.
+THE_GARDENS_trophy = "The Gardens trophy" # Complete all levels in The Gardens.
+THE_SAVANNAH_trophy = "The Savannah trophy" # Complete all levels in The Savannah.
+THE_WEDDING_trophy = "The Wedding trophy" # Complete all levels in The Wedding.
+THE_CANYONS_trophy = "The Canyons trophy" # Complete all levels in The Canyons.
+THE_METROPOLIS_trophy = "The Metropolis trophy" # Complete all levels in The Metropolis 
+THE_ISLANDS_trophy = "The Islands trophy" # Complete all levels in The Islands.
+THE_TEMPLES_trophy = "The Temples trophy" # Complete all levels in The Temples.
+EXPERT_CREATOR = "Expert Creator trophy" # Complete all levels in the Tutorials.
+ARTIST = "Artist trophy" # Place a sticker.
+HOMEMAKER = "Homemaker trophy" # Place 10 stickers or decorations in your pod.
+FASHION_SENSE = "Fashion Sense trophy" # Choose a costume for your sackperson with at least one item on your head, at least one item on your body, and a material.
+TRENDSETTER = "Trendsetter trophy" # Place a sticker or a decoration on another player's sackperson.
+FORAGER = "Forager trophy" # Collect 25% of the prize bubbles on the story levels.
+STICKY_FINGERS = "Sticky Fingers trophy" # Collect 50% of the prize bubbles on the story levels.
+TREASURE_HUNTER = "Treasure Hunter trophy" # Collect 75% of the prize bubbles on the story levels.
+_2X_MULTIPLIER = "2X Multiplier! trophy" # Get a 2X Multiplier.
+_8X_MULTIPLIER = "8X Multiplier! trophy" # Get a 8X Multiplier.
 
-# trophie progress variables
+# trophy progress variables
 _100_complete_progress = "locked" 
-the_gardens_trophie_progress = "locked"
-the_savannah_trophie_progress = "locked"
-the_wedding_trophie_progress = "locked"
-the_canyons_trophie_progress = "locked"
-the_metropolis_trophie_progress = "locked"
+the_gardens_trophy_progress = "locked"
+the_savannah_trophy_progress = "locked"
+the_wedding_trophy_progress = "locked"
+the_canyons_trophy_progress = "locked"
+the_metropolis_trophy_progress = "locked"
 expert_creator_progress = "locked"
 artist_progress = "locked"
 homemaker_progress = "locked"
@@ -127,7 +127,7 @@ GLOBAL_STUFF = "Global Stuff"
 █▀▀ █░░ █▀█ █▄▄ ▄▀█ █░░   █▀ ▀█▀ █░█ █▀▀ █▀▀
 █▄█ █▄▄ █▄█ █▄█ █▀█ █▄▄   ▄█ ░█░ █▄█ █▀░ █▀░
 
-Gameplay
+Game play
 Game Mode: 
 
 Cooperative
@@ -135,7 +135,7 @@ Versus
 Cut Scene
 Manual jump down
 
-Enable Sackpocket
+Enable Sack pocket
 
 Enable Organizertron
 
@@ -404,7 +404,7 @@ THE_COLLECTOR = "The Collector™"
 ░█░ █▀█ ██▄   █▄▄ █▄█ █▄▄ █▄▄ ██▄ █▄▄ ░█░ █▄█ █▀▄
 
 The Collector is a Creator Curator who is the main antagonist in LittleBigPlanet. He is the Creator Curator of a
-Siberian Tundra, or Soviet warbase-themed world known as The Wilderness. He speaks with the "Evil Pixie" voice and 
+Siberian Tundra, or Soviet war base themed world known as The Wilderness. He speaks with the "Evil Pixie" voice and 
 throughout his other appearances he triggers the "Evil Laugh" sound effect with the speed and pitch turned all the 
 way up. He is the final boss and the 8th and last Creator Curator in LittleBigPlanet.
 
@@ -524,7 +524,7 @@ while True: # Main pod menu loop
     print("                            _.-'``        LBP        ``'-._                                    ")
     print("                          -'                                '-                                 \n \n")
     
-    """ Learn about playsound & winsound intergrations here!
+    """ Learn about playsound & winsound integrations here!
 
 
 █▀█ █░░ ▄▀█ █▄█ █▀ █▀█ █░█ █▄░█ █▀▄   █▀▄▀█ █▀█ █▀▄ █░█ █░░ █▀▀
@@ -670,7 +670,7 @@ Play the SystemDefault sound.
         
         time.sleep(3)
         
-        print(f"{GENESISGIR}: Coding is a creative and logical playing field and with alot of practice and hard work you")
+        print(f"{GENESISGIR}: Coding is a creative and logical playing field and with a lot of practice and hard work you")
         print("can achieve results like these in the matter of hours! don't rush your learning process. go at your own")
         print("pace! \n")
         
@@ -766,7 +766,7 @@ Play the SystemDefault sound.
             ░█░ ▀▄▀▄▀ █ ░█░ █▄▄ █▀█   ▄█ ░█░ █▄█ █▀▄ ██▄ █▄▀   █▄█ █▀▄ █▄█ █▀█ █▄▀ █▄▄ █▀█ ▄█ ░█░ ▄█
 
             Fun Fact this .py was made on stream and can be found on my Twitch page @ GenesisGir! Subscribers can 
-            go back a rewatch how .pf files are made in cohesion and learn step by step how projects like these are made 
+            go back a re-watch how .pf files are made in cohesion and learn step by step how projects like these are made 
             very useful to those starting out. Subscribe and stay in the loop!
 
             link:https://www.twitch.tv/genesisgir Watch resourceful livestreams and chat , code!
@@ -831,7 +831,7 @@ Play the SystemDefault sound.
                     
                     # hint flow controls
                     if buff == 0: # release hint at 0%
-                        print("Fun fact: Did you know you can unlock trophies in Littlebigplanet™? \n \n")
+                        print("Fun fact: Did you know you can unlock trophys in Littlebigplanet™? \n \n")
                         
                     elif buff == 20: # release hint at 20%
                         print("Fun fact: Littlebigplanet™ was crafted in 2008 by Media molecule! \n \n")
@@ -878,7 +878,7 @@ Play the SystemDefault sound.
                 
                 # The King Dialog
                 print(f"{THE_KING}: But first you'll need to learn how to use your popit menu, This will help you complete this level and collect")
-                print("prizes and even trophies and much more!")
+                print("prizes and even trophys and much more!")
                 
                 # The king's voice audio src
                 playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\King.wav")
@@ -1039,12 +1039,12 @@ Play the SystemDefault sound.
                         
                         winsound.PlaySound(None, winsound.SND_PURGE) # stop backround music
                         
-                        # In-game trophie Dialog notifcation
+                        # In-game trophy Dialog notifcation
                         print("You have " + "(" + str(int(round(1.10))) + ")" + " Popit Notifcation!")
                         print(f"{GENESISGIR}: You've unlocked the {ARTIST} good job sackling! \n")
                         
-                        # trophie award audio src
-                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophie.wav")
+                        # trophy award audio src
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophy.wav")
                         
                         time.sleep(3) 
                         
@@ -1072,12 +1072,12 @@ Play the SystemDefault sound.
                         
                         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\success.wav")
                         
-                        # In-game trophie Dialog notifcation
+                        # In-game trophy Dialog notifcation
                         print("You have " + "(" + str(int(round(1.10))) + ")" + " Popit Notifcation!")
-                        print(f"{GENESISGIR}: You've unlocked the {THE_GARDENS_TROPHIE} nice one! \n")
+                        print(f"{GENESISGIR}: You've unlocked the {THE_GARDENS_trophy} nice one! \n")
                         
-                        # trophie award audio src
-                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophie.wav")
+                        # trophy award audio src
+                        playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophy.wav")
                         
                         time.sleep(3)
                         
@@ -1120,21 +1120,21 @@ Play the SystemDefault sound.
 
             print("𝙩𝙧𝙤𝙥𝙝𝙞𝙚𝙨")
             print(f"{_100_COMPLETE} {_100_complete_progress}")
-            print("Earn all LittleBigPlanet™ trophies to unlock this platinum trophy. \n")
+            print("Earn all LittleBigPlanet™ trophys to unlock this platinum trophy. \n")
 
-            print(f"{THE_GARDENS} {the_gardens_trophie_progress}") 
+            print(f"{THE_GARDENS} {the_gardens_trophy_progress}") 
             print("Complete all levels in The Gardens. \n")
 
-            print(f"{THE_SAVANNAH} {the_savannah_trophie_progress}")
+            print(f"{THE_SAVANNAH} {the_savannah_trophy_progress}")
             print("Complete all levels in The Savannah. \n")
 
-            print(f"{THE_WEDDING} {the_wedding_trophie_progress}")
+            print(f"{THE_WEDDING} {the_wedding_trophy_progress}")
             print("Complete all levels in The Wedding. \n")
 
-            print(f"{THE_CANYONS} {the_canyons_trophie_progress}")
+            print(f"{THE_CANYONS} {the_canyons_trophy_progress}")
             print("Complete all levels in The Canyons. \n")
 
-            print(f"{THE_METROPOLIS} {the_metropolis_trophie_progress}")
+            print(f"{THE_METROPOLIS} {the_metropolis_trophy_progress}")
             print("Complete all levels in The Metropolis  \n")
 
             print(f"{EXPERT_CREATOR} {expert_creator_progress}")
