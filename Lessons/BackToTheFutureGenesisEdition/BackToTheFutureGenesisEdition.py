@@ -2,12 +2,13 @@
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
 
 
-░██████╗░███████╗███╗░░██╗███████╗░██████╗██╗░██████╗░██████╗░██╗██████╗░
-██╔════╝░██╔════╝████╗░██║██╔════╝██╔════╝██║██╔════╝██╔════╝░██║██╔══██╗
-██║░░██╗░█████╗░░██╔██╗██║█████╗░░╚█████╗░██║╚█████╗░██║░░██╗░██║██████╔╝
-██║░░╚██╗██╔══╝░░██║╚████║██╔══╝░░░╚═══██╗██║░╚═══██╗██║░░╚██╗██║██╔══██╗
-╚██████╔╝███████╗██║░╚███║███████╗██████╔╝██║██████╔╝╚██████╔╝██║██║░░██║
-░╚═════╝░╚══════╝╚═╝░░╚══╝╚══════╝╚═════╝░╚═╝╚═════╝░░╚═════╝░╚═╝╚═╝░░╚═╝
+
+████████╗███████╗███╗░░██╗███╗░░██╗██╗░██████╗░██╗░░░░░░░██╗░█████╗░██╗███████╗██╗░░░██╗
+╚══██╔══╝██╔════╝████╗░██║████╗░██║██║██╔════╝░██║░░██╗░░██║██╔══██╗██║██╔════╝██║░░░██║
+░░░██║░░░█████╗░░██╔██╗██║██╔██╗██║██║╚█████╗░░╚██╗████╗██╔╝███████║██║█████╗░░██║░░░██║
+░░░██║░░░██╔══╝░░██║╚████║██║╚████║██║░╚═══██╗░░████╔═████║░██╔══██║██║██╔══╝░░██║░░░██║
+░░░██║░░░███████╗██║░╚███║██║░╚███║██║██████╔╝░░╚██╔╝░╚██╔╝░██║░░██║██║██║░░░░░╚██████╔╝
+░░░╚═╝░░░╚══════╝╚═╝░░╚══╝╚═╝░░╚══╝╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝╚═╝░░░░░░╚═════╝░
 
 
 
@@ -17,9 +18,9 @@
 █▀▀ █▀▄ █ ▀█▀ █ █▀█ █▄░█ █
 ██▄ █▄▀ █ ░█░ █ █▄█ █░▀█ ▄
 
-Time fractures, Time rifts, Time machines and Genesisgir? All in one package this program takes the user into
+Time fractures, Time rifts, Time machines and tenniswaifu? All in one package this program takes the user into
 a time dimension joy-ride through the space time continuum with the brains behind the Delorean time machine,
-Doc Brown! GenesisGir and Doc need to go to the future and retrieve girs computer that stores important data
+Doc Brown! tenniswaifu and Doc need to go to the future and retrieve girs computer that stores important data
 if in the wrong hands can be used to start a cyber warfare in the year 2045, Its up to the duo to stop a crazed
 scientist of the name of freeman whos goal is to acquire the source code and use it for evil. travel through the
 year 2045 and seek the scientist and stop him before your future and everyone elses gets halted! Learn about Chapter
@@ -1704,7 +1705,7 @@ print("- Genesis smiles at her with love and passion in his eyes looking at her 
 
 input("This was a demo press enter to view credits!\n")
 
-print("Thank you for downloading GenesisGirLessonsVolume.2! \n")
+print("Thank you for downloading tenniswaifuLessonsVolume.2! \n")
 
 time.sleep(3)
 
@@ -1718,7 +1719,7 @@ print("█▄▄ █▀▄ ██▄ █▄▀ █ ░█░ ▄█ 
 
 time.sleep(1)
 
-print("source code by - GenesisGir \n")
+print("source code by - tenniswaifu \n")
 
 time.sleep(1)
 
@@ -1733,14 +1734,14 @@ print("Support the creators of the movie and Support me for putting this togethe
 while True:
     print()
     print("visit the netflix page to buy the movie! [s]")
-    print("Visit GenesisGirs Github page! [g]")
+    print("Visit tenniswaifus Github page! [g]")
     r = input("Goodbye <3 [x]\n")
     
     if r == "s":
         webbrowser.open("https://www.netflix.com/lu-en/title/60010110")
         continue
     elif r == "g":
-        webbrowser.open("https://github.com/GenesisGir")
+        webbrowser.open("https://github.com/tenniswaifu")
         continue
     elif r == "x":
         sys.exit()
@@ -1765,7 +1766,7 @@ to not give up on coding! its an artform and anbody can be skilled enough to ach
 make sure to check out my twitch streams below!
 
 Twitch: https://www.twitch.tv/genesisgir 
-Github: https://github.com/GenesisGir
+Github: https://github.com/tenniswaifu
 
 thank you to everyone on twitch who participated in the making of this .py!
 """

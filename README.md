@@ -1,4 +1,4 @@
-# GenesisGir Lessons Volume 2
+# tenniswaifu Lessons Volume 2
 It's here the second installmeant of my workflows for all of you to research and dig threw and understand how to code way faster and more intuitive
 programs to dig threw and understand! volume 2 is currently under developmeant so sofware will be addded day by day or whenever they do I cannot stress enough how important it is to reference the automatetheboringstuff for these tutorials but some learning value can be found in them for sure! This repo has a lot of useful information on getting started with python coding and contains a lot of .py files to inspect and learn from! things get more complex than VOL.1 and it's free and open source.
 
@@ -9,7 +9,7 @@ programs to dig threw and understand! volume 2 is currently under developmeant s
 - Tutorials on python source code
 - tips and tricks to use in your own code
 
-![genesisgir lessons vol 2](https://user-images.githubusercontent.com/87259615/168378665-3995781d-add1-4282-951a-bf73bb936ffd.png)
+![tenniswaifu lessons vol 2](https://user-images.githubusercontent.com/87259615/168378665-3995781d-add1-4282-951a-bf73bb936ffd.png)
 
 
 
@@ -18,6 +18,6 @@ High value and love embedded into every code snippet any novice like me with-100
 
 # links
 
-twitch - https://www.twitch.tv/genesisgir
+twitch - https://www.twitch.tv/tenniswaifu
 
-github - https://github.com/GenesisGir
+github - https://github.com/tenniswaifu

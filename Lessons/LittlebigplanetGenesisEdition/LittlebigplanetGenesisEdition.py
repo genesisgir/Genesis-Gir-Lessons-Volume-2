@@ -2,12 +2,13 @@
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
 
 
-░██████╗░███████╗███╗░░██╗███████╗░██████╗██╗░██████╗░██████╗░██╗██████╗░
-██╔════╝░██╔════╝████╗░██║██╔════╝██╔════╝██║██╔════╝██╔════╝░██║██╔══██╗
-██║░░██╗░█████╗░░██╔██╗██║█████╗░░╚█████╗░██║╚█████╗░██║░░██╗░██║██████╔╝
-██║░░╚██╗██╔══╝░░██║╚████║██╔══╝░░░╚═══██╗██║░╚═══██╗██║░░╚██╗██║██╔══██╗
-╚██████╔╝███████╗██║░╚███║███████╗██████╔╝██║██████╔╝╚██████╔╝██║██║░░██║
-░╚═════╝░╚══════╝╚═╝░░╚══╝╚══════╝╚═════╝░╚═╝╚═════╝░░╚═════╝░╚═╝╚═╝░░╚═╝
+
+████████╗███████╗███╗░░██╗███╗░░██╗██╗░██████╗░██╗░░░░░░░██╗░█████╗░██╗███████╗██╗░░░██╗
+╚══██╔══╝██╔════╝████╗░██║████╗░██║██║██╔════╝░██║░░██╗░░██║██╔══██╗██║██╔════╝██║░░░██║
+░░░██║░░░█████╗░░██╔██╗██║██╔██╗██║██║╚█████╗░░╚██╗████╗██╔╝███████║██║█████╗░░██║░░░██║
+░░░██║░░░██╔══╝░░██║╚████║██║╚████║██║░╚═══██╗░░████╔═████║░██╔══██║██║██╔══╝░░██║░░░██║
+░░░██║░░░███████╗██║░╚███║██║░╚███║██║██████╔╝░░╚██╔╝░╚██╔╝░██║░░██║██║██║░░░░░╚██████╔╝
+░░░╚═╝░░░╚══════╝╚═╝░░╚══╝╚═╝░░╚══╝╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝╚═╝░░░░░░╚═════╝░
 
 
 █░░ █ ▀█▀ ▀█▀ █░░ █▀▀ █▄▄ █ █▀▀ █▀█ █░░ ▄▀█ █▄░█ █▀▀ ▀█▀
@@ -25,8 +26,8 @@ for? Hop right into it sack fellow!
 
 𝙡𝙞𝙩𝙩𝙡𝙚𝙗𝙞𝙜𝙥𝙡𝙖𝙣𝙚𝙩 𝙬𝙖𝙨 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙙 𝙗𝙮 𝙢𝙚𝙙𝙞𝙖 𝙢𝙤𝙡𝙚𝙘𝙪𝙡𝙚
 
-Github Link: https://github.com/GenesisGir
-Twitch Link: https://www.twitch.tv/genesisgir
+Github Link: https://github.com/tenniswaifu
+Twitch Link: https://www.twitch.tv/tenniswaifu
 
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
 """
@@ -250,7 +251,7 @@ They are accessible to the player in both Play and Create Mode, and may even be 
 """
 
 # character constants
-GENESISGIR = "GenesisGir™"
+tenniswaifu = "tenniswaifu™"
 
 STEPHEN_FRY = "Stephen Fry™"
 
@@ -650,7 +651,7 @@ Play the SystemDefault sound.
         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\noti.wav")
         # In-game Dialog notifcation
         print("You have " + "(" + str(int(round(1.15))) + ")" + " Popit Notifcation!")
-        print(f"{GENESISGIR}: Welcome to your pod! I see you met {STEPHEN_FRY}! You can now navigate through the menu! go ahead")
+        print(f"{tenniswaifu}: Welcome to your pod! I see you met {STEPHEN_FRY}! You can now navigate through the menu! go ahead")
         print("give it a whirl why won't you?") 
     
     
@@ -662,7 +663,7 @@ Play the SystemDefault sound.
         
         # In-game Dialog notifcation
         print("You have " + "(" + str(int(round(1.15))) + ")" + " Popit Notifcation!")
-        print(f"{GENESISGIR}: You beat the gardens and met {THE_KING} and even placed down your own stickers")
+        print(f"{tenniswaifu}: You beat the gardens and met {THE_KING} and even placed down your own stickers")
         print("I'm proud of you and now you can go into this .py file and reverse engineer as much as you'd like! \n \n")
         
         # in game notifcation audio src
@@ -670,7 +671,7 @@ Play the SystemDefault sound.
         
         time.sleep(3)
         
-        print(f"{GENESISGIR}: Coding is a creative and logical playing field and with a lot of practice and hard work you")
+        print(f"{tenniswaifu}: Coding is a creative and logical playing field and with a lot of practice and hard work you")
         print("can achieve results like these in the matter of hours! don't rush your learning process. go at your own")
         print("pace! \n")
         
@@ -678,7 +679,7 @@ Play the SystemDefault sound.
         
         winsound.PlaySound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\leftbank.wav", winsound.SND_ASYNC)
 
-        print("Thank you for downloading GenesisGirLessonsVolume.2! \n")
+        print("Thank you for downloading tenniswaifuLessonsVolume.2! \n")
         print("I want to thank everyone for the support on twitch and my lovely wife for the motivation! These")
         print("programs are really fun to make and I enjoy making them if your new to programming with time and practice")
         print("you can achieve anything you set your mind too!~ \n")
@@ -695,7 +696,7 @@ Play the SystemDefault sound.
 
         time.sleep(1)
 
-        print("source code by - GenesisGir \n")
+        print("source code by - tenniswaifu \n")
 
         time.sleep(1)
 
@@ -710,7 +711,7 @@ Play the SystemDefault sound.
             print() # ("ELOC")
             
             print("visit the game page to buy Littlebigplanet! [s]")
-            print("Visit GenesisGirs Github page! [g]")
+            print("Visit tenniswaifus Github page! [g]")
             r = input("Goodbye <3 [x]\n")
 
             if r == "s":
@@ -720,7 +721,7 @@ Play the SystemDefault sound.
             
             elif r == "g":
                 
-                webbrowser.open("https://github.com/GenesisGir")
+                webbrowser.open("https://github.com/tenniswaifu")
                 continue
             
             elif r == "x":
@@ -746,7 +747,7 @@ Play the SystemDefault sound.
             Thank you for downloading this .py find more at my github and learn something new everyday and rememeber
             to not give up on coding! its an artform and anbody can be skilled enough to achieve greatness in your code
             make sure to check out my twitch streams below
-            Twitch: https://www.twitch.tv/genesisgir 
+            Twitch: https://www.twitch.tv/tenniswaifu 
             Github: https://github.com/GenesisGi
             thank you to everyone on twitch who participated in the making of this .py!
             """
@@ -756,7 +757,7 @@ Play the SystemDefault sound.
             █▀█ █▀▀ █▀ █▀█ █░█ █▀█ █▀▀ █▀▀ █▀
             █▀▄ ██▄ ▄█ █▄█ █▄█ █▀▄ █▄▄ ██▄ ▄█
 
-            link: >>> https://www.twitch.tv/genesisgir  <<< Find Livestreams and more!
+            link: >>> https://www.twitch.tv/tenniswaifu  <<< Find Livestreams and more!
             link: >>> https://automatetheboringstuff.com <<< Discover and learn how i did!
             """
             """ twitch stored broadcasts
@@ -765,11 +766,11 @@ Play the SystemDefault sound.
             ▀█▀ █░█░█ █ ▀█▀ █▀▀ █░█   █▀ ▀█▀ █▀█ █▀█ █▀▀ █▀▄   █▄▄ █▀█ █▀█ ▄▀█ █▀▄ █▀▀ ▄▀█ █▀ ▀█▀ █▀
             ░█░ ▀▄▀▄▀ █ ░█░ █▄▄ █▀█   ▄█ ░█░ █▄█ █▀▄ ██▄ █▄▀   █▄█ █▀▄ █▄█ █▀█ █▄▀ █▄▄ █▀█ ▄█ ░█░ ▄█
 
-            Fun Fact this .py was made on stream and can be found on my Twitch page @ GenesisGir! Subscribers can 
+            Fun Fact this .py was made on stream and can be found on my Twitch page @ tenniswaifu! Subscribers can 
             go back a re-watch how .pf files are made in cohesion and learn step by step how projects like these are made 
             very useful to those starting out. Subscribe and stay in the loop!
 
-            link:https://www.twitch.tv/genesisgir Watch resourceful livestreams and chat , code!
+            link:https://www.twitch.tv/tenniswaifu Watch resourceful livestreams and chat , code!
 
             🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
             """
@@ -782,7 +783,7 @@ Play the SystemDefault sound.
             Discover , Explore and learn from my programs that Ive pushed to my remote repositories!
             and dont forget to follow me!
 
-            link: >>> https://github.com/GenesisGir <<<
+            link: >>> https://github.com/tenniswaifu <<<
 
             🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
             """
@@ -841,13 +842,13 @@ Play the SystemDefault sound.
                         print("Fun fact: You are the coolest Sack person ever! \n \n")
                         
                     elif buff == 50: # release hint at 50%
-                        print("Fun fact: Genesisgir has a Github where he posts all his work! \n \n")
+                        print("Fun fact: tenniswaifu has a Github where he posts all his work! \n \n")
                         
                     elif buff == 70: # release hint at 70%
                         print("Fun fact: This lesson was created for beginners and pro's like you! \n \n")
                 
                     elif buff == 90: # release hint at 90%
-                        print("Fun fact: You can watch Genesisgir craft programs from scratch on his twitch! \n \n")
+                        print("Fun fact: You can watch tenniswaifu craft programs from scratch on his twitch! \n \n")
                 
                 # loading has finished and user now enter's the gardens on line '720'!
                 
@@ -1041,7 +1042,7 @@ Play the SystemDefault sound.
                         
                         # In-game trophy Dialog notifcation
                         print("You have " + "(" + str(int(round(1.10))) + ")" + " Popit Notifcation!")
-                        print(f"{GENESISGIR}: You've unlocked the {ARTIST} good job sackling! \n")
+                        print(f"{tenniswaifu}: You've unlocked the {ARTIST} good job sackling! \n")
                         
                         # trophy award audio src
                         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophy.wav")
@@ -1074,7 +1075,7 @@ Play the SystemDefault sound.
                         
                         # In-game trophy Dialog notifcation
                         print("You have " + "(" + str(int(round(1.10))) + ")" + " Popit Notifcation!")
-                        print(f"{GENESISGIR}: You've unlocked the {THE_GARDENS_trophy} nice one! \n")
+                        print(f"{tenniswaifu}: You've unlocked the {THE_GARDENS_trophy} nice one! \n")
                         
                         # trophy award audio src
                         playsound(r"Genesis-Gir-Lessons-Volume-2\Lessons\LittlebigplanetGenesisEdition\Audio Resources\trophy.wav")

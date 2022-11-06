@@ -1241,7 +1241,7 @@ while True: # molotov throw while loop!
         
         winsound.PlaySound(None, winsound.SND_PURGE)
 
-        print("Thank you for downloading GenesisGirLessonsVolume.2! \n")
+        print("Thank you for downloading tenniswaifuLessonsVolume.2! \n")
         print("I want to thank everyone for the support on twitch and my lovely wife for the motivation! These")
         print("programs are really fun to make and I enjoy making them if your new to programming with time and practice")
         print("you can achieve anything you set your mind too!~ \n")
@@ -1258,7 +1258,7 @@ while True: # molotov throw while loop!
 
         time.sleep(1)
 
-        print("source code by - GenesisGir \n")
+        print("source code by - tenniswaifu \n")
 
         time.sleep(1)
 
@@ -1271,14 +1271,14 @@ while True: # molotov throw while loop!
         while True:
             print()
             print("visit the game page to buy the last of us! [s]")
-            print("Visit GenesisGirs Github page! [g]")
+            print("Visit tenniswaifus Github page! [g]")
             r = input("Goodbye <3 [x]\n")
 
             if r == "s":
                 webbrowser.open("https://store.playstation.com/en-us/product/UP9000-CUSA00552_00-THELASTOFUS00000")
                 continue
             elif r == "g":
-                webbrowser.open("https://github.com/GenesisGir")
+                webbrowser.open("https://github.com/tenniswaifu")
                 continue
             elif r == "x":
                 sys.exit()
@@ -1299,7 +1299,7 @@ while True: # molotov throw while loop!
 Thank you for downloading this .py find more at my github and learn something new everyday and rememeber
 to not give up on coding! its an artform and anbody can be skilled enough to achieve greatness in your code
 make sure to check out my twitch streams below
-Twitch: https://www.twitch.tv/genesisgir 
+Twitch: https://www.twitch.tv/tenniswaifu 
 Github: https://github.com/GenesisGi
 thank you to everyone on twitch who participated in the making of this .py!
 """
@@ -1309,7 +1309,7 @@ thank you to everyone on twitch who participated in the making of this .py!
 █▀█ █▀▀ █▀ █▀█ █░█ █▀█ █▀▀ █▀▀ █▀
 █▀▄ ██▄ ▄█ █▄█ █▄█ █▀▄ █▄▄ ██▄ ▄█
 
-link: >>> https://www.twitch.tv/genesisgir  <<< Find Livestreams and more!
+link: >>> https://www.twitch.tv/tenniswaifu  <<< Find Livestreams and more!
 link: >>> https://automatetheboringstuff.com <<< Discover and learn how i did!
 """
 """
@@ -1318,11 +1318,11 @@ link: >>> https://automatetheboringstuff.com <<< Discover and learn how i did!
 ▀█▀ █░█░█ █ ▀█▀ █▀▀ █░█   █▀ ▀█▀ █▀█ █▀█ █▀▀ █▀▄   █▄▄ █▀█ █▀█ ▄▀█ █▀▄ █▀▀ ▄▀█ █▀ ▀█▀ █▀
 ░█░ ▀▄▀▄▀ █ ░█░ █▄▄ █▀█   ▄█ ░█░ █▄█ █▀▄ ██▄ █▄▀   █▄█ █▀▄ █▄█ █▀█ █▄▀ █▄▄ █▀█ ▄█ ░█░ ▄█
 
-Fun Fact this .py was made on stream and can be found on my Twitch page @ GenesisGir! Subscribers can 
+Fun Fact this .py was made on stream and can be found on my Twitch page @ tenniswaifu! Subscribers can 
 go back a re-watch how .pf files are made in cohesion and learn step by step how projects like these are made 
 very useful to those starting out. Subscribe and stay in the loop!
 
-link:https://www.twitch.tv/genesisgir Watch resourceful livestreams and chat , code!
+link:https://www.twitch.tv/tenniswaifu Watch resourceful livestreams and chat , code!
 
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
 """
@@ -1335,7 +1335,7 @@ link:https://www.twitch.tv/genesisgir Watch resourceful livestreams and chat , c
 Discover , Explore and learn from my programs that Ive pushed to my remote repositories!
 and dont forget to follow me! (;
 
-link: >>> https://github.com/GenesisGir <<<
+link: >>> https://github.com/tenniswaifu <<<
 
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂
 """
